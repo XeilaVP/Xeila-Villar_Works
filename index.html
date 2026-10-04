@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Porfolio Xeila</title>
+
+    <!--1. RESET--> <link rel="stylesheet" href="css/reset.css">
+    <!--2. ESTRUCTURA--> <link rel="stylesheet" href="css/estructura.css">
+    <!--3. ICONOS-FONTAWESOME--> <link rel="stylesheet" href="css/all.min.css"> 
+    <!--4. ICONOS GOOGLE FONTS--> <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=east" />
+    <!--5. ESTILOS--> <link rel="stylesheet" href="css/estilos.css">
+
+    <!--TIPOGRAFÍA-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap">
+
+    <!------- LIBRERÍAS ------->  
+
+    <!--JQUERY librerias...--> <script src="js/jquery-ui.min.css"></script>
+    <!--JQUERY librerias...--> <script src="js/jquery-3.6.1.min.js"></script>
+ 
+  
+    <!--MENU NAV-->
+    <script src="js/jquery.nav.js"></script>
+
+    <!--OWL CAROUSEL -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <script src="js/owl.carousel.min.js"></script>
+
+    <!--MAGNIFIC POPUP -->
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    
+
+    <!--LIGHTBOX
+    <link href="lightbox2-2.11.3/dist/css/lightbox.min.css" rel="stylesheet" />
+    <script src="lightbox2-2.11.3/dist/js/lightbox-plus-jquery.min.js"></script>
+    -->
+
+    <!-------- ANIMACION -------->
+
+    <!--CAJAS-->
+    <link href="css/aos.css" rel="stylesheet"> 
+    <script src="js/aos.js"></script> 
+
+    <!--------- FUNCIONES -------->
+    
+   
+    
+    <!--CURSOR-POINTER-->
+    
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    // Añadir la clase '.cursor-pointer' a todos los elementos <a> y <button>
+    document.querySelectorAll('a, button, .cta').forEach(element => {
+      element.classList.add('cursor-pointer');
+    });
+  });
+</script>
+    
+    <!--CURSOR-CUSTOMIZADO-->
+    
+<script>
+document.addEventListener('mousemove', (event) => {
+  const cursorBackground = document.querySelector('.cursor-background');
+
+  // Posición actual del cursor real
+
+  setTimeout(() => {
+  const mouseX = event.clientX;
+  const mouseY = event.clientY;
+
+  // Actualizar la posición del cursor falso directamente sin retraso
+  cursorBackground.style.left = `${mouseX - cursorBackground.offsetWidth / 2}px`;
+  cursorBackground.style.top = `${mouseY - cursorBackground.offsetHeight / 2}px`;
+
+ // Detectar el elemento debajo del cursor
+  const elementUnderCursor = document.elementFromPoint(mouseX, mouseY);
+ // Comprobamos si el elemento tiene la clase .cursor-pointer
+    
+  if (elementUnderCursor && elementUnderCursor.classList.contains("cursor-pointer")) {
+    // Cambiar el tamaño del cursor falso a más grande cuando está sobre un elemento con la clase cursor-pointer
+    cursorBackground.classList.add("pointer");
+    cursorBackground.style.transform = "scale(1.2)"; // Escala mayor
+
+    // Ocultar el cursor habitual del navegador
+    //document.body.style.cursor = "none";  Desactivamos el cursor normal
+  } else {
+    // Restauramos el cursor cuando no está sobre un elemento con la clase cursor-pointer
+    cursorBackground.classList.remove("pointer");
+    cursorBackground.style.transform = "scale(0.2)"; // Escala menor
+
+    // Restauramos el cursor habitual del navegador
+     //document.body.style.cursor = ""; Restauramos el cursor predeterminado
+  }
+  }, 40); // Ajusta el retraso en milisegundos (50ms en este caso)
+});
+</script>
+    
+<!--SCROLL TO TOP / MENÚ OPEN-CLOSE -->
+    
+<script>
+    $(function(){  
+        $(window).scroll(function (event) {
+            var scroll = $(window).scrollTop();
+            if (scroll>10){
+                $("#btn-to-top").addClass("btn-entrando");
+                $("#menu-top").addClass("desplazamiento");
+            }else{
+                $("#btn-to-top").removeClass("btn-entrando");
+                $("#menu-top").removeClass("desplazamiento");
+            }
+        });
+    })
+</script> 
+    
+<script>
+    $(function () {
+        $(".abrir-menu, .cerrar-menu").click(function () {
+            const menu = $("#menu-bottom, #menu-top");
+            // Alternar la clase del menú para abrir/cerrar
+            menu.toggleClass("menu-abierto");
+
+            // Asegurar el estado de los botones
+            const isOpen = menu.hasClass("menu-abierto");
+            $(".abrir-menu").toggle(!isOpen); // Mostrar solo si el menú está cerrado
+            $(".cerrar-menu").toggle(isOpen); // Mostrar solo si el menú está abierto
+        });
+    });
+</script>
+
+</head>
+
+<body id="inicio">
+    <section class="viewport">
+<div id="scroll-container" class="scroll-container">
+<div class="content">
+    
+<!--BOTTON TO TOP-->
+    
+<div class="cta">
+    <div id="btn-to-top" class="flex m-jcc m-aic">
+        <a href="#inicio"><i class="fa-solid fa-chevron-up"></i></a>
+    </div>
+</div>
+ 
+<!--HERO MENU-->
+
+<header class="contenedor m-jcc">
+    <div id="hero" class="contenido m-100 t-90 m-jcc m-aic m-columna">
+        <div id="menu-top" class="flex m-jcsb m-aic">
+            <a href="#webs">UX/UI Web</a>
+            <a href="#marketing">Marketing</a>
+        </div>
+        <div class="title-pag flex m-jcc m-aic m-columna m-90 p-100">
+            
+            <h1 data-aos="fade-right" 
+                data-aos-offset="50"
+                data-aos-delay="50"
+                data-aos-duration="800"
+                data-aos-easing="ease-in-out"
+                data-aos-mirror="true">Xeila<br><span style="margin-left:58px;">Villar</span></h1>
+            <div data-aos="fade-left" data-aos-offset="50"
+                data-aos-delay="50"
+                data-aos-duration="800"
+                data-aos-easing="ease-in-out"
+                data-aos-mirror="true" class="flex m-aic m-jcc m-100 mb-15">
+                <h2>Design & Code</h2><a href="#about" id="button-about" class="button">Sobre mi</a>
+            </div>
+            <div class="menu-button">
+                <div class="abrir-menu cursor-pointer"><i class="fa-solid fa-chevron-left"></i><i class="fa-solid fa-chevron-left"></i> MENÚ <i class="fa-solid fa-chevron-right"></i><i class="fa-solid fa-chevron-right"></i></div>
+                <div class="cerrar-menu cursor-pointer"><i class="fa-solid fa-chevron-right"></i><i class="fa-solid fa-chevron-right"></i> MENÚ <i class="fa-solid fa-chevron-left"></i><i class="fa-solid fa-chevron-left"></i></div>
+            </div>
+            <dotlottie-wc class="lottie-arrow" src="https://lottie.host/166b04c1-6f49-4607-ac19-42ed7e9f8b82/abAKtLV5tA.json" speed="1" style="width: 200px; height: 200px; opacity: 0.5;" mode="forward" loop autoplay></dotlottie-wc>
+        </div>
+        <div id="menu-bottom" class=" flex m-jcsb m-aic cursor-pointer">
+            <a href="#design">Gráfico</a>
+            <a href="#mkt">Ilustración</a>
+        </div>
+    </div>
+</header>  
+
+<!--texto intro-->
+<section id="intro" class="contenedor m-jcc m-100">
+    <div class="contenido m-columna trigger flex m-jcc">
+        <h2 class="description">
+            Graphic Designer, UX/UI & Front End Developer.
+        </h2>
+        <h3 class="text m-aic m-jcc m-100">
+            <span>
+                Me muevo en un extraño equilibrio entre funcionalidad y creatividad, 
+                entre imaginar sin límites o disfrutar haciendo que las cosas funcionen. 
+            </span>
+        </h3>
+    </div>
+</section>
+    
+        
+<!--WEB-->
+<section id="web" class="contenedor m-columna m-aic">
+    <div class="flex m-columna title-section m-100 t-90">
+        <h2 data-aos="fade-right" 
+            data-aos-offset="50"
+            data-aos-delay="50"
+            data-aos-duration="800"
+            data-aos-easing="ease-in-out"
+            data-aos-mirror="true" >Diseño & Desarrollo Web
+        </h2> 
+    </div>
+    <div class="contenido m-columna m-100 m-jcc m-aic ">
+            
+        <div class="flex m-wrap m-jcsa m-aic m-100 t-100">
+            <div class="web flex m-columna m-40">
+                <h4 class="title-webs">Kraz.ai</h4>
+                <a href="http://xeila.sebbek.es/fotografía/" class="m-100 web1 cursor-pointer" data-speed="5" target=_blank>
+                <img src="imagenes/home-kraz.png" class="img-web1"></a>
+                <p>Rediseño y maquetación web ajustando el estilo gráfico al nuevo rebrand centrado en optimización UX/UI.</p>
+                <p class="etiquetas">Wordpress<span>/</span>HTML<span>/</span>CSS<span>/</span>Figma</p>
+            </div>
+            <div class="web flex m-columna m-40">
+                <h4 class="title-webs">Kraz.ai</h4>
+                <a href="http://xeila.sebbek.es/fotografía/" class="m-100 web1 cursor-pointer" data-speed="5" target=_blank>
+                <img src="imagenes/home-kraz.png" class="img-web1"></a>
+                <p>Rediseño y maquetación web ajustando el estilo gráfico al nuevo rebrand centrado en optimización UX/UI.</p>
+                <p class="etiquetas">Wordpress<span>/</span>HTML<span>/</span>CSS<span>/</span>Figma</p>
+            </div>
+            <div class="web flex m-columna m-40">
+                <h4 class="title-webs">Kraz.ai</h4>
+                <a href="http://xeila.sebbek.es/fotografía/" class="m-100 web1 cursor-pointer" data-speed="5" target=_blank>
+                <img src="imagenes/home-kraz.png" class="img-web1"></a>
+                <p>Rediseño y maquetación web ajustando el estilo gráfico al nuevo rebrand centrado en optimización UX/UI.</p>
+                <p class="etiquetas">Wordpress<span>/</span>HTML<span>/</span>CSS<span>/</span>Figma</p>
+            </div>
+            <div class="web flex m-columna m-40">
+                <h4 class="title-webs">Kraz.ai</h4>
+                <a href="http://xeila.sebbek.es/fotografía/" class="m-100 web1 cursor-pointer" data-speed="5" target=_blank>
+                <img src="imagenes/home-kraz.png" class="img-web1"></a>
+                <p>Rediseño y maquetación web ajustando el estilo gráfico al nuevo rebrand centrado en optimización UX/UI.</p>
+                <p class="etiquetas">Wordpress<span>/</span>HTML<span>/</span>CSS<span>/</span>Figma</p>
+            </div>
+            <div class="web flex m-columna m-40">
+                <h4 class="title-webs">Kraz.ai</h4>
+                <a href="http://xeila.sebbek.es/fotografía/" class="m-100 web1 cursor-pointer" data-speed="5" target=_blank>
+                <img src="imagenes/home-kraz.png" class="img-web1"></a>
+                <p>Rediseño y maquetación web ajustando el estilo gráfico al nuevo rebrand centrado en optimización UX/UI.</p>
+                <p class="etiquetas">Wordpress<span>/</span>HTML<span>/</span>CSS<span>/</span>Figma</p>
+            </div>
+            <div class="web flex m-columna m-40">
+                <h4 class="title-webs">Kraz.ai</h4>
+                <a href="http://xeila.sebbek.es/fotografía/" class="m-100 web1 cursor-pointer" data-speed="5" target=_blank>
+                <img src="imagenes/home-kraz.png" class="img-web1"></a>
+                <p>Rediseño y maquetación web ajustando el estilo gráfico al nuevo rebrand centrado en optimización UX/UI.</p>
+                <p class="etiquetas">Wordpress<span>/</span>HTML<span>/</span>CSS<span>/</span>Figma</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!--WEB
+<section id="webs" class="contenedor">
+    <div class="contenido m-columna m-100 m-aic">
+        <div class="flex m-columna title-section m-100 t-90">
+            <h2 data-aos="fade-right" 
+                data-aos-offset="50"
+                data-aos-delay="50"
+                data-aos-duration="800"
+                data-aos-easing="ease-in-out"
+                data-aos-mirror="true" >Diseño & Desarrollo Web</h2> 
+        </div>
+        <div class="contenedor-parallax flex m-100 m-jcc m-aic">
+            
+            <div class="parallaxbg flex m-100 m-jcsa m-columna">
+                <h3 class="right">UX/UI</h3>
+                <h3>Prototyping</h3>
+                <h3 class="right">Web Build</h3>
+            </div>
+
+            
+            <div class="flex parallax-tarjets m-wrap m-jcsa m-aic m-100 t-100">
+                <a href="http://xeila.sebbek.es/fotografía/" class="m-90 t-30 web1" data-speed="5" target=_blank>
+                    <div class="copy-webs flex m-wrap m-100">
+                        <h4 class="title-webs">Kraz.ai</h4>
+                        <p>Rediseño y maquetación web ajustando el estilo gráfico al nuevo rebrand centrado en optimización UX/UI.</p>
+                        <p class="etiquetas">Wordpress<span>/</span>HTML<span>/</span>CSS<span>/</span>Figma</p>
+                    </div>
+                </a>
+                <a href="http://xeila.sebbek.es/fotografía/" class="m-90 t-30 web2" data-speed="3" target=_blank>
+                   <div class="copy-webs flex m-wrap m-100">
+                        <h4 class="title-webs">Avon</h4>
+                        <p>Diseño y maquetación de landing page para campaña de captación de leads de Paid Media.</p>
+                        <p class="etiquetas">Wordpress<span>/</span>HTML<span>/</span>CSS<span>/</span>Figma</p>
+                    </div>
+                </a>
+                <a href="http://xeila.sebbek.es/fotografía/" class="m-90 t-30 web3" data-speed="7" target=_blank>
+                    <div class="copy-webs flex m-wrap m-100">
+                        <h4 class="title-webs">gorlomipizza.es</h4>
+                        <p>Diseño y desarrollo web front-end para pizzería local.</p>
+                        <p class="etiquetas">HTML<span>/</span>CSS<span>/</span>JS<span>/</span>PHP</p>
+                    </div>
+                </a>
+                <a href="http://xeila.sebbek.es/fotografía/" class="m-90 t-30 web4" data-speed="5" target=_blank>
+                    <div class="copy-webs flex m-wrap m-100">
+                        <h4 class="title-webs">xeila.es</h4>
+                        <p>Diseño y desarrollo web front-end de mi porfolio personal.</p>
+                        <p class="etiquetas">HTML<span>/</span>CSS<span>/</span>JS</p>
+                    </div>
+                </a>
+                <a href="http://xeila.sebbek.es/fotografía/" class="m-90 t-30 web5" data-speed="8" target=_blank>
+                    <div class="copy-webs flex m-wrap m-100">
+                        <h4 class="title-webs">Restaurante Demo</h4>
+                        <p>Desarrollo web front-end de plantilla web para restaurante.</p>
+                        <p class="etiquetas">HTML<span>/</span>CSS<span>/</span>JS</p>
+                    </div>
+                </a>
+                <a href="http://xeila.sebbek.es/fotografía/" class="m-90 t-30 web6" data-speed="5" target=_blank>
+                    <div class="copy-webs flex m-wrap m-100">
+                        <h4 class="title-webs">Fotografía Demo</h4>
+                        <p>Desarrollo web front-end de plantilla web para estudio de fotografía.</p>
+                        <p class="etiquetas">HTML<span>/</span>CSS<span>/</span>JS</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+-->
+    
+<section class="infinite title-section">
+        <div class="infinite-content-left flex m-100">
+            <ol class="infinite-text-left flex m-jcsb">
+                <li><p>Marketing Digital</p></li> 
+                <li><p>Concepto Creativo</p></li> 
+                <li><p>Social Media</p></li> 
+                <li><p>IA Generativa</p></li> 
+                <li><p>Marketing Digital</p></li> 
+                <li><p>Concepto Creativo</p></li> 
+                <li><p>Social Media</p></li> 
+                <li><p>IA Generativa</p></li> 
+                <li><p>Marketing Digital</p></li> 
+                <li><p>Concepto Creativo</p></li> 
+            </ol>   
+        </div>
+        <div class="infinite-content-right flex m-100"> 
+            <ol class="infinite-text-right flex m-jcsb">
+                <li><p>Diseño Gráfico</p></li> 
+                <li><p>Branding</p></li> 
+                <li><p>Ilustración</p></li> 
+                <li><p>Motion Graphics</p></li> 
+                <li><p>Diseño Gráfico</p></li> 
+                <li><p>Branding</p></li> 
+                <li><p>Ilustración</p></li> 
+                <li><p>Motion Graphics</p></li> 
+                <li><p>Diseño Gráfico</p></li> 
+                <li><p>Branding</p></li> 
+            </ol>  
+        </div>
+</section>
+
+<!--MARKETING-->
+    
+<section id="mkt" class="contenedor m-jcfe m-100">
+    <div class="contenido m-columna">
+        <div class="flex m-columna m-jcfe m-100">
+            <div class="mkt-menu flex m-jcsb m-columna m-100">
+                <div data-aos="fade" data-aos-easing="ease-in" class="mkt flex t-jcsb t-aic m-aifs m-100 m-columna t-fila">
+                    <div class="title-mkt m-flex m-jcsb m-100">
+                        <div class="flex m-100 m-jcsb m-columna t-fila">
+                            <h3><span class="small-number">01.</span>Concepto Creativo
+                                <span class="material-symbols-outlined">east</span>
+                            </h3>
+                            <div class="flex logo m-50 t-20 t-jcfe m-aic t-wrap">
+                                <img src="imagenes/logos/correos-express-logo.png">
+                                <img src="imagenes/logos/calido-living-logo.png">
+                            </div>
+                        </div>
+                        <div class="flex"><p>Creatividad · Campaña Marketing digital | En Agencia Elogia</p></div>
+                    </div>
+                    <div class="imagen-mkt m-wrap">
+                        <a href=""><img src="imagenes/marketing/correos/mockup-post-correos.png"></a>
+                        <a href=""><img src="imagenes/marketing/correos/mockup-post-punto-correos.png"></a>
+                    </div>
+                </div>
+                <div data-aos="fade" data-aos-easing="ease-in" class="mkt flex t-jcsb t-aic m-aifs m-100 m-columna t-fila">
+                    <div class="title-mkt m-flex m-jcsb m-100">
+                        <div class="flex m-100 m-jcsb m-columna t-fila">
+                            <h3><span class="small-number">02.</span>Social & Paid Media
+                                <span class="material-symbols-outlined">east</span>
+                            </h3>
+                            <div class="flex logo m-50 t-20 t-jcfe m-aic t-wrap">
+                                <img src="imagenes/logos/iml-logo.png">
+                                <img src="imagenes/logos/revlon-logo.png">
+                                <img src="imagenes/logos/teka-logo.png">
+                                <img src="imagenes/logos/wwf-logo.png">
+                            </div>      
+                        </div>
+                        <div class="flex"><p>Diseño Gráfico · Marketing digital | En Agencia Elogia</p></div>
+                    </div>
+                    <div class="imagen-mkt m-wrap">
+                        <a href=""><img src="imagenes/marketing/wwf/1080x1080-wwf-trafico-especies-general.gif"></a>
+                        <a href=""><img src="imagenes/marketing/wwf/1080x1920-ux-dia-del-medio-ambiente.gif"></a>
+                    </div>
+                </div>
+                <div data-aos="fade" data-aos-easing="ease-in" class="mkt flex t-jcsb t-aic m-aifs m-100 m-columna t-fila">
+                    <div class="title-mkt m-flex m-jcsb m-100">
+                        <div class="flex m-100 m-jcsb m-columna t-fila">
+                            <h3><span class="small-number">03.</span>IA generativa
+                                <span class="material-symbols-outlined">east</span>
+                            </h3>
+                            <div class="flex logo m-50 t-20 t-jcfe m-aic t-wrap">
+                                <img src="imagenes/logos/envato-logo.png">
+                                <img src="imagenes/logos/midjourney-logo.png">
+                                <img src="imagenes/logos/freepik-logo.png">
+                            </div> 
+                        </div>
+                        <div class="flex"><p>Creación de imagene y video | En Agencia Elogia</p></div>
+                    </div>
+                    <div class="imagen-mkt m-wrap">
+                        <a href=""><img src="imagenes/marketing/revlon/revlon-ad-mockup.png"></a>
+                        <a href=""><img src="imagenes/marketing/revlon/revlon-ad-mockup-reviews.png"></a>
+                        <a href=""><img src="imagenes/marketing/revlon/revlon-ad-mockup-pack.png"></a>
+                    </div>
+                </div>
+                <div data-aos="fade" data-aos-easing="ease-in" class="mkt flex t-jcsb t-aic m-aifs m-100 m-columna t-fila">
+                    <div class="title-mkt m-flex m-jcsb m-100">
+                        <div class="flex m-100 m-jcsb m-columna t-fila">
+                            <h3><span class="small-number">04.</span>Newsletters
+                                <span class="material-symbols-outlined">east</span>
+                            </h3>
+                            <div class="flex logo m-50 t-20 t-jcfe m-aic t-wrap">
+                                <img src="imagenes/logos/blip-logo.png">
+                                <img src="imagenes/logos/boheringer-logo.png">
+                                <img src="imagenes/logos/yelmo-logo.png">
+                            </div> 
+                        </div>
+                        <div class="flex"><p>Desarrollo · Diseño · Paid Media | En Agencia Elogia</p></div>
+                    </div>
+                    <div class="imagen-mkt m-wrap">
+                        <a href=""><img src="imagenes/marketing/nl/biesa-boheringer.jpg"></a>
+                        <a href=""><img src="imagenes/marketing/nl/CONTINUACI%C3%93N%20DE%20BIENVENIDA.png"></a>
+                    </div>
+                </div>
+                <div data-aos="fade" data-aos-easing="ease-in" class="mkt flex t-jcsb t-aic m-aifs m-100 m-columna t-fila">
+                    <div class="title-mkt m-flex m-jcsb m-100">
+                        <div class="flex m-100 m-jcsb m-columna t-fila">
+                            <h3><span class="small-number">05.</span>Marketplaces
+                                <span class="material-symbols-outlined">east</span>
+                            </h3>
+                            <div class="flex logo m-50 t-20 t-jcfe m-aic t-wrap">
+                                <img src="imagenes/logos/tandem-logo.png">
+                            </div> 
+                        </div>
+                        <div class="flex"><p>Fichas de producto Amazon + | En Agencia Elogia</p></div>
+                    </div>
+                    <div class="imagen-mkt m-wrap">
+                        <a href=""><img src="imagenes/marketing/nl/NL-blip-2.png"></a>
+                        <a href=""><img src="imagenes/marketing/nl/CONTINUACI%C3%93N%20DE%20BIENVENIDA.png"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--grafico-ilustracion-->
+
+<section id="graphic" class="page-wrapper contenedor m-columna">
+    <!--<h3 class="flex m-jcsa m-100 m-aic"><span>Graphic</span> · <span>Design</span> · <span>Maquetación</span> · <span>Textil</span> · <span>Fashion</span> · <span>Motion</span></h3>-->
+    <div class="carrusel-section">
+        <div class="flex m-columna title-section m-100">
+            <h2 data-aos="fade-right" 
+                data-aos-offset="50"
+                data-aos-delay="50"
+                data-aos-duration="800"
+                data-aos-easing="ease-in-out"
+                data-aos-mirror="true" >Diseño Gráfico</h2> 
+        </div>
+        <div class="container-carrusel">
+            <ul class="items scrollx-section cursor-pointer parallax-tarjets">
+                <li class="item item1">
+                    <a href="#branding" class="flex m-columna m-jcsb">
+                        <div class="flex m-columna m-jcfe cursor-pointer">
+                            <h5>Branding</h5>
+                            <p>Diseño Gráfico · Identidad Visual · Comunicación Corporativa</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="item item2">
+                    <a href="#maquetacion" class="flex m-columna m-jcsb">
+                        <div class="flex m-columna m-jcfe cursor-pointer">
+                            <h5>Diseño Editorial</h5>
+                            <p>Maquetación · Arte Final</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="item item3">
+                    <a href="#ilustracion" class="flex m-columna m-jcsb">
+                        <div class="flex m-columna m-jcfe cursor-pointer">
+                            <h5>Ilustración</h5>
+                            <p>Tradicional · Digital · Infantil</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="item item4">
+                    <a href="#textil" class="flex m-columna m-jcsb">
+                        <div class="flex m-columna m-jcfe cursor-pointer">
+                            <h5>Diseño Textil</h5>
+                            <p>Ilustración · Patterns · Print Posicional</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="item item5">
+                    <a href="#technical-sheets" class="flex m-columna m-jcsb">
+                        <div class="flex m-columna m-jcfe cursor-pointer">
+                            <h5>Fashion Design</h5>
+                            <p>Fashion Technical Sheets</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="item item6">
+                    <a href="#technical-sheets" class="flex m-columna m-jcsb">
+                        <div class="flex m-columna m-jcfe cursor-pointer">           
+                            <h5>Motion Graphics</h5>
+                            <p>Logo Animation · Diseño Gráfico · Motion</p>                                        
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+    
+<!--FIN grafico-ilustracion-->
+<section id="about" class="contenedor m-jcc m-100">
+    <div class="flex m-columna title-section m-100">
+        <h2 data-aos="fade-right" 
+            data-aos-offset="50"
+            data-aos-delay="50"
+            data-aos-duration="800"
+            data-aos-easing="ease-in-out"
+            data-aos-mirror="true" >Sobre mi
+        </h2> 
+    </div>    
+</section>    
+<footer class="contenedor m-jcc m-100">
+    <div class="contenido m-aic m-100">
+        
+        <div class="left m-50 flex">
+            <div class="mb-15 m-60">
+                <h2>De la imaginación</h2>
+                <p>Busco insights para convertirlos en conceptos y propuestas visuales atractivas que conectan con las personas.</p>
+            </div>
+        </div>
+        <div class="right m-50">
+            <div class="mb-15 m-60 flex m-columna m-aife">
+                <h2>a la ejecución.</h2>
+                <p>Transformo propuestas visuales en experiencias digitales claras y accesibles, complementando el diseño con un código que potencia la navegación y optimiza la conversión.</p>
+            </div>
+        </div>
+    </div>
+    <ul class="flex rrss m-jcsb">
+                <li><a class="medium mr-15" target=_blank href="https://es.linkedin.com/in/xeila-villar?original_referer=https%3A%2F%2Fwww.google.com%2F"><i class="fa-brands fa-linkedin-in cta"></i></a></li>
+                <li><a class="medium" target=_blank href="https://www.behance.net/xeilavillar"><i class="fa-brands fa-behance cta"></i></a></li>
+            </ul>
+            <div>
+                <p>xeilavillar@gmail.com</p>
+                <p>620814546</p>
+            </div>
+</footer>
+    
+<!-- Elemento que simula el cursor -->
+<div class="cursor-background"><div class="cursor-background-punto"></div></div>
+    
+</div>
+</div>   
+</section>
+<script>
+  AOS.init();
+</script>
+    <script src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.7.1/dist/dotlottie-wc.js" type="module"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollToPlugin.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/TextPlugin.min.js"></script>
+<script src="script.js"></script>
+<script src="myCustomCode.js"></script>
+</body>
+</html>
