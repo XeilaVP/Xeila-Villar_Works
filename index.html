@@ -114,10 +114,12 @@ document.addEventListener('mousemove', (event) => {
             var scroll = $(window).scrollTop();
             if (scroll>10){
                 $("#btn-to-top").addClass("btn-entrando");
-                $("#menu-top").addClass("desplazamiento");
+                $("#menu-bottom").addClass("desplazamiento");
+                $(".menu-button").addClass("desplazamiento");
             }else{
                 $("#btn-to-top").removeClass("btn-entrando");
-                $("#menu-top").removeClass("desplazamiento");
+                $("#menu-bottom").removeClass("desplazamiento");
+                $(".menu-button").removeClass("desplazamiento");
             }
         });
     })
@@ -158,7 +160,7 @@ document.addEventListener('mousemove', (event) => {
 <header class="contenedor m-jcc">
     <div id="hero" class="contenido m-100 t-90 m-jcc m-aic m-columna">
         <div id="menu-top" class="flex m-jcsb m-aic">
-            <a href="#webs">UX/UI Web</a>
+            <a href="#webs">Web UX/UI</a>
             <a href="#marketing">Marketing</a>
         </div>
         <div class="title-pag flex m-jcc m-aic m-columna m-90 p-100">
@@ -177,7 +179,7 @@ document.addEventListener('mousemove', (event) => {
                 data-aos-mirror="true" class="flex color-dark m-aic m-jcc m-100 mb-15">
                 <h1>Design & &lt;Code&gt;</h1><!--<a href="#about" id="button-about" class="button">Sobre mi</a>-->
             </div>
-            <div class="menu-button">
+            <div class="menu-button color-dark">
                 <div class="abrir-menu cursor-pointer"><i class="fa-solid fa-chevron-left"></i><i class="fa-solid fa-chevron-left"></i> MENÚ <i class="fa-solid fa-chevron-right"></i><i class="fa-solid fa-chevron-right"></i></div>
                 <div class="cerrar-menu cursor-pointer"><i class="fa-solid fa-chevron-right"></i><i class="fa-solid fa-chevron-right"></i> MENÚ <i class="fa-solid fa-chevron-left"></i><i class="fa-solid fa-chevron-left"></i></div>
             </div>
@@ -226,7 +228,7 @@ document.addEventListener('mousemove', (event) => {
             data-aos-easing="ease-in-out"
             data-aos-mirror="true" ><span>Soy Xeila,</span>
         </h2> 
-        <p>Diseñadora web, recién titulada en desarrollo web con años de experiencia entendiendo las necesidades de los usuarios antes de diseñar para ellos.
+        <p class="m-90 t-50">Diseñadora web, recién titulada en desarrollo web con años de experiencia entendiendo las necesidades de los usuarios antes de diseñar para ellos.
         Creo experiencias digitales desde el concepto al código, fáciles de entender, accesibles y usables de principio a fin.</p>
     </div>    
 </section> 
@@ -235,25 +237,27 @@ document.addEventListener('mousemove', (event) => {
     <div class="contenido dual m-aic m-100">
         <div class="left m-50 flex">
             <div class="mb-15 m-60">
-                <h2>De la imaginación</h2>
+                <h2 class="accent-orange">CREATIVI<br>DAD</h2>
+                <span class="footer-arrow cta">&larr;</span>
                 <p>Busco insights para convertirlos en conceptos y propuestas visuales atractivas que conectan con las personas.</p>
             </div>
         </div>
-         <div class="right m-50">
+         <div class="right m-50 flex">
             <div class="mb-15 m-60 flex m-columna m-aife">
-                <h2>a la ejecución.</h2>
+                <h2 class="accent-blue">FUNCIONA<br>LIDAD</h2>
+                <span class="footer-arrow cta">&rarr;</span>
                 <p>Transformo propuestas visuales en experiencias digitales claras y accesibles, complementando el diseño con un código que potencia la navegación y optimiza la conversión.</p>
             </div>
         </div>
-    </div>
-    <div class="contenido subfooter flex m-columna t-fila m-aic t-jcsb m-90">
-        <div class="contacto flex m-aic t-fila m-columna m-aic t-jcsb m-20">
-            <p>xeilavillar@gmail.com</p>
-            <p>620814546</p>
-        </div>
-        <div class="flex m-aic t-jcsa">
-            <a class="rrss flex m-jcc m-aic accent-orange" target=_blank href="https://es.linkedin.com/in/xeila-villar?original_referer=https%3A%2F%2Fwww.google.com%2F"><i class="fa-brands fa-linkedin-in cta"></i></a>
-            <a id="cvButton" class="flex m-aic m-jcc accent-bgOrange color-light button" target=_blank href="https://www.behance.net/xeilavillar">Ver CV</a>
+        <div class="contenido subfooter flex m-columna t-fila m-aic t-jcsb m-90">
+            <div class="contacto flex accent-orange m-aic t-fila m-columna m-aic t-jcsb m-20">
+                <p>xeilavillar@gmail.com</p>
+                <p>620814546</p>
+            </div>
+            <div class="flex m-aic t-jcsa">
+                <a class="rrss flex m-jcc m-aic accent-orange" target=_blank href="https://es.linkedin.com/in/xeila-villar?original_referer=https%3A%2F%2Fwww.google.com%2F"><i class="fa-brands fa-linkedin-in cta"></i></a>
+                <a id="cvButton" class="flex m-aic m-jcc accent-bgOrange color-light button" target=_blank href="https://www.behance.net/xeilavillar">Ver CV</a>
+            </div>
         </div>
     </div>
 </footer>
