@@ -845,10 +845,10 @@ header {
 
 footer {
     padding: 0;
-    height: 90vh;
+    height: 100vh;
     background-image: url("../imagenes/img-footer.png");
     background-position: bottom;
-    background-size: contain;
+    background-size: 90%;
     background-repeat: no-repeat;
     position:relative;
 }
@@ -856,12 +856,16 @@ footer {
 .subfooter{
     position:absolute;
     bottom:0;
-    margin-bottom:10px;
     z-index:10;
+    width: 100%;
+    border-top: 1px solid #5e4422;
 }
-.subfooter a{
+.subfooter.contenido{
+    padding:15px;
+}
+.subfooter a, .subfooter p{
     border:none;
-    padding:0 5px;
+    margin:0 5px;
 }
 #cvButton{
     height: 40px;
@@ -882,9 +886,10 @@ footer .contenido{
 }
 footer .dual{
     height:100%;
+    width:100%;
 }
 footer .right, footer .left{
-    padding: 5%;
+    padding: 7%;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -1070,8 +1075,12 @@ footer .right:hover p{
     bottom: 0;
     width: 100%;
     }
-    footer {
-     background-size: clamp(170%, calc(15% + 720px), 250%) auto;
+    #about{
+        height: 60vh;
+    }
+        footer {
+    background-size: clamp(130%, calc(15% + 720px), 250%) auto;
+    height:90vh;
     }
 
 }
@@ -1131,15 +1140,15 @@ footer .right:hover p{
     }
     footer .dual {
         position: relative;
-        display: block;
     }
     footer .dual > .left,
     footer .dual > .right {
         position: absolute;
         top: 0;
-        width: 70%;
+        width: 55%;
         flex: none;
         z-index: 1;
+        justify-content:flex-start;
         transition: width 0.7s ease-in-out;
     }
      /* CADA PANEL ANCLADO A SU LADO */
@@ -1156,6 +1165,10 @@ footer .right:hover p{
     footer .dual:has(.right:hover) > .right {
         z-index: 2;
     }
+    #cvButton{
+        width:110px;
+    }
+
 
     /*---------WEBS-----------*/
 
