@@ -12,12 +12,24 @@ html {
     scroll-behavior: smooth;
     cursor:default;
 }
+p{
+    font-weight: lighter;
+}
 .noto-font {
   font-family: "Noto Sans Display", serif;
   font-weight: 400;
   font-style: italic;
   font-variation-settings:
     "wdth" 100;
+}
+strong, b{
+    font-weight: 500;
+}
+i{
+    font-style:italic;
+}
+u{
+    text-decoration: underline;
 }
 body {
     overflow: hidden;
@@ -365,9 +377,10 @@ header {
 #about p{
     font-size: 20px;
     text-align: center;
-    line-height: 1.2;
+    line-height: 1.3;
     font-weight: 300;
     padding: 3% 0;
+    letter-spacing: 0.2px;
 }
 #about{
     height: 90vh;
@@ -876,11 +889,15 @@ footer .subfooter-dual {
     width: 100%;
     border-top: 1px solid #5e4422;
     border-bottom: 1px solid #5e4422;
-    padding: 0 20px;
+    padding: 0 3%;
     height:10vh;
 }
 .contacto a, .contacto p{
-    margin: 0 5px;
+    margin: 0 8px;
+}
+.contacto p{
+    font-size: clamp(16px, 1.8vw, 20px);
+    font-weight: 300;
 }
 footer .contenido{
     width: 100%;
@@ -888,7 +905,7 @@ footer .contenido{
 }
 #cvButton{
     height: 40px;
-    width:150px;
+    padding:0 clamp(20px, 6vw, 90px);
 }
 footer .rrss {
     font-size: 20px;
@@ -1189,9 +1206,6 @@ footer .right:hover p{
     }
     footer .subfooter-dual:has(.right:hover) > .right {
         z-index: 2;
-    }
-    #cvButton{
-        width:110px;
     }
 
 
