@@ -245,7 +245,7 @@ header {
 }
 #menu-top {
     top: 50%;
-    z-index: 100;
+    z-index: 99;
 }
 #menu-bottom.menu-abierto.desplazamiento{
     transition: all 1s ease;
@@ -255,7 +255,7 @@ header {
 }
 #menu-bottom {
     bottom: 50%;
-    z-index: 99;
+    z-index: 100;
 }
 #menu-top.menu-abierto {
     transform: scale(1); /* Menú abierto */
@@ -846,27 +846,27 @@ header {
 
 footer {
     padding: 0;
-    height: 100vh;
     background-image: url("../imagenes/img-footer.png");
     background-position: bottom;
     background-size: 90%;
     background-repeat: no-repeat;
-    position:relative;
 }
 
-.subfooter{
-    position:absolute;
+.contacto{
     bottom:0;
     z-index:10;
     width: 100%;
     border-top: 1px solid #5e4422;
+    border-bottom: 1px solid #5e4422;
+    padding: 0 20px;
+    height:10vh;
 }
-.subfooter.contenido{
-    padding:15px;
+.contacto a, .contacto p{
+    margin: 0 5px;
 }
-.subfooter a, .subfooter p{
-    border:none;
-    margin:0 5px;
+footer .contenido{
+    width: 100%;
+    padding:0;
 }
 #cvButton{
     height: 40px;
@@ -882,39 +882,34 @@ footer .rrss {
 footer .rrss:hover {
     background-color: #C9852C;
 }
-footer .contenido{
-    padding:0;
-}
-footer .dual{
+footer .subfooter-dual{
     height:100%;
     width:100%;
+    padding:0;
 }
 footer .right, footer .left{
     padding: 7%;
-    display: flex;
-    justify-content: center;
     flex-direction: column;
     height: 100%;
     position: relative;
-    overflow: hidden;
     width: 50%;
 }
-footer .dual > .left,
-footer .dual > .right {
+footer .subfooter-dual > .left,
+footer .subfooter-dual > .right {
     width: 50%;
     flex: 0 0 50%;
     min-width: 0;
     transition: flex-basis 0.6s ease-in-out;
 }
 /* IZQUIERDA ACTIVA POR DEFECTO */
-footer .dual:not(:has(.right:hover)) > .left::before {
+footer .subfooter-dual:not(:has(.right:hover)) > .left::before {
     transform: translateX(0);
 }
-footer .dual:not(:has(.right:hover)) > .left p {
+footer .subfooter-dual:not(:has(.right:hover)) > .left p {
     opacity: 1;
     transform: translateY(0);
 }
-footer .dual:not(:has(.right:hover)) > .left .footer-arrow {
+footer .subfooter-dual:not(:has(.right:hover)) > .left .footer-arrow {
     opacity: 1;
     transform: translateX(-10px);
 }
@@ -933,6 +928,10 @@ footer .right{
     text-align: right;
     align-items: flex-end;
     background-color:none;
+    padding-bottom:40%;
+}
+footer .left{
+    padding-top:20%;
 }
 /* IZQUIERDA: empieza fuera por la izquierda */
 footer .left::before {
@@ -954,7 +953,7 @@ footer .right > div {
     z-index: 2;
 }
 footer .left h2, footer .right h2 {
-    font-size: clamp(32px, 3.5vw, 50px);
+    font-size: clamp(40px, 3.5vw, 50px);
     font-weight: 800;
     line-height: 1;
     margin-bottom: 30px;
@@ -1077,7 +1076,7 @@ footer .right:hover p{
     width: 100%;
     }
     #about{
-        height: 60vh;
+        height: 80vh;
     }
         footer {
     background-size: clamp(130%, calc(15% + 720px), 250%) auto;
@@ -1139,31 +1138,32 @@ footer .right:hover p{
     bottom: 0;
     width: 100%;
     }
-    footer .dual {
-        position: relative;
+    footer .subfooter-dual {
+        height: 100%;
+        position:relative;
     }
-    footer .dual > .left,
-    footer .dual > .right {
+    footer .subfooter-dual > .left,
+    footer .subfooter-dual > .right {
         position: absolute;
         top: 0;
-        width: 55%;
+        width: 65%;
         flex: none;
         z-index: 1;
-        justify-content:flex-start;
         transition: width 0.7s ease-in-out;
+        height: 100%;
     }
      /* CADA PANEL ANCLADO A SU LADO */
-    footer .dual > .left {
+    footer .subfooter-dual > .left {
         left: 0;
     }
-    footer .dual > .right {
+    footer .subfooter-dual > .right {
         right: 0;
     }
      /* IZQUIERDA ACTIVA POR DEFECTO */
-    footer .dual:not(:has(.right:hover)) > .left{
+    footer .subfooter-dual:not(:has(.right:hover)) > .left{
         z-index: 2;
     }
-    footer .dual:has(.right:hover) > .right {
+    footer .subfooter-dual:has(.right:hover) > .right {
         z-index: 2;
     }
     #cvButton{
