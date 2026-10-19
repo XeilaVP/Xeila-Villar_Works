@@ -293,6 +293,7 @@ header {
 .menu-button.desplazamiento{
     top:4%;
     color:#FAFBFB;
+    bottom:auto;
 }
 /*---------TRIGGER TEXT INTRO-----------*/
 
