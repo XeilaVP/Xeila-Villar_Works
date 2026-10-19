@@ -312,7 +312,7 @@ header {
 }
 #intro{
     height: 100vh;
-    padding-top:70px;
+    padding-top:100px;
 }
 #intro p{
     font-size: 55px;
@@ -336,8 +336,8 @@ header {
     opacity: 0;
     position:absolute;
     visibility: hidden;
-    right:-10px;
-    top:-60px;
+    right: clamp(50px, calc(80px - 2vw), -250px);
+    top:-50px;
     transition: all 1s ease;
     width:100px; 
 }
@@ -866,7 +866,7 @@ footer .subfooter-dual {
     padding: 0;
     background-image: url("../imagenes/img-footer.png");
     background-position: bottom;
-    background-size: 90%;
+    background-size: contain;
     background-repeat: no-repeat;
 }
 
