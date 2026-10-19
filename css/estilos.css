@@ -315,18 +315,36 @@ header {
     padding-top:70px;
 }
 #intro p{
-    font-size: 60px;
+    font-size: 55px;
     width: 100%;
     font-weight: 400;
     text-align:center;
     line-height: 1.16;
     letter-spacing: -.045em;
     text-transform: uppercase;
+    transition: all 1s ease-in-out;
+    white-space: nowrap;
 }
 #intro p:hover{
     letter-spacing: .045em;
-    transition:all ease-in-out 0.5s;
     cursor:pointer;
+}
+.hover-imagen{
+    position:relative;
+}
+.hover-imagen img{
+    opacity: 0;
+    position:absolute;
+    visibility: hidden;
+    right:-10px;
+    top:-60px;
+    transition: all 1s ease;
+    width:100px; 
+}
+.hover-imagen p:hover + img{
+    opacity: 1;
+    visibility: visible;
+    transform:rotate(10deg);
 }
 #intro h3{
     font-size: 24px;
@@ -844,7 +862,7 @@ header {
     background-image: url(../imagenes/motion/logo-four-blocks-animation.png);
 }
 
-footer {
+footer .subfooter-dual {
     padding: 0;
     background-image: url("../imagenes/img-footer.png");
     background-position: bottom;
@@ -883,7 +901,7 @@ footer .rrss:hover {
     background-color: #C9852C;
 }
 footer .subfooter-dual{
-    height:100%;
+    height:80vh;
     width:100%;
     padding:0;
 }
@@ -928,11 +946,8 @@ footer .right{
     text-align: right;
     align-items: flex-end;
     background-color:none;
-    padding-bottom:40%;
 }
-footer .left{
-    padding-top:20%;
-}
+
 /* IZQUIERDA: empieza fuera por la izquierda */
 footer .left::before {
     transform: translateX(-100%);
@@ -1076,11 +1091,14 @@ footer .right:hover p{
     width: 100%;
     }
     #about{
-        height: 80vh;
+    height: 80vh;
     }
-        footer {
-    background-size: clamp(130%, calc(15% + 720px), 250%) auto;
-    height:90vh;
+    footer {
+   height:80vh;
+    }
+    footer .subfooter-dual {
+         background-size: clamp(130%, calc(15% + 720px), 250%) auto;
+        
     }
 
 }
@@ -1137,6 +1155,12 @@ footer .right:hover p{
     top:inherit;
     bottom: 0;
     width: 100%;
+    }
+    footer .right {
+        padding-bottom:30%;
+    }
+    footer .left{
+    padding-top:20%;
     }
     footer .subfooter-dual {
         height: 100%;
@@ -1217,8 +1241,9 @@ footer .right:hover p{
 
     #intro p{
     font-size: clamp(32px, 8.5vw, 60px);
-    line-height: 105%;
+    line-height: 115%;
     }
+    
     #intro h3{
         font-size: 18px;
         font-weight: 700;
