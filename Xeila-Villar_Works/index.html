@@ -1,0 +1,324 @@
+<!DOCTYPE html> ''
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Porfolio Xeila</title>
+
+    <!--1. RESET--> <link rel="stylesheet" href="css/reset.css">
+    <!--2. ESTRUCTURA--> <link rel="stylesheet" href="css/estructura.css">
+    <!--3. ICONOS-FONTAWESOME--> <link rel="stylesheet" href="css/all.min.css"> 
+    <!--4. ICONOS GOOGLE FONTS--> <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=east" />
+    <!--5. ESTILOS--> <link rel="stylesheet" href="css/estilos.css">
+
+    <!--TIPOGRAFÍA-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap">
+
+    <!------- LIBRERÍAS ------->  
+
+    <!--JQUERY librerias...--> <script src="js/jquery-ui.min.css"></script>
+    <!--JQUERY librerias...--> <script src="js/jquery-3.6.1.min.js"></script>
+ 
+  
+    <!--MENU NAV-->
+    <script src="js/jquery.nav.js"></script>
+
+    <!--OWL CAROUSEL -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <script src="js/owl.carousel.min.js"></script>
+
+    <!--MAGNIFIC POPUP -->
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    
+
+    <!--LIGHTBOX
+    <link href="lightbox2-2.11.3/dist/css/lightbox.min.css" rel="stylesheet" />
+    <script src="lightbox2-2.11.3/dist/js/lightbox-plus-jquery.min.js"></script>
+    -->
+
+    <!-------- ANIMACION -------->
+
+    <!--CAJAS-->
+    <link href="css/aos.css" rel="stylesheet"> 
+    <script src="js/aos.js"></script> 
+
+    <!--------- FUNCIONES -------->
+    
+   
+    
+    <!--CURSOR-POINTER-->
+    
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    // Añadir la clase '.cursor-pointer' a todos los elementos <a> y <button>
+    document.querySelectorAll('a, button, .cta').forEach(element => {
+      element.classList.add('cursor-pointer');
+    });
+  });
+</script>
+    
+    <!--CURSOR-CUSTOMIZADO-->
+    
+<script>
+document.addEventListener('mousemove', (event) => {
+  const cursorBackground = document.querySelector('.cursor-background');
+
+  // Posición actual del cursor real
+
+  setTimeout(() => {
+  const mouseX = event.clientX;
+  const mouseY = event.clientY;
+
+  // Actualizar la posición del cursor falso directamente sin retraso
+  cursorBackground.style.left = `${mouseX - cursorBackground.offsetWidth / 2}px`;
+  cursorBackground.style.top = `${mouseY - cursorBackground.offsetHeight / 2}px`;
+
+ // Detectar el elemento debajo del cursor
+  const elementUnderCursor = document.elementFromPoint(mouseX, mouseY);
+ // Comprobamos si el elemento tiene la clase .cursor-pointer
+    
+  if (elementUnderCursor && elementUnderCursor.classList.contains("cursor-pointer")) {
+    // Cambiar el tamaño del cursor falso a más grande cuando está sobre un elemento con la clase cursor-pointer
+    cursorBackground.classList.add("pointer");
+    cursorBackground.style.transform = "scale(1.2)"; // Escala mayor
+
+    // Ocultar el cursor habitual del navegador
+    //document.body.style.cursor = "none";  Desactivamos el cursor normal
+  } else {
+    // Restauramos el cursor cuando no está sobre un elemento con la clase cursor-pointer
+    cursorBackground.classList.remove("pointer");
+    cursorBackground.style.transform = "scale(0.2)"; // Escala menor
+
+    // Restauramos el cursor habitual del navegador
+     //document.body.style.cursor = ""; Restauramos el cursor predeterminado
+  }
+  }, 40); // Ajusta el retraso en milisegundos (50ms en este caso)
+});
+</script>
+    
+<!--SCROLL TO TOP / MENÚ OPEN-CLOSE -->
+    
+<script>
+    $(function(){  
+        $(window).scroll(function (event) {
+            var scroll = $(window).scrollTop();
+            if (scroll>10){
+                $("#btn-to-top").addClass("btn-entrando");
+                $("#menu-bottom").addClass("desplazamiento");
+                $(".menu-button").addClass("desplazamiento");
+            }else{
+                $("#btn-to-top").removeClass("btn-entrando");
+                $("#menu-bottom").removeClass("desplazamiento");
+                $(".menu-button").removeClass("desplazamiento");
+            }
+        });
+    })
+</script> 
+    
+<script>
+    $(function () {
+        $(".abrir-menu, .cerrar-menu").click(function () {
+            const menu = $("#menu-bottom, #menu-top");
+            // Alternar la clase del menú para abrir/cerrar
+            menu.toggleClass("menu-abierto");
+
+            // Asegurar el estado de los botones
+            const isOpen = menu.hasClass("menu-abierto");
+            $(".abrir-menu").toggle(!isOpen); // Mostrar solo si el menú está cerrado
+            $(".cerrar-menu").toggle(isOpen); // Mostrar solo si el menú está abierto
+        });
+    });
+</script>
+
+</head>
+
+<body id="inicio">
+    <section class="viewport">
+<div id="scroll-container" class="scroll-container">
+<div class="content">
+    
+<!--BOTTON TO TOP-->
+    
+<div class="cta">
+    <div id="btn-to-top" class="flex m-jcc m-aic">
+        <a href="#inicio"><i class="fa-solid fa-chevron-up"></i></a>
+    </div>
+</div>
+ 
+<!--HERO MENU-->
+
+<header class="contenedor m-jcc">
+    <div id="hero" class="contenido m-100 t-90 m-jcc m-aic m-columna">
+        <div id="menu-top" class="flex m-jcsb m-aic">
+            <a href="#webs">Web UX/UI</a>
+            <a href="#marketing">Marketing</a>
+        </div>
+        <div class="title-pag flex m-jcc m-aic m-columna m-90 p-100">
+            
+            <img id="logo-hero" src="imagenes/logo.png" alt="logotipo-xeila-villar"
+                data-aos="fade-right" 
+                data-aos-offset="50"
+                data-aos-delay="50"
+                data-aos-duration="800"
+                data-aos-easing="ease-in-out"
+                data-aos-mirror="true">
+            <div data-aos="fade-left" data-aos-offset="50"
+                data-aos-delay="50"
+                data-aos-duration="800"
+                data-aos-easing="ease-in-out"
+                data-aos-mirror="true" class="flex color-dark m-aic m-jcc m-100 mb-15">
+                <h1>Design & &lt;Code&gt;</h1><!--<a href="#about" id="button-about" class="button">Sobre mi</a>-->
+            </div>
+            <div class="menu-button color-dark">
+                <div class="abrir-menu cursor-pointer"><i class="fa-solid fa-chevron-left"></i><i class="fa-solid fa-chevron-left"></i> MENÚ <i class="fa-solid fa-chevron-right"></i><i class="fa-solid fa-chevron-right"></i></div>
+                <div class="cerrar-menu cursor-pointer"><i class="fa-solid fa-chevron-right"></i><i class="fa-solid fa-chevron-right"></i> MENÚ <i class="fa-solid fa-chevron-left"></i><i class="fa-solid fa-chevron-left"></i></div>
+            </div>
+            <!-- <dotlottie-wc class="lottie-arrow" src="https://lottie.host/166b04c1-6f49-4607-ac19-42ed7e9f8b82/abAKtLV5tA.json" speed="1" style="width: 200px; height: 200px; opacity: 0.5;" mode="forward" loop autoplay></dotlottie-wc> -->
+        </div>
+        <div id="menu-bottom" class=" flex m-jcsb m-aic cursor-pointer">
+            <a href="#design">Gráfico</a>
+            <a href="#mkt">Ilustración</a>
+        </div>
+    </div>
+</header>  
+
+<!--texto intro-->
+<section id="intro" class="color-bgDark contenedor m-aic m-jcc m-100">
+    <div class="contenido m-columna m-jcc m-aic m-100">
+        <div class="producto hover-imagen">
+            <p class="color-light">
+                PRODUCTO
+            </p>
+            <img src="imagenes/branding/BOLSA.jpg" alt="">
+        </div>
+
+        <div class="desarrollo hover-imagen">
+            <p class="color-light">
+                DESARROLLO <b class="accent-blue">WEB</b>
+            </p>
+            <img src="imagenes/branding/BOLSA.jpg" alt="">
+        </div>
+
+        <div class="diseno-web hover-imagen">
+            <p class="color-light">
+                <span class="noto-font" style="font-weight:400; font-style:italic;">DISEÑO</span> WEB
+            </p>
+            <img src="imagenes/branding/BOLSA.jpg" alt="">
+        </div>
+        <div class="marketing hover-imagen">
+            <p class="color-light">
+               <b class="accent-orange">MARKETING</b> DIGITAL
+            </p>
+            <img src="imagenes/branding/BOLSA.jpg" alt="">
+        </div>
+        <div class="direccion-arte hover-imagen">
+            <p class="color-light">
+                DIRECCIÓN DE ARTE
+            </p>
+            <img src="imagenes/branding/BOLSA.jpg" alt="">
+        </div>
+
+        <div class="diseno-grafico hover-imagen">
+            <p class="color-light">
+                <b class="accent-blue">DISEÑO</b> GRÁFICO
+            </p>
+            <img src="imagenes/branding/BOLSA.jpg" alt="">
+        </div>
+
+        <div class="ia-generativa hover-imagen">
+            <p class="color-light">
+                IA GENERATIVA
+            </p>
+            <img src="imagenes/branding/BOLSA.jpg" alt="">
+        </div>
+
+        <div class="ilustracion hover-imagen">
+            <p class="accent-orange noto-font">
+                ILUSTRACIÓN
+            </p>
+            <img src="imagenes/branding/BOLSA.jpg" alt="">
+        </div>
+    </div>
+</section>
+    
+<section id="about" class="contenedor color-light color-bgDark m-jcc m-aic m-100">
+    <div class="contenido m-columna m-aic m-jcc m-100">
+        <h2 data-aos="fade-right" 
+            data-aos-offset="50"
+            data-aos-delay="50"
+            data-aos-duration="800"
+            data-aos-easing="ease-in-out"
+            data-aos-mirror="true" class="mb-25"><span>Hola, soy Xeila</span>
+        </h2> 
+        <p class="m-90 p-70">Diseñadora gráfica y web <b>con años de experiencia en proyectos digitales, </b>
+        especializada en UX/UI y recién titulada en Desarrollo de Aplicaciones Web.
+        <p class="m-90 p-70">Mi experiencia en diseño me ha enseñado la importancia de <b class="noto-font accent-orange">entender las necesidades de los usuarios </b>
+        antes de plantear soluciones. Ahora combino esa visión creativa con mis conocimientos de 
+        desarrollo front-end y back-end, lo que me permite participar en todo el proceso, 
+        desde la idea inicial y el diseño de la interfaz hasta su implementación en código.</p>
+    </div>    
+</section> 
+
+<footer class="contenedor color-light color-bgDark">
+    <div class="contenido m-columna m-jsb m-aic m-100">
+        <div class="contacto flex m-fila m-jcsb m-aic">
+            <div class="flex accent-orange m-aic m-jcsb">
+                <a class="rrss flex m-jcc m-aic accent-orange" target=_blank href="https://es.linkedin.com/in/xeila-villar?original_referer=https%3A%2F%2Fwww.google.com%2F"><i class="fa-brands fa-linkedin-in cta"></i></a>
+                <div class="flex m-columna t-fila">
+                    <p>620814546</p>
+                    <p>xeilavillar@gmail.com</p>
+                </div>
+            </div>
+            <div class="flex m-aic">
+                <a id="cvButton" class="flex m-aic m-jcc accent-bgOrange color-light button" target=_blank href="https://www.behance.net/xeilavillar">Ver CV</a>
+            </div>
+        </div>
+        <div class="subfooter-dual flex m-100 p-100 t-100">
+            <div class="left m-jcc flex">
+                <div class="mb-15 t-60">
+                    <h2 class="accent-orange">CREATIVI<br>DAD</h2>
+                    <span class="footer-arrow ">&rarr;</span>
+                    <p>Busco insights para convertirlos en conceptos y propuestas visuales atractivas que conectan con las personas.</p>
+                </div>
+            </div>
+             <div class="right m-jcc flex">
+                <div class="mb-15 t-60">
+                    <h2 class="accent-blue">FUNCIONA<br>LIDAD</h2>
+                    <span class="footer-arrow ">&larr;</span>
+                    <p>Transformo propuestas visuales en experiencias digitales claras y accesibles, complementando el diseño con un código que potencia la navegación y optimiza la conversión.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+    
+<!-- Elemento que simula el cursor -->
+<div class="cursor-background"><div class="cursor-background-punto"></div></div>
+    
+</div>
+</div>   
+</section>
+<script>
+  AOS.init();
+</script>
+    <script src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.7.1/dist/dotlottie-wc.js" type="module"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollToPlugin.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/TextPlugin.min.js"></script>
+<script src="script.js"></script>
+<script src="myCustomCode.js"></script>
+</body>
+</html>
