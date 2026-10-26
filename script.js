@@ -1,4 +1,77 @@
 document.addEventListener("DOMContentLoaded", () => {
+    
+    
+$(function () {
+
+    const esPaginaInterior = $("body").hasClass("seccion-pags");
+
+    const menu = $("#menu-top, #menu-bottom");
+    const menuBottom = $("#menu-bottom");
+    const menuButton = $(".menu-button");
+    const btnToTop = $("#btn-to-top");
+
+    /* POSICIÓN DEL MENÚ */
+
+    function actualizarMenu() {
+
+        const hayScroll = $(window).scrollTop() > 10;
+
+        // HOME:
+        // La posición cambia según el scroll.
+        //
+        // PÁGINAS INTERIORES:
+        // Mantiene siempre la posición desplazada.
+
+        const desplazado = esPaginaInterior || hayScroll;
+
+        menuBottom.toggleClass("desplazamiento", desplazado);
+        menuButton.toggleClass("desplazamiento", desplazado);
+
+        // Volver arriba depende únicamente del scroll
+        btnToTop.toggleClass("btn-entrando", hayScroll);
+    }
+
+
+    /* ESTADO INICIAL */
+
+    // En las páginas interiores el menú empieza abierto.
+    // En index conserva su estado inicial cerrado.
+
+    if (esPaginaInterior) {
+        menu.addClass("menu-abierto");
+    }
+
+    function actualizarBotones() {
+
+        const abierto = menu.hasClass("menu-abierto");
+
+        $(".abrir-menu").toggle(!abierto);
+        $(".cerrar-menu").toggle(abierto);
+    }
+
+    actualizarMenu();
+    actualizarBotones();
+
+
+    /* SCROLL */
+
+    $(window).on("scroll", actualizarMenu);
+
+
+    /* ABRIR Y CERRAR MENÚ */
+
+    $(".abrir-menu, .cerrar-menu").on("click", function () {
+
+        menu.toggleClass("menu-abierto");
+
+        actualizarBotones();
+
+    });
+
+});
+
+    
+    
     // texto en scroll
   
   gsap.registerPlugin(ScrollTrigger,ScrollToPlugin,TextPlugin);
