@@ -124,21 +124,6 @@ document.addEventListener('mousemove', (event) => {
         });
     })
 </script> 
-    
-<script>
-    $(function () {
-        $(".abrir-menu, .cerrar-menu").click(function () {
-            const menu = $("#menu-bottom, #menu-top");
-            // Alternar la clase del menú para abrir/cerrar
-            menu.toggleClass("menu-abierto");
-
-            // Asegurar el estado de los botones
-            const isOpen = menu.hasClass("menu-abierto");
-            $(".abrir-menu").toggle(!isOpen); // Mostrar solo si el menú está cerrado
-            $(".cerrar-menu").toggle(isOpen); // Mostrar solo si el menú está abierto
-        });
-    });
-</script>
 
 </head>
 
@@ -160,7 +145,7 @@ document.addEventListener('mousemove', (event) => {
 <header class="contenedor m-jcc">
     <div id="hero" class="contenido m-100 t-90 m-jcc m-aic m-columna">
         <div id="menu-top" class="flex m-jcsb m-aic">
-            <a href="#webs">Web UX/UI</a>
+            <a href="web.html">Web UX/UI</a>
             <a href="#marketing">Marketing</a>
         </div>
         <div class="title-pag flex m-jcc m-aic m-columna m-90 p-100">
