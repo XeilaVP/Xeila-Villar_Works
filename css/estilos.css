@@ -444,6 +444,23 @@ header {
     z-index: 1001;
 }
 
+#web .menu-logo {
+    position: absolute;
+    bottom: calc(100% + 5px);
+    left: 50%;
+    transform: translateX(-50%);
+    color: inherit;
+    font-size: 14px;
+    font-weight: 400;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+#web .menu-logo strong {
+    font-weight: 800;
+}
+
+
 /* ======================================
    WEB Y PRODUCTO - ESTILOS
 ====================================== */
@@ -702,25 +719,41 @@ header {
     /* MENÚ INTERIOR:
        botón arriba y enlaces debajo */
 
-    .seccion-pags .menu-button,
-    .seccion-pags .menu-button.desplazamiento {
-        top: 15px;
-        bottom: auto;
-        color: #21232A;
-    }
+    
+/* MENÚ WEB - MOBILE */
 
-    .seccion-pags #menu-top.menu-abierto {
-        top: 55px;
-        left: 4%;
-        width: 92%;
-    }
+#web .menu-button,
+#web .menu-button.desplazamiento {
+    top: 60px;
+    bottom: auto;
+    color: #21232A;
+}
 
-    .seccion-pags #menu-bottom.menu-abierto.desplazamiento {
-        top: 103px;
-        bottom: auto;
-        left: 4%;
-        width: 92%;
-    }
+/* Logo encima del botón */
+#web .menu-logo {
+    font-size: clamp(10px, 3vw, 13px);
+}
+
+/* Botón abrir/cerrar */
+#web .abrir-menu,
+#web .cerrar-menu {
+    font-size: 14px;
+}
+
+/* Enlaces superiores */
+#web #menu-top.menu-abierto {
+    top: 2%;
+    left: 4%;
+    width: 92%;
+}
+
+/* Enlaces inferiores */
+#web #menu-bottom.menu-abierto.desplazamiento {
+    top: auto;
+    bottom: 2%;
+    left: 4%;
+    width: 92%;
+}
 
     /* CABECERA */
 

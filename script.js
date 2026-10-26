@@ -55,7 +55,20 @@ $(function () {
 
     /* SCROLL */
 
-    $(window).on("scroll", actualizarMenu);
+    
+$(window).on("scroll", function () {
+    actualizarMenu();
+
+    const esWebMobile =
+        document.body.id === "web" &&
+        window.matchMedia("(max-width: 700px)").matches;
+
+    if (esWebMobile && $(window).scrollTop() > 10) {
+        menu.removeClass("menu-abierto");
+        actualizarBotones();
+    }
+});
+
 
 
     /* ABRIR Y CERRAR MENÚ */
