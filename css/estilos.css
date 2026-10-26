@@ -22,6 +22,7 @@ p{
   font-family: "Noto Sans Display", serif;
   font-weight: 400;
   font-style: italic;
+  font-size: 110%;
 }
 strong, b{
     font-weight: 500;
@@ -368,24 +369,26 @@ header {
 }
 /*---------SECCIÓN ABOUT-----------*/
 
-#about h2 span{
-    font-size: 40px;
+#about h2{
+    font-size: 30px;
     font-weight: 400;
-    text-align:center;
-    border-top:1px solid white;
-    border-bottom:1px solid white;
+    padding-bottom:25px;
 }
-#about p{
-    font-size: 20px;
-    text-align: center;
+#about h3{
+    font-size: 16px;
     line-height: 1.3;
     font-weight: 300;
     padding: 1% 0;
     letter-spacing: 0.2px;
+    border-left:1px solid white;
+    padding:15px;
 }
 #about{
-    height: 90vh;
+    height: 100vh;
     padding-bottom:40px;
+}
+#about .contenido{
+    width: 80%;
 }
 
 /*---------SECCIÓN WEB-----------*/
@@ -880,7 +883,7 @@ footer .subfooter-dual {
     padding: 0;
     background-image: url("../imagenes/img-footer.png");
     background-position: bottom;
-    background-size: contain;
+    background-size: 100%;
     background-repeat: no-repeat;
 }
 
@@ -1115,7 +1118,7 @@ footer .right:hover p{
    height:80vh;
     }
     footer .subfooter-dual {
-         background-size: clamp(130%, calc(15% + 720px), 250%) auto;
+         background-size: clamp(100%, calc(15% + 720px), 250%) auto;
         
     }
 
@@ -1178,7 +1181,7 @@ footer .right:hover p{
         padding-bottom:30%;
     }
     footer .left{
-    padding-top:20%;
+        padding-top:20%;
     }
     footer .subfooter-dual {
         height: 100%;
