@@ -50,7 +50,7 @@ section {
     flex-direction: row;
 }
 a, button, .cta, .cursor-pointer{
-    cursor:none;
+    cursor:pointer;
 }
 /*---------BUTTONS----------*/
 .button{
@@ -558,11 +558,13 @@ header {
 
 #web-portfolio .web-proyectos {
     width: 100%;
-    padding: 0;
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    column-gap: 6%;
-    row-gap: 60px;
+    padding: 160px 0;
+    display: flex;
+    column-gap: 10%;
+    row-gap: 15%;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
 }
 
 .web-proyecto {
@@ -682,7 +684,7 @@ footer .subfooter-dual {
     padding: 0;
     background-image: url("../imagenes/img-footer.png");
     background-position: bottom;
-    background-size: 100%;
+    background-size: 80%;
     background-repeat: no-repeat;
 }
 
@@ -751,7 +753,7 @@ footer .rrss:hover {
 }
 footer .subfooter-dual{
     height:80vh;
-    width:73%;
+    width:contain;
     padding:0;
 }
 footer .right, footer .left{
@@ -947,7 +949,7 @@ footer .right:hover p{
     }
 
     footer .subfooter-dual {
-        background-size: clamp(100%, calc(15% + 720px), 250%) auto;
+        background-size: clamp(100%, calc(15% + 720px), 200%) auto;
     }
 
     #web-portfolio {
