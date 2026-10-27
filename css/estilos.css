@@ -309,6 +309,7 @@ header {
     color:#FAFBFB;
     bottom:auto;
 }
+
 /*---------TRIGGER TEXT INTRO-----------*/
 
 
@@ -444,22 +445,47 @@ header {
     z-index: 1001;
 }
 
-#web .menu-logo {
-    position: absolute;
-    bottom: calc(100% + 5px);
-    left: 50%;
-    transform: translateX(-50%);
-    color: inherit;
-    font-size: 14px;
+.menu-logo {
+    font-size: 22px;
     font-weight: 400;
-    text-decoration: none;
+    line-height: 1;
     white-space: nowrap;
+    color: inherit;
+    text-decoration: none;
+    margin-bottom: 5px;
 }
 
-#web .menu-logo strong {
+.menu-logo strong {
     font-weight: 800;
 }
+#inicio .menu-button {
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
+/* En el hero se ve MENÚ, pero no el nombre */
+#inicio .menu-logo {
+    display: none;
+}
+
+/* Al hacer scroll aparece el nombre */
+#inicio .menu-button.desplazamiento .menu-logo {
+    display: block;
+}
+
+#inicio .menu-button.desplazamiento {
+    top: 2%;
+    bottom: auto;
+    color: #21232A;
+}
+
+/* Al llegar a las secciones oscuras */
+#inicio.menu-sobre-oscuro .menu-button.desplazamiento {
+    color: #F5F5F5;
+}
 
 /* ======================================
    WEB Y PRODUCTO - ESTILOS
@@ -716,9 +742,31 @@ header {
 
 @media (max-width: 700px) {
 
-    /* MENÚ INTERIOR:
-       botón arriba y enlaces debajo */
 
+.seccion-pags .menu-button,
+.seccion-pags .menu-button.desplazamiento {
+    top: 20px;
+    bottom: auto;
+    color: #21232A;
+}
+
+.seccion-pags #menu-top.menu-abierto {
+    top: 2%;
+    left: 4%;
+    width: 92%;
+}
+
+.seccion-pags #menu-bottom.menu-abierto.desplazamiento {
+    top: auto;
+    bottom: 2%;
+    left: 4%;
+    width: 92%;
+}
+
+.seccion-pags .abrir-menu,
+.seccion-pags .cerrar-menu {
+    font-size: 14px;
+}
     
 /* MENÚ WEB - MOBILE */
 
@@ -754,7 +802,22 @@ header {
     left: 4%;
     width: 92%;
 }
+#inicio .menu-button.desplazamiento {
+    top: 20px;
+    bottom: auto;
+}
 
+#inicio .abrir-menu,
+#inicio .cerrar-menu {
+    font-size: 14px;
+}
+
+#inicio #menu-bottom.menu-abierto.desplazamiento {
+    top: auto;
+    bottom: 2%;
+    left: 4%;
+    width: 92%;
+}
     /* CABECERA */
 
     #web-portfolio {
@@ -846,6 +909,7 @@ header {
     .web-proyecto-tecnologias {
         font-size: 11px;
     }
+   
 }
 /*---------mkt-----------*/
 
@@ -1366,6 +1430,18 @@ footer .right:hover p{
 .cursor-background.pointer::after {
     transform: translate(-50%, -50%) scale(1.5); /* Se activa con escala 1 */
     opacity: 1; /* Aparece el icono */
+}
+@media (min-width: 701px) {
+
+    /* Home después del scroll */
+    #inicio .menu-button.desplazamiento .abrir-menu,
+    #inicio .menu-button.desplazamiento .cerrar-menu,
+
+    /* Páginas interiores */
+    .seccion-pags .menu-button .abrir-menu,
+    .seccion-pags .menu-button .cerrar-menu {
+        display: none !important;
+    }
 }
 @media only screen and (max-width: 900px) {
     #menu-top,

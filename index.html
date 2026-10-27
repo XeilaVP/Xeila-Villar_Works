@@ -106,24 +106,6 @@ document.addEventListener('mousemove', (event) => {
 });
 </script>
     
-<!--SCROLL TO TOP / MENÚ OPEN-CLOSE -->
-    
-<script>
-    $(function(){  
-        $(window).scroll(function (event) {
-            var scroll = $(window).scrollTop();
-            if (scroll>10){
-                $("#btn-to-top").addClass("btn-entrando");
-                $("#menu-bottom").addClass("desplazamiento");
-                $(".menu-button").addClass("desplazamiento");
-            }else{
-                $("#btn-to-top").removeClass("btn-entrando");
-                $("#menu-bottom").removeClass("desplazamiento");
-                $(".menu-button").removeClass("desplazamiento");
-            }
-        });
-    })
-</script> 
 
 </head>
 
@@ -165,6 +147,8 @@ document.addEventListener('mousemove', (event) => {
                 <h1>Design & &lt;Code&gt;</h1><!--<a href="#about" id="button-about" class="button">Sobre mi</a>-->
             </div>
             <div class="menu-button color-dark">
+                <a href="#inicio" class="menu-logo" aria-label="Volver al inicio">
+                <strong>XEILA</strong>VILLAR</a>
                 <div class="abrir-menu cursor-pointer"><i class="fa-solid fa-chevron-left"></i><i class="fa-solid fa-chevron-left"></i> MENÚ <i class="fa-solid fa-chevron-right"></i><i class="fa-solid fa-chevron-right"></i></div>
                 <div class="cerrar-menu cursor-pointer"><i class="fa-solid fa-chevron-right"></i><i class="fa-solid fa-chevron-right"></i> MENÚ <i class="fa-solid fa-chevron-left"></i><i class="fa-solid fa-chevron-left"></i></div>
             </div>

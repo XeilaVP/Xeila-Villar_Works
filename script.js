@@ -1,87 +1,97 @@
 document.addEventListener("DOMContentLoaded", () => {
     
-    
+
 $(function () {
 
     const esPaginaInterior = $("body").hasClass("seccion-pags");
+    const esHome = $("body").attr("id") === "inicio";
+    const esMovil = () => window.matchMedia("(max-width: 700px)").matches;
 
     const menu = $("#menu-top, #menu-bottom");
     const menuBottom = $("#menu-bottom");
     const menuButton = $(".menu-button");
     const btnToTop = $("#btn-to-top");
 
-    /* POSICIÓN DEL MENÚ */
+    let scrollAnterior = $(window).scrollTop();
+    let movilAnterior = esMovil();
 
-    function actualizarMenu() {
-
-        const hayScroll = $(window).scrollTop() > 10;
-
-        // HOME:
-        // La posición cambia según el scroll.
-        //
-        // PÁGINAS INTERIORES:
-        // Mantiene siempre la posición desplazada.
-
-        const desplazado = esPaginaInterior || hayScroll;
-
-        menuBottom.toggleClass("desplazamiento", desplazado);
-        menuButton.toggleClass("desplazamiento", desplazado);
-
-        // Volver arriba depende únicamente del scroll
-        btnToTop.toggleClass("btn-entrando", hayScroll);
-    }
-
-
-    /* ESTADO INICIAL */
-
-    // En las páginas interiores el menú empieza abierto.
-    // En index conserva su estado inicial cerrado.
-
+    // Las páginas interiores comienzan con el menú abierto
     if (esPaginaInterior) {
         menu.addClass("menu-abierto");
     }
 
     function actualizarBotones() {
-
         const abierto = menu.hasClass("menu-abierto");
 
         $(".abrir-menu").toggle(!abierto);
         $(".cerrar-menu").toggle(abierto);
     }
 
-    actualizarMenu();
-    actualizarBotones();
+    function actualizarMenu(desdeScroll = false) {
 
+        const scrollActual = $(window).scrollTop();
+        const hayScroll = scrollActual > 10;
+        const movil = esMovil();
 
-    /* SCROLL */
+        const desplazado = esPaginaInterior || hayScroll;
 
-    
-$(window).on("scroll", function () {
-    actualizarMenu();
+        menuBottom.toggleClass("desplazamiento", desplazado);
+        menuButton.toggleClass("desplazamiento", desplazado);
+        btnToTop.toggleClass("btn-entrando", hayScroll);
 
-    const esWebMobile =
-        document.body.id === "web" &&
-        window.matchMedia("(max-width: 700px)").matches;
+        // Contraste del nombre en la home
+        if (esHome) {
+            const alturaHero = $("header").first().outerHeight() || 0;
 
-    if (esWebMobile && $(window).scrollTop() > 10) {
-        menu.removeClass("menu-abierto");
+            $("body").toggleClass(
+                "menu-sobre-oscuro",
+                scrollActual >= alturaHero
+            );
+        }
+
+        if (!movil) {
+            // Desktop/tablet: navegación siempre visible fuera del hero
+            if (esPaginaInterior || hayScroll) {
+                menu.addClass("menu-abierto");
+            }
+        } else {
+            // Móvil: cerrar al desplazarse o pasar desde desktop
+            if (
+                (desdeScroll && hayScroll && scrollActual !== scrollAnterior) ||
+                (!movilAnterior && hayScroll)
+            ) {
+                menu.removeClass("menu-abierto");
+            }
+        }
+
+        // Al regresar al principio de la home, recuperar estado inicial
+        if (esHome && !hayScroll && scrollAnterior > 10) {
+            menu.removeClass("menu-abierto");
+        }
+
         actualizarBotones();
+
+        scrollAnterior = scrollActual;
+        movilAnterior = movil;
     }
-});
 
+    actualizarMenu();
 
+    $(window).on("scroll", function () {
+        actualizarMenu(true);
+    });
 
-    /* ABRIR Y CERRAR MENÚ */
+    $(window).on("resize", function () {
+        actualizarMenu();
+    });
 
     $(".abrir-menu, .cerrar-menu").on("click", function () {
-
         menu.toggleClass("menu-abierto");
-
         actualizarBotones();
-
     });
 
 });
+
 
     
     
