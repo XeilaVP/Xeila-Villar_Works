@@ -300,6 +300,16 @@ header {
     height: 100vh;
     padding-top:100px;
 }
+#intro.intro-animation-ready .contenido > div {
+    opacity: 0;
+    transform: translateX(-90px);
+    transition: opacity 750ms ease, transform 750ms cubic-bezier(.2, .75, .25, 1);
+}
+#intro.intro-animation-ready.intro-entered .contenido > div {
+    opacity: 1;
+    transform: translateX(0);
+    transition-delay: calc(var(--intro-index) * 100ms);
+}
 #intro p{
     font-size: 55px;
     width: 100%;
@@ -346,6 +356,27 @@ header {
     font-weight: 400;
     padding-bottom:35px;
     line-height: 2.3rem;
+}
+#about h2.about-heading-ready .about-line-word {
+    opacity: 0;
+    display: inline-block;
+    transform: translateY(16px);
+    transition: opacity 750ms ease, transform 750ms ease;
+}
+#about h2.about-heading-ready.about-entered .about-line-word {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: calc(var(--line-index) * 180ms);
+}
+#about h2.about-heading-ready + h3 {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 600ms ease, transform 600ms ease;
+}
+#about h2.about-heading-ready.about-entered + h3 {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 250ms;
 }
 #about h3{
     font-size: 20px;

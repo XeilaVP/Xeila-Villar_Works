@@ -295,6 +295,92 @@ document.addEventListener('mousemove', (event) => {
 </div>   
 </section>
 <script>
+(() => {
+    const intro = document.querySelector("#intro");
+    const aboutHeading = document.querySelector("#about h2");
+
+    if (
+        !("IntersectionObserver" in window) ||
+        window.matchMedia("(prefers-reduced-motion: reduce)").matches
+    ) {
+        return;
+    }
+
+    if (intro) {
+        const introItems = [...intro.querySelectorAll(".contenido > div")];
+
+        introItems.forEach((item, index) => {
+            item.style.setProperty("--intro-index", index);
+        });
+        intro.classList.add("intro-animation-ready");
+
+        const introObserver = new IntersectionObserver(entries => {
+            intro.classList.toggle(
+                "intro-entered",
+                entries.some(entry => entry.isIntersecting)
+            );
+        }, { threshold: 0.15 });
+
+        introObserver.observe(intro);
+    }
+
+    if (aboutHeading) {
+        const text = aboutHeading.textContent.replace(/\s+/g, " ").trim();
+        const words = text.split(" ");
+        const fragment = document.createDocumentFragment();
+        const wordElements = [];
+
+        aboutHeading.setAttribute("aria-label", text);
+
+        words.forEach((word, index) => {
+            const wordElement = document.createElement("span");
+            wordElement.className = "about-line-word";
+            wordElement.textContent = word;
+            wordElements.push(wordElement);
+            fragment.appendChild(wordElement);
+
+            if (index < words.length - 1) {
+                fragment.appendChild(document.createTextNode(" "));
+            }
+        });
+
+        aboutHeading.replaceChildren(fragment);
+
+        const prepareAnimation = () => {
+            aboutHeading.classList.add("about-heading-ready");
+
+            let lineTop;
+            let lineIndex = -1;
+
+            wordElements.forEach(wordElement => {
+                const currentTop = wordElement.getBoundingClientRect().top;
+
+                if (lineTop === undefined || Math.abs(currentTop - lineTop) > 1) {
+                    lineTop = currentTop;
+                    lineIndex += 1;
+                }
+
+                wordElement.style.setProperty("--line-index", lineIndex);
+            });
+
+            const aboutObserver = new IntersectionObserver(entries => {
+                aboutHeading.classList.toggle(
+                    "about-entered",
+                    entries.some(entry => entry.isIntersecting)
+                );
+            }, { threshold: 0.15 });
+
+            aboutObserver.observe(aboutHeading);
+        };
+
+        if (document.fonts && document.fonts.ready) {
+            document.fonts.ready.then(prepareAnimation);
+        } else {
+            prepareAnimation();
+        }
+    }
+})();
+
   AOS.init();
 </script>
     <script src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.7.1/dist/dotlottie-wc.js" type="module"></script>
