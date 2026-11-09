@@ -44,49 +44,6 @@ $idPagina = $idPagina ?? ($esInicio ? "inicio" : "web");
     <link rel="stylesheet" href="css/aos.css">
     <script src="js/aos.js"></script>
 
-    <?php if ($esInicio): ?>
-
-    <!-- CURSOR PERSONALIZADO: HOME -->
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            document.querySelectorAll('a, button, .cta').forEach(element => {
-                element.classList.add('cursor-pointer');
-            });
-        });
-
-        document.addEventListener('mousemove', (event) => {
-            const cursorBackground = document.querySelector('.cursor-background');
-
-            setTimeout(() => {
-                const mouseX = event.clientX;
-                const mouseY = event.clientY;
-
-                cursorBackground.style.left =
-                    `${mouseX - cursorBackground.offsetWidth / 2}px`;
-
-                cursorBackground.style.top =
-                    `${mouseY - cursorBackground.offsetHeight / 2}px`;
-
-                const elementUnderCursor =
-                    document.elementFromPoint(mouseX, mouseY);
-
-                if (elementUnderCursor &&
-                    elementUnderCursor.classList.contains("cursor-pointer")) {
-
-                    cursorBackground.classList.add("pointer");
-                    cursorBackground.style.transform = "scale(1.2)";
-
-                } else {
-                    cursorBackground.classList.remove("pointer");
-                    cursorBackground.style.transform = "scale(0.2)";
-                }
-
-            }, 40);
-        });
-    </script>
-
-    <?php endif; ?>
-
 </head>
 
 <body id="<?= htmlspecialchars($idPagina, ENT_QUOTES, 'UTF-8') ?>"

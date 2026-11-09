@@ -349,37 +349,5 @@ require __DIR__ . "/includes/head.php";
 require __DIR__ . "/includes/footer.php";
 ?>
 
-<script src="script.js"></script>
-
-<!-- CURSOR: MISMO COMPORTAMIENTO DE INDEX -->
-<script>
-document.addEventListener("DOMContentLoaded", () => {
-
-    document.querySelectorAll("a, button, .cta").forEach(element => {
-        element.classList.add("cursor-pointer");
-    });
-
-    document.addEventListener("mousemove", event => {
-        const cursor = document.querySelector(".cursor-background");
-
-        if (!cursor) return;
-
-        const x = event.clientX;
-        const y = event.clientY;
-
-        cursor.style.left = `${x - cursor.offsetWidth / 2}px`;
-        cursor.style.top = `${y - cursor.offsetHeight / 2}px`;
-
-        const elemento = document.elementFromPoint(x, y);
-
-        cursor.classList.toggle(
-            "pointer",
-            !!elemento && !!elemento.closest(".cursor-pointer")
-        );
-    });
-
-});
-</script>
-
 </body>
 </html>
