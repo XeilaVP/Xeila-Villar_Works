@@ -19,7 +19,7 @@
             <!-- MENÚ SUPERIOR -->
             <div id="menu-top" class="flex m-jcsb m-aic">
                 <a href="web.php">Web UX/UI</a>
-                <a href="<?= $esInicio ? '#marketing' : 'index.php#mkt' ?>">Marketing</a>
+                <a href="marketing.php">Marketing</a>
             </div>
 
             <div class="title-pag flex m-jcc m-aic m-columna m-90 p-100">
@@ -82,8 +82,8 @@
 
             <!-- MENÚ INFERIOR -->
             <div id="menu-bottom" class="flex m-jcsb m-aic cursor-pointer">
-                <a href="<?= $esInicio ? '#design' : 'index.php#design' ?>">Gráfico</a>
-                <a href="<?= $esInicio ? '#mkt' : 'index.php#mkt' ?>">Ilustración</a>
+                <a href="grafico.php">Gráfico</a>
+                <a href="ilustracion.php">Ilustración</a>
             </div>
 
         </div>

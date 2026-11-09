@@ -3,7 +3,7 @@ $esInicio = false;
 $idPagina = "web";
 $titulo = "Web y Producto | Xeila Villar";
 
-require __DIR__ . "/includes/cabecera.php";
+require __DIR__ . "/includes/header.php";
 ?>
 
 <?php
@@ -349,17 +349,9 @@ require __DIR__ . "/includes/menu.php";
 
     </main>
 
-    <!-- FOOTER: PENDIENTE -->
-
-
-    <!-- CURSOR PERSONALIZADO -->
-    <div class="cursor-background">
-        <div class="cursor-background-punto"></div>
-    </div>
-
-</div>
-</div>
-</section>
+<?php
+require __DIR__ . "/includes/footer.php";
+?>
 
 <script src="script.js"></script>
 

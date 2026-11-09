@@ -982,6 +982,9 @@ footer .right:hover p{
     footer {
         height: 80vh;
     }
+    footer.footer-interior {
+    height: auto;
+    }   
 
     footer .subfooter-dual {
         background-size: clamp(100%, calc(15% + 720px), 200%) auto;
