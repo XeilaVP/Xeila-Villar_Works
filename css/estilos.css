@@ -324,6 +324,9 @@ header {
 #intro p:hover{
     letter-spacing: .045em;
     cursor:pointer;
+    border-bottom: 1px solid #ffffff2e;
+    border-top: 1px solid #ffffff2e;
+    padding: 0 50px;
 }
 .hover-imagen{
     position:relative;
@@ -360,7 +363,7 @@ header {
 #about h2.about-heading-ready .about-line-word {
     opacity: 0;
     display: inline-block;
-    transform: translateY(16px);
+    transform: translateY(36px);
     transition: opacity 750ms ease, transform 750ms ease;
 }
 #about h2.about-heading-ready.about-entered .about-line-word {
@@ -370,13 +373,13 @@ header {
 }
 #about h2.about-heading-ready + h3 {
     opacity: 0;
-    transform: translateY(40px);
-    transition: opacity 600ms ease, transform 600ms ease;
+    transform: translateY(150px);
+    transition: opacity 2s ease, transform 2s ease;
 }
 #about h2.about-heading-ready.about-entered + h3 {
     opacity: 1;
     transform: translateY(0);
-    transition-delay: 250ms;
+    transition-delay: 350ms;
 }
 #about h3{
     font-size: 20px;
@@ -384,15 +387,15 @@ header {
     font-weight: 300;
     padding: 1% 0;
     letter-spacing: 0.2px;
-    border-left:1px solid white;
+    border-left:1px solid rgba(255, 255, 255, 0.341);
     padding:15px;
 }
 #about{
-    height: 100vh;
-    padding-bottom:40px;
+    min-height: 100vh;
+    padding-bottom:100px;
 }
 #about .contenido{
-    width: 60%;
+    width: 65%;
 }
 
 /* ======================================
@@ -763,7 +766,8 @@ footer .subfooter-dual {
 
 #cvButton {
     min-width: 20%;
-    font-size: 25px;
+    font-size: 20px;
+    padding:auto;
 }
 
 
@@ -1082,25 +1086,20 @@ footer .right:hover p{
         left: auto;
         width: 95%;
     }
-
     #logo-hero {
         width: 70%;
     }
-
     .title-pag h1 {
         font-size: 35px;
     }
-
     #hero.contenido {
         padding: 0 !important;
     }
-
     /* ---------- HOME ---------- */
     #intro p {
         font-size: clamp(30px, 8.5vw, 60px);
         line-height: 115%;
     }
-
     #intro h3 {
         font-size: 18px;
         font-weight: 700;
@@ -1108,29 +1107,27 @@ footer .right:hover p{
         width: 70%;
         line-height: 110%;
     }
-    #intro p:hover {
-    letter-spacing: -.045em;
-}
 
-#about {
-    height: auto;
-    padding: 60px 0;
-}
+    #about {
+        height: 100vh;
+        padding-bottom: 100px;
+    }
 
-#about .contenido {
-    width: 90%;
-    padding: 0;
-}
+    #about .contenido {
+        width: 90%;
+        padding: 0;
+    }
 
-#about h2 {
-    font-size: clamp(22px, 5.8vw, 30px);
-}
+    #about h2 {
+        font-size: clamp(22px, 5.8vw, 30px);
+        line-height: 1.8rem;
+    }
 
-#about h3 {
-    width: 100%;
-    font-size: 14px;
-    line-height: 1.45;
-}
+    #about h3 {
+        width: 100%;
+        font-size: 16px;
+        line-height: 1.45;
+    }
 
     /* ---------- WEB Y PRODUCTO ---------- */
 
@@ -1283,7 +1280,9 @@ footer .right:hover p{
 }
 
 #cvButton {
-    min-width: 50%;
+    font-size:15px;
+    min-width: 20%;
+    padding:7px 40px;
 }
 
     /* ---------- CURSOR PERSONALIZADO ---------- */
