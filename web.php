@@ -3,11 +3,7 @@ $esInicio = false;
 $idPagina = "web";
 $titulo = "Web y Producto | Xeila Villar";
 
-require __DIR__ . "/includes/header.php";
-?>
-
-<?php
-require __DIR__ . "/includes/menu.php";
+require __DIR__ . "/includes/head.php";
 ?>
 
     <!-- WEB Y PRODUCTO -->
