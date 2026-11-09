@@ -87,6 +87,22 @@ document.addEventListener("DOMContentLoaded", () => {
         actualizarBotones();
     });
 
+    const imagenesProyecto = document.querySelectorAll(".web-proyecto-imagen img");
+
+    if (imagenesProyecto.length) {
+        if (typeof window.SimpleParallax !== "function") {
+            console.error("No se pudo cargar simpleParallax.js para las imágenes de proyecto.");
+        } else {
+           new window.SimpleParallax(imagenesProyecto, {
+            orientation: "down",
+            scale: 0.8,
+            delay: 0,
+            transition: 'cubic-bezier(0,0,0,1)',
+            customWrapper: ".web-proyecto-imagen"
+        });
+        }
+    }
+
 
     // =========================================
     // CURSOR PERSONALIZADO

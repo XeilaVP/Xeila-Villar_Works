@@ -65,7 +65,7 @@ require __DIR__ . "/includes/head.php";
                         <span>Elogia Media</span>
                     </div>
 
-                    <a href="#" class="web-proyecto-imagen">
+                    <a href="#" class="web-proyecto-imagen" aria-label="Ver Freelance Board">
                         <img src="imagenes/web/producto/freelance-connect-mockup.png" alt="Freelance Board">
                     </a>
 
@@ -103,8 +103,8 @@ require __DIR__ . "/includes/head.php";
                         <span>Proyecto personal</span>
                     </div>
 
-                    <a href="#" class="web-proyecto-imagen">
-                        <img src="imagenes/web/kraz/Macbook-Air-solutions.kraz.ai (2).png" alt="Exobrain">
+                    <a href="#" class="web-proyecto-imagen" aria-label="Ver Exobrain">
+                        <img src="imagenes/web/kraz/mockup-kraz.png" alt="Exobrain">
                     </a>
 
                     <div class="web-proyecto-info">
@@ -139,8 +139,8 @@ require __DIR__ . "/includes/head.php";
                         <span>Elogia Media</span>
                     </div>
 
-                    <a href="#" class="web-proyecto-imagen">
-                        <img src="imagenes/home-kraz.png" alt="Custom Report">
+                    <a href="#" class="web-proyecto-imagen" aria-label="Ver Custom Report">
+                        <img src="imagenes/web/producto/freelance-connect-mockup.png" alt="Custom Report">
                     </a>
 
                     <div class="web-proyecto-info">
@@ -175,8 +175,8 @@ require __DIR__ . "/includes/head.php";
                         <span>Viko Group</span>
                     </div>
 
-                    <a href="#" class="web-proyecto-imagen">
-                        <img src="imagenes/home-kraz.png" alt="Kraz">
+                    <a href="#" class="web-proyecto-imagen" aria-label="Ver Kraz">
+                        <img src="imagenes/web/producto/freelance-connect-mockup.png" alt="Kraz">
                     </a>
 
                     <div class="web-proyecto-info">
@@ -210,8 +210,8 @@ require __DIR__ . "/includes/head.php";
                         <span>Viko Group</span>
                     </div>
 
-                    <a href="#" class="web-proyecto-imagen">
-                        <img src="imagenes/home-kraz.png" alt="Kraz">
+                    <a href="#" class="web-proyecto-imagen" aria-label="Ver Kraz">
+                        <img src="imagenes/web/producto/freelance-connect-mockup.png" alt="Kraz">
                     </a>
 
                     <div class="web-proyecto-info">
@@ -244,8 +244,8 @@ require __DIR__ . "/includes/head.php";
                         <span>Viko Group</span>
                     </div>
 
-                    <a href="#" class="web-proyecto-imagen">
-                        <img src="imagenes/home-kraz.png" alt="Kraz">
+                    <a href="#" class="web-proyecto-imagen" aria-label="Ver Kraz">
+                        <img src="imagenes/web/producto/freelance-connect-mockup.png" alt="Kraz">
                     </a>
 
                     <div class="web-proyecto-info">
@@ -278,8 +278,8 @@ require __DIR__ . "/includes/head.php";
                         <span>Viko Group</span>
                     </div>
 
-                    <a href="#" class="web-proyecto-imagen">
-                        <img src="imagenes/home-kraz.png" alt="Kraz">
+                    <a href="#" class="web-proyecto-imagen" aria-label="Ver Kraz">
+                        <img src="imagenes/web/producto/freelance-connect-mockup.png" alt="Kraz">
                     </a>
 
                     <div class="web-proyecto-info">
@@ -312,8 +312,8 @@ require __DIR__ . "/includes/head.php";
                         <span>Viko Group</span>
                     </div>
 
-                    <a href="#" class="web-proyecto-imagen">
-                        <img src="imagenes/home-kraz.png" alt="Kraz">
+                    <a href="#" class="web-proyecto-imagen" aria-label="Ver Kraz">
+                        <img src="imagenes/web/producto/freelance-connect-mockup.png" alt="Kraz">
                     </a>
 
                     <div class="web-proyecto-info">
@@ -344,6 +344,8 @@ require __DIR__ . "/includes/head.php";
         </div>
 
     </main>
+
+<script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@7.0.0/dist/vanilla/simpleParallaxVanilla.umd.js"></script>
 
 <?php
 require __DIR__ . "/includes/footer.php";
