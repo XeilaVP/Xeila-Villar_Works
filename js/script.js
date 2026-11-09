@@ -94,10 +94,10 @@ document.addEventListener("DOMContentLoaded", () => {
             console.error("No se pudo cargar simpleParallax.js para las imágenes de proyecto.");
         } else {
            new window.SimpleParallax(imagenesProyecto, {
-            orientation: "down",
-            scale: 0.8,
+            orientation: "up",
+            scale: 1.2,
             delay: 0,
-            transition: 'cubic-bezier(0,0,0,1)',
+            transition: 'cubic-bezier(0,0,0,5)',
             customWrapper: ".web-proyecto-imagen"
         });
         }

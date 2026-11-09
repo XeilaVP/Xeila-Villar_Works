@@ -57,8 +57,8 @@ require __DIR__ . "/includes/head.php";
             <!-- GRID DE PROYECTOS -->
             <section id="proyectos-web" class="web-proyectos flex m-jcsb m-aic">
 
-                <!-- PROYECTO 01 -->
-                <article class="web-proyecto t-50">
+                <!-- PROYECTO 01 FREELANCE BOARD -->
+                <article class="web-proyecto t-40">
 
                     <div class="web-proyecto-cabecera flex m-jcsb m-aic">
                         <h2>FREELANCE BOARD</h2>
@@ -95,16 +95,16 @@ require __DIR__ . "/includes/head.php";
                 </article>
 
 
-                <!-- PROYECTO 02 -->
-                <article class="web-proyecto t-40">
+                <!-- PROYECTO 02 REPO -->
+                <article class="web-proyecto t-30">
 
                     <div class="web-proyecto-cabecera flex m-jcsb m-aic">
-                        <h2>EXOBRAIN</h2>
+                        <h2>HTML EDIT</h2>
                         <span>Proyecto personal</span>
                     </div>
 
                     <a href="#" class="web-proyecto-imagen" aria-label="Ver Exobrain">
-                        <img src="imagenes/web/kraz/mockup-kraz.png" alt="Exobrain">
+                        <img src="imagenes/web/producto/repo-edit.png" alt="Exobrain">
                     </a>
 
                     <div class="web-proyecto-info">
@@ -131,16 +131,16 @@ require __DIR__ . "/includes/head.php";
                 </article>
 
 
-                <!-- PROYECTO 03 -->
-                <article class="web-proyecto t-40">
+                <!-- PROYECTO 03 EXOBRAIN-->
+                <article class="web-proyecto t-30">
 
                     <div class="web-proyecto-cabecera flex m-jcsb m-aic">
-                        <h2>CUSTOM REPORT</h2>
+                        <h2>EXOBRAIN</h2>
                         <span>Elogia Media</span>
                     </div>
 
                     <a href="#" class="web-proyecto-imagen" aria-label="Ver Custom Report">
-                        <img src="imagenes/web/producto/freelance-connect-mockup.png" alt="Custom Report">
+                        <img src="imagenes/web/producto/exobrain.png" alt="Custom Report">
                     </a>
 
                     <div class="web-proyecto-info">
@@ -168,109 +168,6 @@ require __DIR__ . "/includes/head.php";
 
 
                 <!-- PROYECTO 04 -->
-                <article class="web-proyecto t-50">
-
-                    <div class="web-proyecto-cabecera flex m-jcsb m-aic">
-                        <h2>KRAZ</h2>
-                        <span>Viko Group</span>
-                    </div>
-
-                    <a href="#" class="web-proyecto-imagen" aria-label="Ver Kraz">
-                        <img src="imagenes/web/producto/freelance-connect-mockup.png" alt="Kraz">
-                    </a>
-
-                    <div class="web-proyecto-info">
-
-                        <div class="web-proyecto-etiquetas flex m-jcsb m-aic">
-                            <p>
-                                <b class="accent-blue">PRODUCTO</b>
-                                · DISEÑO · DESARROLLO
-                            </p>
-                            <a href="#" aria-label="Ver Kraz">
-                                <i class="fa-solid fa-arrow-right"></i>
-                            </a>
-                        </div>
-
-                        <p class="web-proyecto-descripcion">
-                            Lorem ipsum
-                        </p>
-
-                        <p class="web-proyecto-tecnologias">
-                            React / CSS / Typescript
-                        </p>
-
-                    </div>
-                </article>
-
-                <!-- PROYECTO 05 -->
-                <article class="web-proyecto t-50">
-
-                    <div class="web-proyecto-cabecera flex m-jcsb m-aic">
-                        <h2>KRAZ</h2>
-                        <span>Viko Group</span>
-                    </div>
-
-                    <a href="#" class="web-proyecto-imagen" aria-label="Ver Kraz">
-                        <img src="imagenes/web/producto/freelance-connect-mockup.png" alt="Kraz">
-                    </a>
-
-                    <div class="web-proyecto-info">
-
-                        <div class="web-proyecto-etiquetas flex m-jcsb m-aic">
-                            <p>
-                                <b class="accent-blue">PRODUCTO</b>
-                                · DISEÑO · DESARROLLO
-                            </p>
-                            <a href="#" aria-label="Ver Kraz">
-                                <i class="fa-solid fa-arrow-right"></i>
-                            </a>
-                        </div>
-
-                        <p class="web-proyecto-descripcion">
-                            Lorem ipsum
-                        </p>
-
-                        <p class="web-proyecto-tecnologias">
-                            React / CSS / Typescript
-                        </p>
-
-                    </div>
-                </article>
-                <!-- PROYECTO 05 -->
-                <article class="web-proyecto t-30">
-
-                    <div class="web-proyecto-cabecera flex m-jcsb m-aic">
-                        <h2>KRAZ</h2>
-                        <span>Viko Group</span>
-                    </div>
-
-                    <a href="#" class="web-proyecto-imagen" aria-label="Ver Kraz">
-                        <img src="imagenes/web/producto/freelance-connect-mockup.png" alt="Kraz">
-                    </a>
-
-                    <div class="web-proyecto-info">
-
-                        <div class="web-proyecto-etiquetas flex m-jcsb m-aic">
-                            <p>
-                                <b class="accent-blue">PRODUCTO</b>
-                                · DISEÑO · DESARROLLO
-                            </p>
-                            <a href="#" aria-label="Ver Kraz">
-                                <i class="fa-solid fa-arrow-right"></i>
-                            </a>
-                        </div>
-
-                        <p class="web-proyecto-descripcion">
-                            Lorem ipsum
-                        </p>
-
-                        <p class="web-proyecto-tecnologias">
-                            React / CSS / Typescript
-                        </p>
-
-                    </div>
-                </article>
-                <!-- PROYECTO 05 -->
                 <article class="web-proyecto t-40">
 
                     <div class="web-proyecto-cabecera flex m-jcsb m-aic">
@@ -279,7 +176,7 @@ require __DIR__ . "/includes/head.php";
                     </div>
 
                     <a href="#" class="web-proyecto-imagen" aria-label="Ver Kraz">
-                        <img src="imagenes/web/producto/freelance-connect-mockup.png" alt="Kraz">
+                        <img src="imagenes/web/kraz/mockup-kraz.png" alt="Kraz">
                     </a>
 
                     <div class="web-proyecto-info">
@@ -304,16 +201,122 @@ require __DIR__ . "/includes/head.php";
 
                     </div>
                 </article>
+
                 <!-- PROYECTO 05 -->
-                <article class="web-proyecto t-60">
+                <article class="web-proyecto t-40">
 
                     <div class="web-proyecto-cabecera flex m-jcsb m-aic">
-                        <h2>KRAZ</h2>
+                        <h2>BLIP</h2>
                         <span>Viko Group</span>
                     </div>
 
                     <a href="#" class="web-proyecto-imagen" aria-label="Ver Kraz">
-                        <img src="imagenes/web/producto/freelance-connect-mockup.png" alt="Kraz">
+                        <img src="imagenes/web/blip/blip-mockup.png" alt="Kraz">
+                    </a>
+
+                    <div class="web-proyecto-info">
+
+                        <div class="web-proyecto-etiquetas flex m-jcsb m-aic">
+                            <p>
+                                <b class="accent-blue">PRODUCTO</b>
+                                · DISEÑO · DESARROLLO
+                            </p>
+                            <a href="#" aria-label="Ver Kraz">
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+
+                        <p class="web-proyecto-descripcion">
+                            Lorem ipsum
+                        </p>
+
+                        <p class="web-proyecto-tecnologias">
+                            React / CSS / Typescript
+                        </p>
+
+                    </div>
+                </article>
+
+                <!-- PROYECTO 06 -->
+                <article class="web-proyecto t-20">
+
+                    <div class="web-proyecto-cabecera flex m-jcsb m-aic">
+                        <h2>ESUE</h2>
+                        <span>Viko Group</span>
+                    </div>
+
+                    <a href="#" class="web-proyecto-imagen" aria-label="Ver Kraz">
+                        <img src="imagenes/web/esue_ebs/esue-lp-home.png" alt="Kraz">
+                    </a>
+
+                    <div class="web-proyecto-info">
+
+                        <div class="web-proyecto-etiquetas flex m-jcsb m-aic">
+                            <p>
+                                <b class="accent-blue">PRODUCTO</b>
+                                · DISEÑO · DESARROLLO
+                            </p>
+                            <a href="#" aria-label="Ver Kraz">
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+
+                        <p class="web-proyecto-descripcion">
+                            Lorem ipsum
+                        </p>
+
+                        <p class="web-proyecto-tecnologias">
+                            React / CSS / Typescript
+                        </p>
+
+                    </div>
+                </article>
+
+                <!-- PROYECTO 07 -->
+                <article class="web-proyecto t-40">
+
+                    <div class="web-proyecto-cabecera flex m-jcsb m-aic">
+                        <h2>GORLOMI</h2>
+                        <span>Freelance</span>
+                    </div>
+
+                    <a href="#" class="web-proyecto-imagen" aria-label="Ver Kraz">
+                        <img src="imagenes/web/gorlomi/gorlomi-home.png" alt="Kraz">
+                    </a>
+
+                    <div class="web-proyecto-info">
+
+                        <div class="web-proyecto-etiquetas flex m-jcsb m-aic">
+                            <p>
+                                <b class="accent-blue">PRODUCTO</b>
+                                · DISEÑO · DESARROLLO
+                            </p>
+                            <a href="#" aria-label="Ver Kraz">
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+
+                        <p class="web-proyecto-descripcion">
+                            Lorem ipsum
+                        </p>
+
+                        <p class="web-proyecto-tecnologias">
+                            React / CSS / Typescript
+                        </p>
+
+                    </div>
+                </article>
+
+                <!-- PROYECTO 08 -->
+                <article class="web-proyecto t-30">
+
+                    <div class="web-proyecto-cabecera flex m-jcsb m-aic">
+                        <h2>FOTOGRAFIA</h2>
+                        <span>Freelance</span>
+                    </div>
+
+                    <a href="#" class="web-proyecto-imagen" aria-label="Ver Kraz">
+                        <img src="imagenes/web/fotografia/fotografia-mockup.png" alt="Kraz">
                     </a>
 
                     <div class="web-proyecto-info">
