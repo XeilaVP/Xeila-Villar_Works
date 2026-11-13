@@ -94,7 +94,6 @@ require __DIR__ . "/includes/head.php";
                     </div>
                 </article>
 
-
                 <!-- PROYECTO 02 REPO -->
                 <article class="web-proyecto t-30">
 
