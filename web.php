@@ -57,7 +57,7 @@ require __DIR__ . "/includes/head.php";
             <!-- GRID DE PROYECTOS -->
             <section id="proyectos-web" class="web-proyectos flex m-jcsb m-aic">
 
-                <!-- PROYECTO 01 FREELANCE BOARD -->
+                <!-- PROYECTO FREELANCE BOARD -->
                 <article class="web-proyecto t-40">
 
                     <div class="web-proyecto-cabecera flex m-jcsb m-aic">
@@ -94,11 +94,46 @@ require __DIR__ . "/includes/head.php";
                     </div>
                 </article>
 
-                <!-- PROYECTO 02 REPO -->
+                <!-- PROYECTO EXOBRAIN-->
                 <article class="web-proyecto t-30">
 
                     <div class="web-proyecto-cabecera flex m-jcsb m-aic">
-                        <h2>HTML EDIT</h2>
+                        <h2>EXOBRAIN</h2>
+                        <span>Proyecto personal</span>
+                    </div>
+
+                    <a href="#" class="web-proyecto-imagen" aria-label="Ver Custom Report">
+                        <img src="imagenes/web/producto/exobrain.png" alt="Custom Report">
+                    </a>
+
+                    <div class="web-proyecto-info">
+
+                        <div class="web-proyecto-etiquetas flex m-jcsb m-aic">
+                            <p>
+                                <b class="accent-blue">PRODUCTO</b>
+                                · DISEÑO · DESARROLLO
+                            </p>
+                            <a href="#" aria-label="Ver Custom Report">
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+
+                        <p class="web-proyecto-descripcion">
+                            Lorem ipsum
+                        </p>
+
+                        <p class="web-proyecto-tecnologias">
+                            HTML / CSS / JS
+                        </p>
+
+                    </div>
+                </article>
+
+                <!-- PROYECTO REPORT -->
+                <article class="web-proyecto t-30">
+
+                    <div class="web-proyecto-cabecera flex m-jcsb m-aic">
+                        <h2>CUSTOM REPORT</h2>
                         <span>Proyecto personal</span>
                     </div>
 
@@ -129,44 +164,7 @@ require __DIR__ . "/includes/head.php";
                     </div>
                 </article>
 
-
-                <!-- PROYECTO 03 EXOBRAIN-->
-                <article class="web-proyecto t-30">
-
-                    <div class="web-proyecto-cabecera flex m-jcsb m-aic">
-                        <h2>EXOBRAIN</h2>
-                        <span>Elogia Media</span>
-                    </div>
-
-                    <a href="#" class="web-proyecto-imagen" aria-label="Ver Custom Report">
-                        <img src="imagenes/web/producto/exobrain.png" alt="Custom Report">
-                    </a>
-
-                    <div class="web-proyecto-info">
-
-                        <div class="web-proyecto-etiquetas flex m-jcsb m-aic">
-                            <p>
-                                <b class="accent-blue">PRODUCTO</b>
-                                · DISEÑO · DESARROLLO
-                            </p>
-                            <a href="#" aria-label="Ver Custom Report">
-                                <i class="fa-solid fa-arrow-right"></i>
-                            </a>
-                        </div>
-
-                        <p class="web-proyecto-descripcion">
-                            Lorem ipsum
-                        </p>
-
-                        <p class="web-proyecto-tecnologias">
-                            HTML / CSS / JS
-                        </p>
-
-                    </div>
-                </article>
-
-
-                <!-- PROYECTO 04 -->
+                <!-- PROYECTO KRAZ -->
                 <article class="web-proyecto t-40">
 
                     <div class="web-proyecto-cabecera flex m-jcsb m-aic">
@@ -201,7 +199,42 @@ require __DIR__ . "/includes/head.php";
                     </div>
                 </article>
 
-                <!-- PROYECTO 05 -->
+                <!-- PROYECTO AVON -->
+                <article class="web-proyecto t-40">
+
+                    <div class="web-proyecto-cabecera flex m-jcsb m-aic">
+                        <h2>AVON</h2>
+                        <span>Elogia Media</span>
+                    </div>
+
+                    <a href="#" class="web-proyecto-imagen" aria-label="Ver Kraz">
+                        <img src="imagenes/web/kraz/mockup-kraz.png" alt="Kraz">
+                    </a>
+
+                    <div class="web-proyecto-info">
+
+                        <div class="web-proyecto-etiquetas flex m-jcsb m-aic">
+                            <p>
+                                <b class="accent-blue">LANDING PAGE</b>
+                                · DISEÑO · MAQUETACIÓN CMS
+                            </p>
+                            <a href="#" aria-label="Ver Kraz">
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+
+                        <p class="web-proyecto-descripcion">
+                            Lorem ipsum
+                        </p>
+
+                        <p class="web-proyecto-tecnologias">
+                            Wordpress / CSS
+                        </p>
+
+                    </div>
+                </article>
+
+                <!-- PROYECTO blip -->
                 <article class="web-proyecto t-40">
 
                     <div class="web-proyecto-cabecera flex m-jcsb m-aic">
@@ -236,7 +269,7 @@ require __DIR__ . "/includes/head.php";
                     </div>
                 </article>
 
-                <!-- PROYECTO 06 -->
+                <!-- PROYECTO esue -->
                 <article class="web-proyecto t-20">
 
                     <div class="web-proyecto-cabecera flex m-jcsb m-aic">
@@ -271,7 +304,7 @@ require __DIR__ . "/includes/head.php";
                     </div>
                 </article>
 
-                <!-- PROYECTO 07 -->
+                <!-- PROYECTO gorlomi -->
                 <article class="web-proyecto t-40">
 
                     <div class="web-proyecto-cabecera flex m-jcsb m-aic">
@@ -306,7 +339,42 @@ require __DIR__ . "/includes/head.php";
                     </div>
                 </article>
 
-                <!-- PROYECTO 08 -->
+                <!-- PROYECTO plantillas -->
+                <article class="web-proyecto t-30">
+
+                    <div class="web-proyecto-cabecera flex m-jcsb m-aic">
+                        <h2>FOTOGRAFIA</h2>
+                        <span>Freelance</span>
+                    </div>
+
+                    <a href="#" class="web-proyecto-imagen" aria-label="Ver Kraz">
+                        <img src="imagenes/web/fotografia/fotografia-mockup.png" alt="Kraz">
+                    </a>
+
+                    <div class="web-proyecto-info">
+
+                        <div class="web-proyecto-etiquetas flex m-jcsb m-aic">
+                            <p>
+                                <b class="accent-blue">PRODUCTO</b>
+                                · DISEÑO · DESARROLLO
+                            </p>
+                            <a href="#" aria-label="Ver Kraz">
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+
+                        <p class="web-proyecto-descripcion">
+                            Lorem ipsum
+                        </p>
+
+                        <p class="web-proyecto-tecnologias">
+                            React / CSS / Typescript
+                        </p>
+
+                    </div>
+                </article>
+
+                <!-- PROYECTO esue2 -->
                 <article class="web-proyecto t-30">
 
                     <div class="web-proyecto-cabecera flex m-jcsb m-aic">
