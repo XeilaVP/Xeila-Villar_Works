@@ -950,8 +950,8 @@ footer .right:hover p{
 ====================================== */
 
 .modal-proyecto {
-    width: 90%;
-    max-width: 1200px;
+    width: 95%;
+    max-width: 1250px;
     max-height: 85vh;
     padding: 0;
     border: none;
@@ -985,18 +985,35 @@ footer .right:hover p{
 /* Contenido interior */
 .modal-contenido {
     padding: 60px 5%;
+    border-radius: 50%;
 }
 
 /* Evitar que los estilos generales del header afecten al modal */
 .modal-proyecto .proyecto-detalle-cabecera {
     min-height: 0;
 }
-
+.proyecto-detalle-cabecera h1{
+    font-size:40px;
+}
+.modal-contenido h1,.modal-contenido h2, .modal-contenido span, .modal-contenido p{
+    margin-bottom: 15px;
+}
 /* Imágenes */
 .modal-proyecto .proyecto-detalle-imagen img {
     display: block;
-    width: 100%;
     height: auto;
+}
+.modal-proyecto .proyecto-detalle-imagen {
+    margin:30px 0;
+}
+.modal-proyecto .proyecto-detalle-texto {
+    margin:30px 0;
+}
+.modal-proyecto .proyecto-detalle-imagen-text{
+    margin:30px 0;
+}
+.proyecto-detalle-imagen-text .text {
+    margin:30px;
 }
 
 /* =========================================================
@@ -1324,7 +1341,7 @@ footer .right:hover p{
     .cursor-background {
         display: none;
     }    
-    
+
     .modal-proyecto {
         width: 95%;
         max-height: 95dvh;

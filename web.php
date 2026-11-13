@@ -65,7 +65,7 @@ require __DIR__ . "/includes/head.php";
                         <span>Elogia Media</span>
                     </div>
 
-                    <a href="webs/freelanceConnect.php" class="web-proyecto-imagen" aria-label="Ver Freelance Board">
+                    <a href="webs/freelanceConnect.php" class="web-proyecto-imagen" data-proyecto aria-label="Ver Freelance Board">
                         <img src="imagenes/web/producto/freelance-connect-mockup.png" alt="Freelance Board">
                     </a>
 
