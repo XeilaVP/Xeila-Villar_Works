@@ -65,7 +65,7 @@ require __DIR__ . "/includes/head.php";
                         <span>Elogia Media</span>
                     </div>
 
-                    <a href="#" class="web-proyecto-imagen" aria-label="Ver Freelance Board">
+                    <a href="webs/freelanceConnect.php" class="web-proyecto-imagen" aria-label="Ver Freelance Board">
                         <img src="imagenes/web/producto/freelance-connect-mockup.png" alt="Freelance Board">
                     </a>
 
@@ -347,11 +347,18 @@ require __DIR__ . "/includes/head.php";
 
     </main>
 
+    <dialog id="modal-proyecto" class="modal-proyecto">
+        <button class="modal-cerrar" aria-label="Cerrar">×</button>
+        <div class="modal-contenido"></div>
+    </dialog>
+
 <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@7.0.0/dist/vanilla/simpleParallaxVanilla.umd.js"></script>
 
 <?php
 require __DIR__ . "/includes/footer.php";
 ?>
+
+<script src="js/proyectos-modal.js"></script>
 
 </body>
 </html>
