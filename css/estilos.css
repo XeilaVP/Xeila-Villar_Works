@@ -912,7 +912,7 @@ footer .right:hover p {
 ====================================== */
 .modal-proyecto {
     width: 95%;
-    max-width: 1250px;
+    max-width: 1300px;
     max-height: 90dvh;
     padding: 0;
     border: 0;
@@ -960,7 +960,7 @@ footer .right:hover p {
     color: #21232A;
     font-family: 'Inter', sans-serif;
 
-    & p {
+    p {
         margin: 0;
         font-size: 15px;
         font-weight: 300;
@@ -969,15 +969,15 @@ footer .right:hover p {
         white-space: normal;
     }
 
-    & h2, & h3, & h4 {
+    h2, h3, h4 {
         margin: 0;
     }
 
-    & p + p {
+    p {
         margin-top: 14px;
     }
 
-    & img {
+    img {
         display: block;
         max-width: 100%;
         height: auto;
@@ -1095,11 +1095,23 @@ footer .right:hover p {
         }
     }
 
+    .proyecto-detalle-video{
+        height: 400px;
+        overflow-y: scroll;
+    }
+
     /* 01 / Brief: dos tarjetas con contraste de color */
     & .proyecto-detalle-texto {
         padding: 0;
         font-size: 16px;
         line-height: 1.4;
+
+        video{
+            padding: 50px;
+            background-color: white;
+            border-radius: 30px;
+            margin: 30px 0;
+        }
 
         & > h2:first-child {
             padding-top: 23px;

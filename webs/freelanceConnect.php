@@ -39,10 +39,10 @@
                 <h4>Cuando un Excel deja de ser suficiente.</h4>
                 <p>A medida que aumentaba el número de colaboradores freelance, también lo hacía la 
                     dificultad para gestionar su información.</p>
-<p>Los datos se almacenaban en hojas de Excel utilizadas por diferentes departamentos, 
+                <p>Los datos se almacenaban en hojas de Excel utilizadas por diferentes departamentos, 
                     sin una estructura común. Los registros podían estar incompletos, duplicados o 
                     contener información que no estaba disponible para el resto del equipo.</p>
-<p>Localizar a un profesional con una especialidad concreta no siempre era sencillo, 
+                <p>Localizar a un profesional con una especialidad concreta no siempre era sencillo, 
                     pero el problema iba más allá de encontrar un contacto.</p>
             </div>
             <div class="column2">
@@ -50,9 +50,9 @@
                     <h4>Información dispersa y difícil de gestionar</h4>
                     <p>¿Con qué clientes había trabajado? ¿Quién había colaborado con él? 
                         ¿Qué tareas había realizado? ¿Dónde estaban los materiales que había entregado?</p>
-<p>Responder a estas preguntas suponía buscar información en distintos lugares 
+                    <p>Responder a estas preguntas suponía buscar información en distintos lugares 
                     o consultar directamente a otros compañeros.</p>
-<p>El objetivo era dejar de depender de esa información dispersa y hacerla 
+                    <p>El objetivo era dejar de depender de esa información dispersa y hacerla 
                     accesible para todos los equipos implicados.</p>
             </div>
         </div>

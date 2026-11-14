@@ -101,9 +101,8 @@ require __DIR__ . "/includes/head.php";
                         <h2>EXOBRAIN</h2>
                         <span>Proyecto personal</span>
                     </div>
-
-                    <a href="#" class="web-proyecto-imagen" aria-label="Ver Custom Report">
-                        <img src="imagenes/web/producto/exobrain.png" alt="Custom Report">
+                    <a href="webs/exobrain.php" class="web-proyecto-imagen" data-proyecto aria-label="Ver Exobrain">
+                        <img src="imagenes/web/producto/exobrain.png" alt="Exobrain">
                     </a>
 
                     <div class="web-proyecto-info">
@@ -113,7 +112,7 @@ require __DIR__ . "/includes/head.php";
                                 <b class="accent-blue">PRODUCTO</b>
                                 · DISEÑO · DESARROLLO
                             </p>
-                            <a href="#" aria-label="Ver Custom Report">
+                            <a href="webs/exobrain.php" data-proyecto aria-label="Ver Exobrain">
                                 <i class="fa-solid fa-arrow-right"></i>
                             </a>
                         </div>
@@ -137,8 +136,8 @@ require __DIR__ . "/includes/head.php";
                         <span>Proyecto personal</span>
                     </div>
 
-                    <a href="#" class="web-proyecto-imagen" aria-label="Ver Exobrain">
-                        <img src="imagenes/web/producto/repo-edit.png" alt="Exobrain">
+                    <a href="webs/customReport.php" class="web-proyecto-imagen" data-proyecto aria-label="Ver Custom Report">
+                        <img src="imagenes/web/producto/repo-edit.png" alt="Custom Report">
                     </a>
 
                     <div class="web-proyecto-info">
@@ -148,7 +147,7 @@ require __DIR__ . "/includes/head.php";
                                 <b class="accent-orange">PRODUCTO</b>
                                 · DISEÑO · DESARROLLO VIBE-CODING
                             </p>
-                            <a href="#" aria-label="Ver Exobrain">
+                            <a href="webs/customReport.php" data-proyecto aria-label="Ver Custom Report">
                                 <i class="fa-solid fa-arrow-right"></i>
                             </a>
                         </div>
@@ -172,7 +171,7 @@ require __DIR__ . "/includes/head.php";
                         <span>Viko Group</span>
                     </div>
 
-                    <a href="#" class="web-proyecto-imagen" aria-label="Ver Kraz">
+                    <a href="webs/kraz.php" class="web-proyecto-imagen" data-proyecto aria-label="Ver Kraz">
                         <img src="imagenes/web/kraz/mockup-kraz.png" alt="Kraz">
                     </a>
 
@@ -183,7 +182,7 @@ require __DIR__ . "/includes/head.php";
                                 <b class="accent-blue">PRODUCTO</b>
                                 · DISEÑO · DESARROLLO
                             </p>
-                            <a href="#" aria-label="Ver Kraz">
+                            <a href="webs/kraz.php" data-proyecto aria-label="Ver Kraz">
                                 <i class="fa-solid fa-arrow-right"></i>
                             </a>
                         </div>
@@ -207,8 +206,8 @@ require __DIR__ . "/includes/head.php";
                         <span>Elogia Media</span>
                     </div>
 
-                    <a href="#" class="web-proyecto-imagen" aria-label="Ver Kraz">
-                        <img src="imagenes/web/kraz/mockup-kraz.png" alt="Kraz">
+                    <a href="webs/avon.php" class="web-proyecto-imagen" data-proyecto aria-label="Ver Avon">
+                        <img src="imagenes/web/avon/avon.png" alt="Avon">
                     </a>
 
                     <div class="web-proyecto-info">
@@ -218,7 +217,7 @@ require __DIR__ . "/includes/head.php";
                                 <b class="accent-blue">LANDING PAGE</b>
                                 · DISEÑO · MAQUETACIÓN CMS
                             </p>
-                            <a href="#" aria-label="Ver Kraz">
+                            <a href="webs/avon.php" data-proyecto aria-label="Ver Avon">
                                 <i class="fa-solid fa-arrow-right"></i>
                             </a>
                         </div>
