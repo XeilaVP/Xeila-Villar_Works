@@ -9,7 +9,7 @@ require __DIR__ . "/includes/head.php";
     <!-- WEB Y PRODUCTO -->
     <main id="web-portfolio" class="contenedor">
 
-        <div class="contenido m-columna">
+        <div class="contenido m-columna flex m-aic m-jcc">
 
             <!-- HERO -->
             <section class="web-cabecera">
@@ -276,8 +276,8 @@ require __DIR__ . "/includes/head.php";
                         <span>Viko Group</span>
                     </div>
 
-                    <a href="#" class="web-proyecto-imagen" aria-label="Ver Kraz">
-                        <img src="imagenes/web/esue_ebs/esue-lp-home.png" alt="Kraz">
+                    <a href="webs/esue.php" class="web-proyecto-imagen" data-project  aria-label="Ver Esue">
+                        <img src="imagenes/web/esue_ebs/esue-mockup.png" alt="Esue">
                     </a>
 
                     <div class="web-proyecto-info">
@@ -338,7 +338,7 @@ require __DIR__ . "/includes/head.php";
                     </div>
                 </article>
 
-                <!-- PROYECTO plantillas -->
+                <!-- PROYECTO fotografía -->
                 <article class="web-proyecto t-30">
 
                     <div class="web-proyecto-cabecera flex m-jcsb m-aic">
@@ -373,16 +373,16 @@ require __DIR__ . "/includes/head.php";
                     </div>
                 </article>
 
-                <!-- PROYECTO esue2 -->
+                <!-- PROYECTO restaurante -->
                 <article class="web-proyecto t-30">
 
                     <div class="web-proyecto-cabecera flex m-jcsb m-aic">
-                        <h2>FOTOGRAFIA</h2>
+                        <h2>RESTAURANTE</h2>
                         <span>Freelance</span>
                     </div>
 
-                    <a href="#" class="web-proyecto-imagen" aria-label="Ver Kraz">
-                        <img src="imagenes/web/fotografia/fotografia-mockup.png" alt="Kraz">
+                    <a href="web/restaurante.php" class="web-proyecto-imagen" data-project aria-label="Ver Restaurante">
+                        <img src="imagenes/web/restaurante/restaurante-mockup.png" alt="Restaurante">
                     </a>
 
                     <div class="web-proyecto-info">

@@ -567,11 +567,11 @@ header {
 
 /* ---------- GRID PROYECTOS ---------- */
 #web-portfolio .web-proyectos {
-    width: 100%;
+    width: 90%;
     padding: 160px 0;
     display: flex;
     column-gap: 10%;
-    row-gap: 80px;
+    row-gap: 150px;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
@@ -598,9 +598,9 @@ header {
 .web-proyecto-imagen {
     display: block;
     width: 100%;
-    max-height: 350px;
     overflow: hidden;
     background-color: #f2f2f2;
+    margin-bottom: 15px;
     & img {
         display: block;
         width: 100%;
@@ -990,7 +990,7 @@ footer .right:hover p {
     }
 
     /* Cabecera: se utiliza la clase que ya existía */
-    & .proyecto-detalle-cabecera {
+    .proyecto-detalle-cabecera {
         min-height: 0;
         height: auto;
         padding: 18px 0 50px !important;
@@ -1012,7 +1012,7 @@ footer .right:hover p {
             letter-spacing: .06em;
         }
 
-        & h1 {
+        h1 {
             width: 100%;
             margin: 0 0 35px;
             font-size: clamp(62px, 9.6vw, 135px);
@@ -1021,7 +1021,7 @@ footer .right:hover p {
             letter-spacing: -.085em;
             overflow-wrap: anywhere;
 
-            & em {
+            em {
                 display: block;
                 color: #BD802C;
                 font-family: 'Noto Serif Display', Georgia, serif;
@@ -1038,7 +1038,7 @@ footer .right:hover p {
             gap: 7px;
             white-space: normal;
 
-            & span {
+            span {
                 display: inline-flex;
                 align-items: center;
                 min-height: 29px;
@@ -1073,7 +1073,7 @@ footer .right:hover p {
             text-transform: none;
         }
 
-        & p {
+        p {
             padding-left: 20px;
             border-left: 1px solid #BD802C;
             font-size: 15px;
@@ -1087,7 +1087,7 @@ footer .right:hover p {
         border-radius: 22px;
         overflow: hidden;
 
-        & img {
+        img {
             width: 100%;
             max-height: 570px;
             object-fit: contain;
@@ -1101,7 +1101,7 @@ footer .right:hover p {
     }
 
     /* 01 / Brief: dos tarjetas con contraste de color */
-    & .proyecto-detalle-texto {
+    .proyecto-detalle-texto {
         padding: 0;
         font-size: 16px;
         line-height: 1.4;
@@ -1129,7 +1129,7 @@ footer .right:hover p {
             margin-top: 30px;
         }
 
-        & .column1, & .column2 {
+        .column1, & .column2 {
             width: calc(50% - 11px);
             min-width: 0;
             padding: clamp(24px, 3.8vw, 50px);
@@ -1137,7 +1137,7 @@ footer .right:hover p {
             border: 1px solid #DFE0E1;
             background: #F0F1F1;
 
-            & h3 {
+            h3 {
                 margin-bottom: 45px;
                 color: #BD802C;
                 font-size: 12px;
@@ -1146,7 +1146,7 @@ footer .right:hover p {
                 text-transform: uppercase;
             }
 
-            & h4 {
+            h4 {
                 margin-bottom: 25px;
                 padding: 0;
                 font-size: clamp(25px, 2.65vw, 38px);
@@ -1156,19 +1156,19 @@ footer .right:hover p {
             }
         }
 
-        & .column2 {
+        .column2 {
             background: #37677D;
             border-color: #37677D;
             color: #FAFBFB;
 
-            & h3 {
+            h3 {
                 color: #F2B768;
             }
         }
     }
 
     /* 02 / Solución y 05 / Evolución: composiciones imagen + texto */
-    & .proyecto-detalle-imagen-text {
+    .proyecto-detalle-imagen-text {
         display: grid;
         grid-template-columns: .96fr 1.04fr;
         gap: clamp(28px, 5vw, 70px);
@@ -1189,7 +1189,7 @@ footer .right:hover p {
             padding: 0;
         }
 
-        & h2 {
+        h2 {
             margin-bottom: 20px;
             color: #BD802C;
             font-size: 12px;
@@ -1198,7 +1198,7 @@ footer .right:hover p {
             letter-spacing: .1em;
         }
 
-        & h3 {
+        h3 {
             margin-bottom: 28px;
             font-size: clamp(30px, 3.9vw, 59px);
             font-weight: 750;
@@ -1206,7 +1206,7 @@ footer .right:hover p {
             letter-spacing: -.07em;
             text-transform: none;
 
-            & em {
+            em {
                 color: #BD802C;
                 font-family: 'Noto Serif Display', Georgia, serif;
                 font-weight: 400;
@@ -1228,7 +1228,7 @@ footer .right:hover p {
                 margin-bottom: 34px;
             }
 
-            & ul {
+            ul {
                 display: grid;
                 grid-template-columns: repeat(2, minmax(0, 1fr));
                 gap: 1px;
@@ -1240,7 +1240,7 @@ footer .right:hover p {
                 overflow: hidden;
                 counter-reset: funcionalidad;
 
-                & li {
+                li {
                     width: auto;
                     min-width: 0;
                     padding: clamp(22px, 3vw, 38px);
@@ -1259,7 +1259,7 @@ footer .right:hover p {
                         letter-spacing: -.08em;
                     }
 
-                    & h4 {
+                    h4 {
                         margin-bottom: 12px;
                         padding: 0;
                         font-size: 21px;
@@ -1273,7 +1273,7 @@ footer .right:hover p {
     }
 
     /* 04 / Desarrollo: una sola sección. ÚNICA clase nueva para este patrón */
-    & .proyecto-detalle-tarjetas {
+    .proyecto-detalle-tarjetas {
         & > h3 {
             max-width: 850px;
             margin: 16px 0 38px;
@@ -1296,7 +1296,7 @@ footer .right:hover p {
                 min-width: 0;
                 counter-increment: proceso;
 
-                & .proyecto-detalle-imagen {
+                .proyecto-detalle-imagen {
                     margin: 0 0 30px;
                     overflow: hidden;
                     border-radius: 22px;
@@ -1308,7 +1308,7 @@ footer .right:hover p {
                     }
                 }
 
-                & .text {
+                .text {
                     padding: 0 5px;
 
                     &::before {
@@ -1322,7 +1322,7 @@ footer .right:hover p {
                         letter-spacing: -.08em;
                     }
 
-                    & h4 {
+                    h4 {
                         min-height: 50px;
                         margin-bottom: 15px;
                         padding: 0;
@@ -1337,7 +1337,7 @@ footer .right:hover p {
     }
 
     /* 05 / Evolución: misma clase imagen-text + un modificador oscuro */
-    & .proyecto-detalle-oscuro {
+    .proyecto-detalle-oscuro {
         margin-left: -5%;
         margin-right: -5%;
         width: 110%;
@@ -1351,11 +1351,11 @@ footer .right:hover p {
             background: #3A3D42;
         }
 
-        & h2, & h3 em {
+        h2, h3 em {
             color: #E3A250;
         }
 
-        & p {
+        p {
             color: #E6E7E9;
         }
     }
