@@ -906,113 +906,475 @@ footer .right:hover p {
 }
 
 /* ======================================
-   MODAL DE PROYECTOS
+   MODAL DE PROYECTOS · ESTILO EDITORIAL
+   Estilos compartidos: cualquier proyecto que use
+   las clases .proyecto-detalle existentes.
 ====================================== */
 .modal-proyecto {
     width: 95%;
     max-width: 1250px;
-    max-height: 90vh;
+    max-height: 90dvh;
     padding: 0;
-    border: none;
+    border: 0;
     background: #FAFBFB;
     color: #21232A;
     overflow-y: auto;
     overscroll-behavior: contain;
-    /* Fondo oscurecido */
-    &::backdrop {
-        background: rgba(0, 0, 0, 0.75);
-    }
 
-    h3{
-        text-transform: uppercase;
-        font-weight: 700;
-        font-size:16px;
+    &::backdrop {
+        background: rgba(24, 27, 34, .84);
     }
-    h4{
-        font-weight: 400;
-        padding: 15px 0;
-    }
-    li{
-        width: 50%;
-        padding: 10px;
-    }
-    ul{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 40px;
-        border: 1px solid #dfdfdf;
-        background-color: #f5f5f5;
-        border-radius: 30px;
-        margin-bottom: 30px;
-        flex-wrap: wrap;
-    }
-    p{
-        font-weight: 300;
-        letter-spacing: 0;
-    }
-    .column1, .column2{
-        padding: 15px;
-        border: 1px solid #d7d7d7;
-        width: 47%;
-        border-radius: 20px;
-    }   
 }
 
-/* Botón cerrar */
+/* Se conserva el botón de cierre del <dialog> original */
 .modal-cerrar {
     position: sticky;
-    top: 20px;
+    top: 15px;
     z-index: 10;
     display: block;
-    margin: 20px 20px -60px auto;
-    width: 40px;
-    height: 40px;
-    border: 1px solid #21232A;
+    margin: 15px 15px -55px auto;
+    width: 44px;
+    height: 44px;
+    border: 2px solid #BD802C;
+    outline: 3px solid #21232A;
+    outline-offset: -6px;
     border-radius: 50%;
-    background: #FAFBFB;
-    font-size: 24px;
+    background: #21232A;
+    color: #FAFBFB;
+    font-size: 25px;
+    line-height: 1;
     cursor: pointer;
+
+    &:hover,
+    &:focus-visible {
+        background: #BD802C;
+        color: #21232A;
+    }
 }
 
-/* Contenido interior */
 .modal-contenido {
-    padding: 60px 5%;
+    padding: 60px 5% 55px;
 }
 
-/* Evitar que los estilos generales del header afecten al modal */
-#modal-proyecto .proyecto-detalle-cabecera{
-    min-height: 50vh;
-    display: flex;
-    justify-content: center;
-    h1{
-        font-size: 60px;
-        font-weight: 700;
-        width: 50%;
-        line-height: 0.9;
-        letter-spacing: -1.5px;
-    }
-}
-#modal-proyecto{
-    h1, h2, h3, span, p{
-        margin-bottom:10px;
-    }
-    img{
-    border-radius:30px;
-    height:auto;
-    }
-}
-.proyecto-detalle-texto{
-    font-size: 20px;
-    line-height: 1.3;
-    padding: 25px;
-}
+.proyecto-detalle {
+    color: #21232A;
+    font-family: 'Inter', sans-serif;
 
-#modal-proyecto .proyecto-detalle-imagen-text .text{
-    padding:40px;
-}
-.proyecto-detalle-imagen, .proyecto-detalle-imagen-text, .proyecto-detalle-texto{
-    margin: 25px 0;
+    & p {
+        margin: 0;
+        font-size: 15px;
+        font-weight: 300;
+        line-height: 1.65;
+        letter-spacing: -.015em;
+        white-space: normal;
+    }
+
+    & h2, & h3, & h4 {
+        margin: 0;
+    }
+
+    & p + p {
+        margin-top: 14px;
+    }
+
+    & img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+        border-radius: 20px;
+    }
+
+    & > section {
+        width: 100%;
+        margin: 0 0 95px;
+    }
+
+    /* Cabecera: se utiliza la clase que ya existía */
+    & .proyecto-detalle-cabecera {
+        min-height: 0;
+        height: auto;
+        padding: 18px 0 50px !important;
+        margin: 0 !important;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 0;
+
+        & > div:first-child {
+            width: 100%;
+            padding: 16px 0;
+            margin-bottom: clamp(55px, 8vw, 95px);
+            border-top: 1px solid #21232A;
+            gap: 20px;
+            text-transform: uppercase;
+            font-size: 11px;
+            font-weight: 650;
+            letter-spacing: .06em;
+        }
+
+        & h1 {
+            width: 100%;
+            margin: 0 0 35px;
+            font-size: clamp(62px, 9.6vw, 135px);
+            font-weight: 800;
+            line-height: .82;
+            letter-spacing: -.085em;
+            overflow-wrap: anywhere;
+
+            & em {
+                display: block;
+                color: #BD802C;
+                font-family: 'Noto Serif Display', Georgia, serif;
+                font-weight: 400;
+                font-style: italic;
+                letter-spacing: -.075em;
+            }
+        }
+
+        & > p {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 7px;
+            white-space: normal;
+
+            & span {
+                display: inline-flex;
+                align-items: center;
+                min-height: 29px;
+                padding: 5px 11px;
+                border: 1px solid #B9BFC3;
+                border-radius: 999px;
+                font-size: 10px;
+                font-weight: 600;
+                line-height: 1.2;
+                text-transform: uppercase;
+            }
+        }
+    }
+
+    /* Texto introductorio: titular editorial + descripción lateral */
+    & > .proyecto-detalle-texto:first-of-type {
+        display: grid;
+        grid-template-columns: 1.6fr .7fr;
+        gap: 35px;
+        align-items: end;
+        padding: 0 0 10px;
+        margin-bottom: 42px;
+
+        & > h2:first-child {
+            padding: 0;
+            border: 0;
+            color: #21232A;
+            font-size: clamp(25px, 3.1vw, 43px);
+            font-weight: 450;
+            line-height: 1.14;
+            letter-spacing: -.055em;
+            text-transform: none;
+        }
+
+        & p {
+            padding-left: 20px;
+            border-left: 1px solid #BD802C;
+            font-size: 15px;
+        }
+    }
+
+    /* Imagen principal que sigue a la introducción */
+    & > .proyecto-detalle-texto:first-of-type + .proyecto-detalle-imagen {
+        margin-bottom: 110px;
+        background: #ECEDED;
+        border-radius: 22px;
+        overflow: hidden;
+
+        & img {
+            width: 100%;
+            max-height: 570px;
+            object-fit: contain;
+            border-radius: 0;
+        }
+    }
+
+    /* 01 / Brief: dos tarjetas con contraste de color */
+    & .proyecto-detalle-texto {
+        padding: 0;
+        font-size: 16px;
+        line-height: 1.4;
+
+        & > h2:first-child {
+            padding-top: 23px;
+            border-top: 1px solid #21232A;
+            color: #BD802C;
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: .11em;
+            text-transform: uppercase;
+        }
+
+        & > div.flex {
+            width: 100%;
+            gap: 22px;
+            margin-top: 30px;
+        }
+
+        & .column1, & .column2 {
+            width: calc(50% - 11px);
+            min-width: 0;
+            padding: clamp(24px, 3.8vw, 50px);
+            border-radius: 24px;
+            border: 1px solid #DFE0E1;
+            background: #F0F1F1;
+
+            & h3 {
+                margin-bottom: 45px;
+                color: #BD802C;
+                font-size: 12px;
+                font-weight: 700;
+                letter-spacing: .12em;
+                text-transform: uppercase;
+            }
+
+            & h4 {
+                margin-bottom: 25px;
+                padding: 0;
+                font-size: clamp(25px, 2.65vw, 38px);
+                font-weight: 700;
+                line-height: 1.08;
+                letter-spacing: -.055em;
+            }
+        }
+
+        & .column2 {
+            background: #37677D;
+            border-color: #37677D;
+            color: #FAFBFB;
+
+            & h3 {
+                color: #F2B768;
+            }
+        }
+    }
+
+    /* 02 / Solución y 05 / Evolución: composiciones imagen + texto */
+    & .proyecto-detalle-imagen-text {
+        display: grid;
+        grid-template-columns: .96fr 1.04fr;
+        gap: clamp(28px, 5vw, 70px);
+        align-items: center;
+        padding-top: 38px;
+        border-top: 1px solid #21232A;
+
+        & > img {
+            width: 100%;
+            max-height: 475px;
+            object-fit: contain;
+            background: #EAEBEB;
+        }
+
+        & > .text {
+            width: 100%;
+            min-width: 0;
+            padding: 0;
+        }
+
+        & h2 {
+            margin-bottom: 20px;
+            color: #BD802C;
+            font-size: 12px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: .1em;
+        }
+
+        & h3 {
+            margin-bottom: 28px;
+            font-size: clamp(30px, 3.9vw, 59px);
+            font-weight: 750;
+            line-height: 1.03;
+            letter-spacing: -.07em;
+            text-transform: none;
+
+            & em {
+                color: #BD802C;
+                font-family: 'Noto Serif Display', Georgia, serif;
+                font-weight: 400;
+                font-style: italic;
+            }
+        }
+
+        /* 03 / Resultado: el bloque original solo tiene .text, sin imagen */
+        & > .text:only-child {
+            grid-column: 1 / -1;
+
+            & > h3 {
+                max-width: 900px;
+                margin-bottom: 18px;
+            }
+
+            & > p {
+                max-width: 650px;
+                margin-bottom: 34px;
+            }
+
+            & ul {
+                display: grid;
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+                gap: 1px;
+                padding: 0;
+                margin: 0;
+                background: #D9DDDF;
+                border: 1px solid #D9DDDF;
+                border-radius: 22px;
+                overflow: hidden;
+                counter-reset: funcionalidad;
+
+                & li {
+                    width: auto;
+                    min-width: 0;
+                    padding: clamp(22px, 3vw, 38px);
+                    background: #F2F3F3;
+                    list-style: none;
+                    counter-increment: funcionalidad;
+
+                    &::before {
+                        content: counter(funcionalidad, decimal-leading-zero);
+                        display: block;
+                        margin-bottom: 33px;
+                        color: #BD802C;
+                        font-size: clamp(38px, 4.1vw, 58px);
+                        font-weight: 800;
+                        line-height: 1;
+                        letter-spacing: -.08em;
+                    }
+
+                    & h4 {
+                        margin-bottom: 12px;
+                        padding: 0;
+                        font-size: 21px;
+                        font-weight: 700;
+                        letter-spacing: -.045em;
+                        line-height: 1.15;
+                    }
+                }
+            }
+        }
+    }
+
+    /* 04 / Desarrollo: una sola sección. ÚNICA clase nueva para este patrón */
+    & .proyecto-detalle-tarjetas {
+        & > h3 {
+            max-width: 850px;
+            margin: 16px 0 38px;
+            font-size: clamp(36px, 4.7vw, 66px);
+            font-weight: 750;
+            line-height: 1;
+            letter-spacing: -.065em;
+            text-transform: none;
+        }
+
+        & > div.flex {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            align-items: start;
+            gap: 24px;
+            margin-top: 0;
+            counter-reset: proceso;
+
+            & > div {
+                min-width: 0;
+                counter-increment: proceso;
+
+                & .proyecto-detalle-imagen {
+                    margin: 0 0 30px;
+                    overflow: hidden;
+                    border-radius: 22px;
+                    background: #E9EAEB;
+
+                    & img {
+                        width: 100%;
+                        border-radius: 0;
+                    }
+                }
+
+                & .text {
+                    padding: 0 5px;
+
+                    &::before {
+                        content: counter(proceso, decimal-leading-zero);
+                        display: block;
+                        margin-bottom: 14px;
+                        color: #BD802C;
+                        font-size: clamp(54px, 5.3vw, 74px);
+                        font-weight: 800;
+                        line-height: .9;
+                        letter-spacing: -.08em;
+                    }
+
+                    & h4 {
+                        min-height: 50px;
+                        margin-bottom: 15px;
+                        padding: 0;
+                        font-size: 22px;
+                        font-weight: 750;
+                        line-height: 1.1;
+                        letter-spacing: -.045em;
+                    }
+                }
+            }
+        }
+    }
+
+    /* 05 / Evolución: misma clase imagen-text + un modificador oscuro */
+    & .proyecto-detalle-oscuro {
+        margin-left: -5%;
+        margin-right: -5%;
+        width: 110%;
+        padding: 65px 5%;
+        border: 0;
+        border-radius: 24px;
+        background: #21232A;
+        color: #FAFBFB;
+
+        & > img {
+            background: #3A3D42;
+        }
+
+        & h2, & h3 em {
+            color: #E3A250;
+        }
+
+        & p {
+            color: #E6E7E9;
+        }
+    }
+
+    /* Cierre: se reutiliza la última .proyecto-detalle-texto */
+    & > .proyecto-detalle-texto:last-child {
+        display: grid;
+        grid-template-columns: 1.5fr .7fr;
+        gap: 35px;
+        align-items: end;
+        margin-bottom: 30px;
+        padding: 40px 0 15px;
+        border-top: 1px solid #21232A;
+
+        & > h2:first-child {
+            padding: 0;
+            border: 0;
+            color: #21232A;
+            font-size: clamp(29px, 3.6vw, 50px);
+            font-weight: 700;
+            line-height: 1.1;
+            letter-spacing: -.065em;
+            text-transform: none;
+        }
+
+        & > p {
+            font-size: 15px;
+            padding-left: 20px;
+            border-left: 1px solid #BD802C;
+        }
+    }
 }
 
 /* =========================================================
@@ -1058,6 +1420,22 @@ footer .right:hover p {
     }
     .web-proyecto-etiquetas p {
         font-size: 10px;
+    }
+
+    /* MODAL · TABLET */
+    .proyecto-detalle {
+        & .proyecto-detalle-imagen-text {
+            grid-template-columns: 1fr;
+            gap: 25px;
+
+            & > img {
+                max-height: 350px;
+            }
+        }
+
+        & .proyecto-detalle-tarjetas > div.flex {
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
     }
 }
 
@@ -1289,6 +1667,116 @@ footer .right:hover p {
         max-height: 95dvh;
     }
     .modal-contenido {
-        padding: 60px 5% 30px;
+        padding: 48px 5% 25px;
+    }
+
+    /* MODAL · MÓVIL */
+    .modal-proyecto {
+        width: 96%;
+        max-height: 95dvh;
+    }
+
+    .modal-cerrar {
+        top: 12px;
+        margin: 12px 12px -56px auto;
+        width: 40px;
+        height: 40px;
+    }
+
+    .proyecto-detalle {
+        & > section {
+            margin-bottom: 65px;
+        }
+
+        & .proyecto-detalle-cabecera {
+            padding-top: 12px !important;
+            padding-bottom: 34px !important;
+
+            & > div:first-child {
+                flex-wrap: wrap;
+                margin-bottom: 60px;
+                gap: 6px;
+                font-size: 9px;
+            }
+
+            & h1 {
+                margin-bottom: 28px;
+                font-size: clamp(39px, 11.2vw, 65px);
+                line-height: .92;
+            }
+
+            & > p span {
+                font-size: 9px;
+                padding: 4px 9px;
+                min-height: 25px;
+            }
+        }
+
+        & > .proyecto-detalle-texto:first-of-type,
+        & > .proyecto-detalle-texto:last-child {
+            grid-template-columns: 1fr;
+            gap: 18px;
+
+            & > p {
+                padding-left: 14px;
+            }
+        }
+
+        & > .proyecto-detalle-texto:first-of-type + .proyecto-detalle-imagen {
+            margin-bottom: 65px;
+        }
+
+        & .proyecto-detalle-texto {
+            & > div.flex {
+                flex-direction: column;
+            }
+
+            & .column1, & .column2 {
+                width: 100%;
+                padding: 25px;
+                border-radius: 18px;
+
+                & h3 {
+                    margin-bottom: 20px;
+                }
+            }
+        }
+
+        & .proyecto-detalle-imagen-text {
+            padding-top: 22px;
+
+            & h3 {
+                font-size: clamp(30px, 8.5vw, 43px);
+            }
+
+            & > .text:only-child ul {
+                grid-template-columns: 1fr;
+
+                & li {
+                    padding: 23px;
+                }
+            }
+        }
+
+        & .proyecto-detalle-tarjetas {
+            & > h3 {
+                font-size: clamp(33px, 9vw, 48px);
+            }
+
+            & > div.flex {
+                grid-template-columns: 1fr;
+                gap: 38px;
+
+                & > div .text h4 {
+                    min-height: 0;
+                }
+            }
+        }
+
+        & .proyecto-detalle-oscuro {
+            padding-top: 35px;
+            padding-bottom: 35px;
+            border-radius: 17px;
+        }
     }
 }

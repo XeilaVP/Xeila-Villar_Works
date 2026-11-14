@@ -1,8 +1,19 @@
 <article class="proyecto-detalle">
 
     <header class="proyecto-detalle-cabecera flex m-columna">
-        <h1>FREELANCE CONNECT</h1>
-        <p>Diseño & desarrollo de producto · Web · React · TypeScript · Lovable · Supabase</p>
+        <div class="flex m-jcsb">
+            <span>CASO DE ESTUDIO / 01</span>
+            <span>ELOGIA MEDIA · PRODUCTO INTERNO</span>
+        </div>
+        <h1>FREELANCE <em>CONNECT</em></h1>
+        <p>
+            <span>Diseño &amp; desarrollo de producto</span>
+            <span>Web</span>
+            <span>React</span>
+            <span>TypeScript</span>
+            <span>Lovable</span>
+            <span>Supabase</span>
+        </p>
     </header>
 
     <section class="proyecto-detalle-texto flex m-columna m-jcsb m-90">
@@ -17,7 +28,7 @@
     </section>
 
     <section class="proyecto-detalle-imagen flex m-jcsb m-columna t-fila">
-        <img src="imagenes/web/producto/freelance-connect-mockup.png" class="m-90" alt="">
+        <img src="imagenes/WEB/producto/freelance-connect-mockup.png" class="m-90" alt="">
     </section>
 
     <section class="proyecto-detalle-texto flex m-columna m-jcsb m-90">
@@ -27,53 +38,42 @@
                 <h3>Contexto</h3>
                 <h4>Cuando un Excel deja de ser suficiente.</h4>
                 <p>A medida que aumentaba el número de colaboradores freelance, también lo hacía la 
-                    dificultad para gestionar su información.
-
-                    Los datos se almacenaban en hojas de Excel utilizadas por diferentes departamentos, 
+                    dificultad para gestionar su información.</p>
+<p>Los datos se almacenaban en hojas de Excel utilizadas por diferentes departamentos, 
                     sin una estructura común. Los registros podían estar incompletos, duplicados o 
-                    contener información que no estaba disponible para el resto del equipo.
-
-                    Localizar a un profesional con una especialidad concreta no siempre era sencillo, 
+                    contener información que no estaba disponible para el resto del equipo.</p>
+<p>Localizar a un profesional con una especialidad concreta no siempre era sencillo, 
                     pero el problema iba más allá de encontrar un contacto.</p>
             </div>
             <div class="column2">
                     <h3>El Problema</h3>
                     <h4>Información dispersa y difícil de gestionar</h4>
                     <p>¿Con qué clientes había trabajado? ¿Quién había colaborado con él? 
-                        ¿Qué tareas había realizado? ¿Dónde estaban los materiales que había entregado?
-
-                        Responder a estas preguntas suponía buscar información en distintos lugares 
-                    o consultar directamente a otros compañeros.
-
-                    El objetivo era dejar de depender de esa información dispersa y hacerla 
-                    accesible para todos los equipos implicados.
-                    </p>
+                        ¿Qué tareas había realizado? ¿Dónde estaban los materiales que había entregado?</p>
+<p>Responder a estas preguntas suponía buscar información en distintos lugares 
+                    o consultar directamente a otros compañeros.</p>
+<p>El objetivo era dejar de depender de esa información dispersa y hacerla 
+                    accesible para todos los equipos implicados.</p>
             </div>
         </div>
     </section>
 
     <section class="proyecto-detalle-imagen-text flex m-jcsb m-columna t-fila">
-        <img src="imagenes/web/producto/freelance-connect-mockup.png" class="m-100 t-50" alt="">
+        <img src="imagenes/WEB/producto/freelance-connect-mockup.png" class="m-100 t-50" alt="">
         <div class="text m-50 t-100">
             <h2>02 · Solución</h2>
-            <h3>Del problema al producto</h3>
-            <p>
-            La primera decisión fue ampliar el alcance del proyecto: no bastaba con sustituir el 
-            Excel por un directorio digital.
-
-            La plataforma debía reunir la información necesaria para encontrar, evaluar y trabajar 
-            con un profesional, conservando además el historial de las colaboraciones.
-
-            Para ello, organicé la información en torno a tres elementos principales: profesionales, 
-            especialidades y trabajos realizados.
-
-            Uno de los retos fue definir una estructura suficientemente flexible para adaptarse a 
-            las necesidades de distintos departamentos.
-
-            Un mismo profesional puede trabajar en varias disciplinas, tener diferentes tarifas o 
+            <h3>Del problema al <em>producto</em></h3>
+            <p>La primera decisión fue ampliar el alcance del proyecto: no bastaba con sustituir el 
+            Excel por un directorio digital.</p>
+<p>La plataforma debía reunir la información necesaria para encontrar, evaluar y trabajar 
+            con un profesional, conservando además el historial de las colaboraciones.</p>
+<p>Para ello, organicé la información en torno a tres elementos principales: profesionales, 
+            especialidades y trabajos realizados.</p>
+<p>Uno de los retos fue definir una estructura suficientemente flexible para adaptarse a 
+            las necesidades de distintos departamentos.</p>
+<p>Un mismo profesional puede trabajar en varias disciplinas, tener diferentes tarifas o 
             colaborar con múltiples clientes. La organización de los datos debía contemplar estas 
-            situaciones sin duplicar registros ni complicar la navegación.
-            </p>
+            situaciones sin duplicar registros ni complicar la navegación.</p>
         </div>
     </section>
 
@@ -104,9 +104,8 @@
                 </li>
                 <li><h4>Historial de colaboraciones</h4>
                     <p>Los clientes, tareas y materiales se vinculan a cada profesional 
-                        para conservar un registro de sus trabajos anteriores.
-
-                        Los materiales pueden incorporarse mediante enlaces o 
+                        para conservar un registro de sus trabajos anteriores.</p>
+<p>Los materiales pueden incorporarse mediante enlaces o 
                         seleccionarse desde Google Drive, evitando duplicar archivos.</p>
                 </li>
                 <li><h4>Valoraciones y conocimiento compartido</h4>
@@ -118,72 +117,77 @@
         </div>
     </section>
 
-    <section class="proyecto-detalle-imagen flex m-jcsb m-wrap">
-        <img src="imagenes/web/producto/freelance-connect-mockup.png" class="m-30" alt="">
-        <img src="imagenes/web/producto/freelance-connect-mockup.png" class="m-30" alt="">
-        <img src="imagenes/web/producto/freelance-connect-mockup.png" class="m-30" alt="">
-    </section>
-    
-    <section class="proyecto-detalle-texto flex m-columna m-jcsb m-90">
+    <section class="proyecto-detalle-texto proyecto-detalle-tarjetas flex m-columna m-jcsb m-90">
         <h2>04 · Desarrollo y pruebas</h2>
         <h3>Construir, probar y ajustar.</h3>
-        <p>La aplicación está desarrollada con React, TypeScript y Supabase, 
-            utilizando Lovable como herramienta de desarrollo asistido por IA.
-
-            Mi trabajo ha incluido la definición de funcionalidades, el diseño de 
+        <div class="flex m-jcsb m-columna t-fila">
+            <div>
+                <div class="proyecto-detalle-imagen">
+                    <img src="imagenes/WEB/producto/freelance-connect-mockup.png" class="m-100" alt="Vista de desarrollo y datos de Freelance Connect">
+                </div>
+                <div class="text">
+                    <h4>Desarrollo y datos</h4>
+                    <p>La aplicación está desarrollada con React, TypeScript y Supabase, 
+            utilizando Lovable como herramienta de desarrollo asistido por IA.</p>
+<p>Mi trabajo ha incluido la definición de funcionalidades, el diseño de 
             las interfaces, la organización de los datos y la revisión de los flujos 
-            para adaptar la aplicación a las necesidades reales de los equipos.
-
-            Una parte importante del desarrollo fue unificar la información existente. 
-
-            Los registros originales no seguían una estructura homogénea, por lo que fue 
+            para adaptar la aplicación a las necesidades reales de los equipos.</p>
+<p>Una parte importante del desarrollo fue unificar la información existente.</p>
+<p>Los registros originales no seguían una estructura homogénea, por lo que fue 
             necesario revisar duplicidades, identificar coincidencias y reorganizar 
             los datos antes de incorporarlos a la plataforma.</p>
-        <h3>Herramienta de testeo integrada</h3>
-        <p>Para evaluar la usabilidad, desarrollé e integré un módulo de testeo 
+                </div>
+            </div>
+            <div>
+                <div class="proyecto-detalle-imagen">
+                    <img src="imagenes/WEB/producto/freelance-connect-mockup.png" class="m-100" alt="Vista de herramienta de testeo integrada de Freelance Connect">
+                </div>
+                <div class="text">
+                    <h4>Herramienta de testeo integrada</h4>
+                    <p>Para evaluar la usabilidad, desarrollé e integré un módulo de testeo 
             que permite configurar pruebas con tareas guiadas, preguntas y campos para 
-            recoger observaciones.
-
-            Mediante este sistema sse registran las respuestas, el tiempo empleado y los comentarios 
+            recoger observaciones.</p>
+<p>Mediante este sistema sse registran las respuestas, el tiempo empleado y los comentarios 
             de los participantes, facilitando la identificación de problemas en los 
-            flujos de uso.
-
-            Decidí realizar el módulo como componente independiente y reutilizable 
-            en otros proyectos.
-        </p>
-        <h3>Feedback y gestión de incidencias</h3>
-        <p>Incorporé un sistema interno para que los usuarios puedan comunicar errores,
-           incidencias o sugerencias directamente desde la aplicación. 
-
-           Cada comunicación queda registrada como un ticket que los administradores 
-           pueden consultar y gestionar, cambiando su estado entre pendiente y resuelto.
-
-           Este sistema permite recoger problemas detectados durante el uso y mantener 
-           un seguimiento básico de su resolución, sin depender de herramientas externas.
-        </p>
+            flujos de uso.</p>
+<p>Decidí realizar el módulo como componente independiente y reutilizable 
+            en otros proyectos.</p>
+                </div>
+            </div>
+            <div>
+                <div class="proyecto-detalle-imagen">
+                    <img src="imagenes/WEB/producto/freelance-connect-mockup.png" class="m-100" alt="Vista de feedback y gestión de incidencias de Freelance Connect">
+                </div>
+                <div class="text">
+                    <h4>Feedback y gestión de incidencias</h4>
+                    <p>Incorporé un sistema interno para que los usuarios puedan comunicar errores,
+           incidencias o sugerencias directamente desde la aplicación.</p>
+<p>Cada comunicación queda registrada como un ticket que los administradores 
+           pueden consultar y gestionar, cambiando su estado entre pendiente y resuelto.</p>
+<p>Este sistema permite recoger problemas detectados durante el uso y mantener 
+           un seguimiento básico de su resolución, sin depender de herramientas externas.</p>
+                </div>
+            </div>
+        </div>
     </section>
-    <section class="proyecto-detalle-imagen-text flex m-jcsb m-columna t-fila">
-        <img src="imagenes/web/producto/freelance-connect-mockup.png" class="m-100 t-50" alt="">
+
+    <section class="proyecto-detalle-imagen-text proyecto-detalle-oscuro flex m-jcsb m-columna t-fila">
+        <img src="imagenes/WEB/producto/freelance-connect-mockup.png" class="m-100 t-50" alt="">
         <div class="text m-50 t-100">
             <h2>05 · Evolución</h2>
             <h3>Conectar herramientas.</h3>
-            <p>
-            Una de las siguientes líneas de desarrollo es la integración con ClickUp, 
-            la herramienta utilizada para gestionar las tareas y proyectos.
-
-            El objetivo no es reproducir sus funcionalidades, sino aprovechar la 
+            <p>Una de las siguientes líneas de desarrollo es la integración con ClickUp, 
+            la herramienta utilizada para gestionar las tareas y proyectos.</p>
+<p>El objetivo no es reproducir sus funcionalidades, sino aprovechar la 
             información ya existente para vincular profesionales, clientes 
-            y tareas con Freelance Connect.
-
-            Se ha definido un sistema para detectar colaboraciones, evitar registros 
+            y tareas con Freelance Connect.</p>
+<p>Se ha definido un sistema para detectar colaboraciones, evitar registros 
             duplicados y conservar su historial, manteniendo el control sobre qué 
-            información se incorpora.
-
-            De esta forma, ClickUp continúa gestionando el trabajo mientras
+            información se incorpora.</p>
+<p>De esta forma, ClickUp continúa gestionando el trabajo mientras
             Freelance Connect conserva el conocimiento sobre las tareas asignadas
             a qué colaborador interno, en qué fecha y todos los comentarios 
-            e interacciones en dicho proyecto o tarea.
-            </p>
+            e interacciones en dicho proyecto o tarea.</p>
         </div>
     </section>
     <section class="proyecto-detalle-texto flex m-columna m-jcsb m-90">
