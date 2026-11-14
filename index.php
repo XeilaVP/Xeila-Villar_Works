@@ -69,7 +69,7 @@ require __DIR__ . "/includes/head.php";
         <h2>Hola, soy Xeila. Diseñadora gráfica y web con años de experiencia en proyectos digitales, 
         especializada en UX/UI y recién titulada en Desarrollo de Aplicaciones Web.
         </h2> 
-        <h3 class="m-90 p-70">Mi experiencia en diseño me ha enseñado <i class="accent-orange">la importancia de entender las necesidades de los usuarios </i>
+        <h3>Mi experiencia en diseño me ha enseñado <i class="accent-orange">la importancia de entender las necesidades de los usuarios </i>
         antes de plantear soluciones. Ahora combino esa visión creativa con mis conocimientos de 
         desarrollo front-end y back-end, lo que me permite participar en todo el proceso, 
         desde la idea inicial y el diseño de la interfaz hasta su implementación en código.</h3>
