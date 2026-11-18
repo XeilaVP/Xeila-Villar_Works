@@ -2,33 +2,29 @@
 
     <header class="proyecto-detalle-cabecera flex m-columna">
         <div class="flex m-jcsb">
-            <span>CASO DE ESTUDIO / 01</span>
-            <span>ELOGIA MEDIA · PRODUCTO INTERNO</span>
+            <span>CASO DE ESTUDIO / 04</span>
+            <span>ELOGIA MEDIA · AVON</span>
         </div>
-        <h1>FREELANCE <em>CONNECT</em></h1>
+        <div>
+        <h1 style="margin-bottom:none;">AVON</h1>
+        <p>tunegocioavon.es</p></div>
         <p>
-            <span>Diseño &amp; desarrollo de producto</span>
-            <span>Web</span>
-            <span>React</span>
-            <span>TypeScript</span>
-            <span>Lovable</span>
-            <span>Supabase</span>
+            <span>Diseño &amp; Maquetación web</span>
+            <span>Wordpress</span>
+            <span>Html</span>
+            <span>CSS</span>
+            <span>Figma</span>
         </p>
     </header>
 
     <section class="proyecto-detalle-texto flex m-columna m-jcsb m-90">
-        <h2>Una herramienta interna 
-        desarrollada para centralizar la información 
-        de de los colaboradores externos que van en aumento, 
-        en la empresa Elogia Media, facilitando su búsqueda, 
-        selección y gestión.</h2>
-        <p>El proyecto abarca desde el análisis de las necesidades y 
-            el diseño de la experiencia de usuario hasta el desarrollo 
-            de la plataforma</p>
+        <h2>Una landing page para Campaña de paid media...</h2>
+        <p>El proyecto abarca desde el análisis de las necesidades de la campaña y 
+            el diseño orientado a conversión hasta la maquetación en Wordpress.</p>
     </section>
 
     <section class="proyecto-detalle-imagen flex m-jcsb m-columna t-fila">
-        <img src="imagenes/WEB/producto/freelance-connect-mockup.png" class="m-90" alt="">
+        <img src="imagenes/WEB/avon/avon.png" class="m-90" alt="">
     </section>
 
     <section class="proyecto-detalle-texto flex m-columna m-jcsb m-90">
@@ -59,7 +55,7 @@
     </section>
 
     <section class="proyecto-detalle-imagen-text flex m-jcsb m-columna t-fila">
-        <img src="imagenes/WEB/producto/freelance-connect-mockup.png" class="m-100 t-50" alt="">
+        <img src="imagenes/WEB/avon/componentes.png" class="m-100 t-50" alt="">
         <div class="text m-50 t-100">
             <h2>02 · Solución</h2>
             <h3>Del problema al <em>producto</em></h3>

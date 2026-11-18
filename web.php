@@ -238,31 +238,33 @@ require __DIR__ . "/includes/head.php";
 
                     <div class="web-proyecto-cabecera flex m-jcsb m-aic">
                         <h2>BLIP</h2>
-                        <span>Viko Group</span>
+                        <span>Elogia Media</span>
                     </div>
 
-                    <a href="#" class="web-proyecto-imagen" aria-label="Ver Kraz">
-                        <img src="imagenes/web/blip/blip-mockup.png" alt="Kraz">
+                    <a href="webs/blip.php" class="web-proyecto-imagen"  data-proyecto aria-label="Ver Blip">
+                        <img src="imagenes/web/blip/blip-mockup.png" alt="Blip">
                     </a>
 
                     <div class="web-proyecto-info">
 
                         <div class="web-proyecto-etiquetas flex m-jcsb m-aic">
                             <p>
-                                <b class="accent-blue">PRODUCTO</b>
-                                · DISEÑO · DESARROLLO
+                                <b class="accent-blue">LANDING PAGE</b>
+                                · DISEÑO · MAQUETACIÓN
                             </p>
-                            <a href="#" aria-label="Ver Kraz">
+                            <a href="webs/blip.php" data-proyecto aria-label="Ver Blip">
                                 <i class="fa-solid fa-arrow-right"></i>
                             </a>
                         </div>
 
                         <p class="web-proyecto-descripcion">
-                            Lorem ipsum
+                            Diseño y desarrollo de una landing page para 
+                            la campaña de paid media de Blip.</br>
+                            <a href="https://digital.blip.ai/es/blip-meta-conversations-for-business/" target="_blank" rel="noopener noreferrer">Blip & Meta: Conversations for business</a>
                         </p>
 
                         <p class="web-proyecto-tecnologias">
-                            React / CSS / Typescript
+                            Wordpress / HTML / CSS / Figma
                         </p>
 
                     </div>
@@ -276,7 +278,7 @@ require __DIR__ . "/includes/head.php";
                         <span>Viko Group</span>
                     </div>
 
-                    <a href="webs/esue.php" class="web-proyecto-imagen" data-project  aria-label="Ver Esue">
+                    <a href="webs/esue.php" class="web-proyecto-imagen" data-proyecto  aria-label="Ver Esue">
                         <img src="imagenes/web/esue_ebs/esue-mockup.png" alt="Esue">
                     </a>
 
