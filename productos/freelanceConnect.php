@@ -165,16 +165,20 @@
              <div class="text">
             <h4>Herramienta de testeo integrada</h4>
 
-            <p>Para evaluar la usabilidad, desarrollé e integré un módulo de testeo
-            que permite configurar pruebas con tareas guiadas, preguntas y campos
-            para recoger observaciones.</p>
+            <p>Para evaluar la usabilidad y detectar problemas durante el desarrollo, 
+                creé un módulo de testeo integrado en la propia aplicación, 
+                que permite realizar pruebas sin interrumpir la navegación.</p>
 
-            <p>Mediante este sistema se registran las respuestas, el tiempo empleado
-            y los comentarios de los participantes, facilitando la identificación
-            de problemas en los flujos de uso.</p>
+            <p>La herramienta permite configurar tareas guiadas, preguntas y 
+                distintos tipos de respuesta. Durante la prueba, 
+                los participantes interactúan con la plataforma mientras 
+                registran sus dificultades y observaciones.</p>
 
-            <p>Decidí realizar el módulo como componente independiente y reutilizable
-            en otros proyectos.</p>
+            <p>El sistema recoge las respuestas, el tiempo empleado y los comentarios de cada participante, 
+                facilitando el análisis de los flujos y la identificación de mejoras.</p>
+
+            <p>Además, desarrollé el módulo como un componente independiente, 
+                pensado para poder reutilizarlo en otros proyectos.</p>
         </div>
         </div>
         <!-- TARJETA 03 · FEEDBACK -->
@@ -184,17 +188,17 @@
                      class="m-100"
                      alt="Vista de feedback y gestión de incidencias">
             </div>
-                            
+
             <div class="text">
                 <h4>Feedback y gestión de incidencias</h4>
-                            
+
                 <p>Incorporé un sistema interno para que los usuarios puedan comunicar
                 errores, incidencias o sugerencias directamente desde la aplicación.</p>
-                            
+
                 <p>Cada comunicación queda registrada como un ticket que los
                 administradores pueden consultar y gestionar, cambiando su estado
                 entre pendiente y resuelto.</p>
-                            
+
                 <p>Este sistema permite recoger problemas detectados durante el uso
                 y mantener un seguimiento básico de su resolución,
                 sin depender de herramientas externas.</p>
