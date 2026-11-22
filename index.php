@@ -55,7 +55,7 @@ require __DIR__ . "/includes/head.php";
 
         <div class="ia-generativa hover-imagen">
             <p class="color-light">
-                <b class="accent-orange">IA GENERATIVA</b>
+                <span class="noto-font" style="font-weight:400; font-style:italic;"><b class="accent-orange">IA GENERATIVA</b></span>
             </p>
             <img src="imagenes/branding/BOLSA.jpg" alt="">
         </div>

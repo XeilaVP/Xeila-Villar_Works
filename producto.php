@@ -21,15 +21,13 @@ require __DIR__ . "/includes/head.php";
                 <div class="producto-presentacion flex m-jcsb">
 
                     <h1>
-                        DEL DISEÑO<br>
-                        AL CÓDIGO.
+                        DEL PROBLEMA<br>
+                        A LA SOLUCIÓN.
                     </h1>
 
                     <p>
-                        Diseño y desarrollo experiencias producto
-                        y productos digitales, desde la definición
-                        de la idea y la experiencia de usuario
-                        hasta su implementación.
+                        Diseño y desarrollo productos digitales a partir de necesidades reales. Desde el análisis de procesos y la definición 
+                        de la experiencia de usuario hasta la creación de interfaces y herramientas funcionales.
                     </p>
 
                 </div>
@@ -37,11 +35,11 @@ require __DIR__ . "/includes/head.php";
                 <div class="producto-categorias flex m-jcsb m-aic">
 
                     <div class="producto-categorias-lista flex m-aic">
-                        <span>UX/UI</span>
+                        <span>ESTRATEGIA</span>
                         <span>—</span>
-                        <span>PRODUCTO</span>
+                        <span>DISEÑO DE PRODUCTO</span>
                         <span>—</span>
-                        <span>DESARROLLO producto</span>
+                        <span>DESARROLLO</span>
                     </div>
 
                     <a href="#proyectos-producto" class="producto-bajar">

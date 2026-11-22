@@ -296,22 +296,22 @@ header {
 #intro {
     height: 100vh;
     padding-top: 100px;
-    &.intro-animation-ready .contenido > div {
+    .intro-animation-ready .contenido > div {
         opacity: 0;
         transform: translateX(-90px);
         transition: opacity 750ms ease, transform 750ms cubic-bezier(.2, .75, .25, 1);
     }
-    &.intro-animation-ready.intro-entered .contenido > div {
+    .intro-animation-ready.intro-entered .contenido > div {
         opacity: 1;
         transform: translateX(0);
         transition-delay: calc(var(--intro-index) * 100ms);
     }
-    & p {
+    p {
         font-size: 55px;
         width: 100%;
         font-weight: 400;
         text-align: center;
-        line-height: 1.16;
+        line-height: 1;
         letter-spacing: -.045em;
         text-transform: uppercase;
         transition: all 1s ease-in-out;
@@ -1525,7 +1525,7 @@ footer .right:hover p {
     /* ---------- HOME ---------- */
     #intro p {
         font-size: clamp(30px, 8.5vw, 60px);
-        line-height: 115%;
+        line-height: 100%;
     }
     #intro h3 {
         font-size: 18px;
