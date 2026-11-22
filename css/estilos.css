@@ -655,7 +655,72 @@ header {
     letter-spacing: 0;
     text-align: right;
 }
+/* ======================================
+   CARRUSEL · COMPONENTE GLOBAL
+====================================== */
 
+.carrusel {
+    width: 100%;
+    min-width: 0;
+    overflow: hidden;
+    background: #E9EAEB;
+
+    .carrusel-pista {
+        display: flex;
+        width: 100%;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
+        scrollbar-width: none;
+        -webkit-overflow-scrolling: touch;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+
+        & > * {
+            flex: 0 0 100%;
+            min-width: 0;
+            scroll-snap-align: start;
+        }
+
+        & > img {
+            width: 100%;
+            aspect-ratio: 4 / 3;
+            object-fit: contain;
+            border-radius: 0;
+        }
+    }
+
+    .carrusel-controles {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 15px;
+        border-top: 1px solid #D9DDDF;
+    }
+
+    .carrusel-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 38px;
+        height: 38px;
+        border: 1px solid #21232A;
+        border-radius: 50%;
+        background: transparent;
+        color: #21232A;
+        font-size: 20px;
+        cursor: pointer;
+        transition: all .3s ease;
+
+        &:hover {
+            background: #BD802C;
+            border-color: #BD802C;
+            color: #FAFBFB;
+        }
+    }
+}
 /*---------mkt-----------*/
 footer .subfooter-dual {
     padding: 0;
@@ -1086,6 +1151,7 @@ footer .right:hover p {
         background: #ECEDED;
         border-radius: 22px;
         overflow: hidden;
+        box-shadow: 1px 4px 11px 0px rgb(0 0 0 / 9%);
 
         img {
             width: 100%;
@@ -1274,7 +1340,7 @@ footer .right:hover p {
 
     /* 04 / Desarrollo: una sola sección. ÚNICA clase nueva para este patrón */
     .proyecto-detalle-tarjetas {
-        & > h3 {
+        h3 {
             max-width: 850px;
             margin: 16px 0 38px;
             font-size: clamp(36px, 4.7vw, 66px);
@@ -1284,7 +1350,7 @@ footer .right:hover p {
             text-transform: none;
         }
 
-        & > div.flex {
+        div.flex {
             display: grid;
             grid-template-columns: repeat(3, minmax(0, 1fr));
             align-items: start;
@@ -1292,7 +1358,7 @@ footer .right:hover p {
             margin-top: 0;
             counter-reset: proceso;
 
-            & > div {
+            div {
                 min-width: 0;
                 counter-increment: proceso;
 
@@ -1301,8 +1367,9 @@ footer .right:hover p {
                     overflow: hidden;
                     border-radius: 22px;
                     background: #E9EAEB;
+                    box-shadow: 1px 4px 11px 0px rgb(0 0 0 / 9%);
 
-                    & img {
+                    img {
                         width: 100%;
                         border-radius: 0;
                     }
@@ -1436,11 +1503,11 @@ footer .right:hover p {
 
     /* MODAL · TABLET */
     .proyecto-detalle {
-        & .proyecto-detalle-imagen-text {
+        .proyecto-detalle-imagen-text {
             grid-template-columns: 1fr;
             gap: 25px;
 
-            & > img {
+            img {
                 max-height: 350px;
             }
         }
@@ -1724,21 +1791,22 @@ footer .right:hover p {
             }
         }
 
-        & > .proyecto-detalle-texto:first-of-type,
-        & > .proyecto-detalle-texto:last-child {
+        .proyecto-detalle-texto:first-of-type,
+        .proyecto-detalle-texto:last-child {
             grid-template-columns: 1fr;
             gap: 18px;
 
-            & > p {
+            p {
                 padding-left: 14px;
             }
         }
 
-        & > .proyecto-detalle-texto:first-of-type + .proyecto-detalle-imagen {
+        .proyecto-detalle-texto:first-of-type + .proyecto-detalle-imagen {
             margin-bottom: 65px;
+            box-shadow: 1px 4px 11px 0px rgb(0 0 0 / 9%);
         }
 
-        & .proyecto-detalle-texto {
+        .proyecto-detalle-texto {
             & > div.flex {
                 flex-direction: column;
             }

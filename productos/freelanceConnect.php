@@ -8,11 +8,11 @@
         <h1>FREELANCE <em>CONNECT</em></h1>
         <p>
             <span>Diseño &amp; desarrollo de producto</span>
-            <span>Web</span>
             <span>React</span>
             <span>TypeScript</span>
             <span>Lovable</span>
             <span>Supabase</span>
+            <span>PgAdmin</span>
         </p>
     </header>
 
@@ -28,7 +28,7 @@
     </section>
 
     <section class="proyecto-detalle-imagen flex m-jcsb m-columna t-fila">
-        <img src="imagenes/WEB/producto/freelance-connect-mockup.png" class="m-90" alt="">
+        <img src="imagenes/producto/freelance-connect-mockup.png" class="m-90" alt="">
     </section>
 
     <section class="proyecto-detalle-texto flex m-columna m-jcsb m-90">
@@ -59,7 +59,7 @@
     </section>
 
     <section class="proyecto-detalle-imagen-text flex m-jcsb m-columna t-fila">
-        <img src="imagenes/WEB/producto/freelance-connect-mockup.png" class="m-100 t-50" alt="">
+        <img src="imagenes/producto/freelance-connect-mockup.png" class="m-100 t-50" alt="">
         <div class="text m-50 t-100">
             <h2>02 · Solución</h2>
             <h3>Del problema al <em>producto</em></h3>
@@ -105,7 +105,7 @@
                 <li><h4>Historial de colaboraciones</h4>
                     <p>Los clientes, tareas y materiales se vinculan a cada profesional 
                         para conservar un registro de sus trabajos anteriores.</p>
-<p>Los materiales pueden incorporarse mediante enlaces o 
+                    <p>Los materiales pueden incorporarse mediante enlaces o 
                         seleccionarse desde Google Drive, evitando duplicar archivos.</p>
                 </li>
                 <li><h4>Valoraciones y conocimiento compartido</h4>
@@ -123,40 +123,44 @@
         <div class="flex m-jcsb m-columna t-fila">
             <div>
                 <div class="proyecto-detalle-imagen">
-                    <img src="imagenes/WEB/producto/freelance-connect-mockup.png" class="m-100" alt="Vista de desarrollo y datos de Freelance Connect">
+                    <img src="imagenes/producto/freelanceConnect_bd.png" class="m-100" alt="Vista de desarrollo y datos de Freelance Connect">
                 </div>
                 <div class="text">
                     <h4>Desarrollo y datos</h4>
-                    <p>La aplicación está desarrollada con React, TypeScript y Supabase, 
-            utilizando Lovable como herramienta de desarrollo asistido por IA.</p>
-<p>Mi trabajo ha incluido la definición de funcionalidades, el diseño de 
-            las interfaces, la organización de los datos y la revisión de los flujos 
-            para adaptar la aplicación a las necesidades reales de los equipos.</p>
-<p>Una parte importante del desarrollo fue unificar la información existente.</p>
-<p>Los registros originales no seguían una estructura homogénea, por lo que fue 
-            necesario revisar duplicidades, identificar coincidencias y reorganizar 
-            los datos antes de incorporarlos a la plataforma.</p>
+                    <p>Para agilizar el desarrollo de Freelance Connect utilicé Lovable como herramienta de programación asistida por IA, 
+                        trabajando con React y TypeScript.
+                        Sin embargo, al tratarse de una plataforma en constante evolución, 
+                        decidí utilizar un proyecto independiente de Supabase 
+                        para mantener el control directo sobre la base de datos 
+                        y su mantenimiento, sin depender del entorno de desarrollo de Lovable.
+                        Mediante pgAdmin gestioné la estructura PostgreSQL y las
+                         relaciones entre profesionales, especialidades, tarifas y 
+                         trabajos realizados, definiendo un modelo de datos flexible 
+                         que pudiera adaptarse a nuevas funcionalidades.
+                        Este proceso también implicó revisar y unificar la información 
+                        procedente de los Excel originales, identificando duplicidades y 
+                        reorganizando registros antes de incorporarlos a la plataforma.</p>
                 </div>
             </div>
-            <div>
-                <div class="proyecto-detalle-imagen">
-                    <img src="imagenes/WEB/producto/freelance-connect-mockup.png" class="m-100" alt="Vista de herramienta de testeo integrada de Freelance Connect">
+            <div class="proyecto-detalle-imagen carrusel">
+                <div class="carrusel-pista">
+                    <img src="imagenes/WEB/producto/testeo/01-inicio.png" alt="Introducción del test">
+                    <img src="imagenes/WEB/producto/testeo/02-configuracion.png" alt="Configuración del test">
+                    <img src="imagenes/WEB/producto/testeo/03-preguntas.png" alt="Creación de preguntas">
+                    <img src="imagenes/WEB/producto/testeo/04-participacion.png" alt="Realización del test">
+                    <img src="imagenes/WEB/producto/testeo/05-resultados.png" alt="Resultados del test">
                 </div>
-                <div class="text">
-                    <h4>Herramienta de testeo integrada</h4>
-                    <p>Para evaluar la usabilidad, desarrollé e integré un módulo de testeo 
-            que permite configurar pruebas con tareas guiadas, preguntas y campos para 
-            recoger observaciones.</p>
-<p>Mediante este sistema sse registran las respuestas, el tiempo empleado y los comentarios 
-            de los participantes, facilitando la identificación de problemas en los 
-            flujos de uso.</p>
-<p>Decidí realizar el módulo como componente independiente y reutilizable 
-            en otros proyectos.</p>
+                <div class="carrusel-controles">
+                    <button type="button" class="carrusel-btn" data-dir="-1" aria-label="Anterior">
+                        &#8592;
+                    </button>
+                    <button type="button" class="carrusel-btn" data-dir="1" aria-label="Siguiente">
+                        &#8594;
+                    </button>
                 </div>
             </div>
-            <div>
                 <div class="proyecto-detalle-imagen">
-                    <img src="imagenes/WEB/producto/freelance-connect-mockup.png" class="m-100" alt="Vista de feedback y gestión de incidencias de Freelance Connect">
+                    <img src="imagenes/producto/freelance-connect-mockup.png" class="m-100" alt="Vista de feedback y gestión de incidencias de Freelance Connect">
                 </div>
                 <div class="text">
                     <h4>Feedback y gestión de incidencias</h4>
@@ -172,7 +176,7 @@
     </section>
 
     <section class="proyecto-detalle-imagen-text proyecto-detalle-oscuro flex m-jcsb m-columna t-fila">
-        <img src="imagenes/WEB/producto/freelance-connect-mockup.png" class="m-100 t-50" alt="">
+        <img src="imagenes/producto/freelance-connect-mockup.png" class="m-100 t-50" alt="">
         <div class="text m-50 t-100">
             <h2>05 · Evolución</h2>
             <h3>Conectar herramientas.</h3>

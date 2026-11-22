@@ -102,7 +102,34 @@ document.addEventListener("DOMContentLoaded", () => {
         });
         }
     }
+// ======================================
+// CARRUSEL GLOBAL
+// ======================================
 
+document.addEventListener("click", (e) => {
+
+    const boton = e.target.closest(".carrusel-btn");
+    if (!boton) return;
+
+    const carrusel = boton.closest(".carrusel");
+    if (!carrusel) return;
+
+    const pista = carrusel.querySelector(".carrusel-pista");
+    if (!pista) return;
+
+    const total = pista.children.length;
+    if (total < 2) return;
+
+    const actual = Math.round(pista.scrollLeft / pista.clientWidth);
+    const direccion = Number(boton.dataset.dir);
+
+    const siguiente = (actual + direccion + total) % total;
+
+    pista.scrollTo({
+        left: siguiente * pista.clientWidth,
+        behavior: "smooth"
+    });
+});
 
     // =========================================
     // CURSOR PERSONALIZADO

@@ -46,9 +46,7 @@ require __DIR__ . "/includes/head.php";
                         <i class="fa-solid fa-arrow-down"></i>
                         PROYECTOS
                     </a>
-
                 </div>
-
             </section>
 
 
