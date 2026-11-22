@@ -142,13 +142,16 @@
                         reorganizando registros antes de incorporarlos a la plataforma.</p>
                 </div>
             </div>
+        <!-- TARJETA 02 · TESTEO -->
+        <div>
             <div class="proyecto-detalle-imagen carrusel">
                 <div class="carrusel-pista">
-                    <img src="imagenes/WEB/producto/testeo/01-inicio.png" alt="Introducción del test">
-                    <img src="imagenes/WEB/producto/testeo/02-configuracion.png" alt="Configuración del test">
-                    <img src="imagenes/WEB/producto/testeo/03-preguntas.png" alt="Creación de preguntas">
-                    <img src="imagenes/WEB/producto/testeo/04-participacion.png" alt="Realización del test">
-                    <img src="imagenes/WEB/producto/testeo/05-resultados.png" alt="Resultados del test">
+                    <img src="imagenes/producto/freelance_pannel.png" alt="Introducción del test">
+                    <img src="imagenes/producto/test1.png" alt="Configuración del test">
+                    <img src="imagenes/producto/test2.png" alt="Configuración del test">
+                    <img src="imagenes/producto/test3.png" alt="Creación de preguntas">
+                    <img src="imagenes/producto/test_prueba.png" alt="Realización del test">
+                    <img src="imagenes/producto/test_resultados.png" alt="Resultados del test">
                 </div>
                 <div class="carrusel-controles">
                     <button type="button" class="carrusel-btn" data-dir="-1" aria-label="Anterior">
@@ -159,18 +162,42 @@
                     </button>
                 </div>
             </div>
-                <div class="proyecto-detalle-imagen">
-                    <img src="imagenes/producto/freelance-connect-mockup.png" class="m-100" alt="Vista de feedback y gestión de incidencias de Freelance Connect">
-                </div>
-                <div class="text">
-                    <h4>Feedback y gestión de incidencias</h4>
-                    <p>Incorporé un sistema interno para que los usuarios puedan comunicar errores,
-           incidencias o sugerencias directamente desde la aplicación.</p>
-<p>Cada comunicación queda registrada como un ticket que los administradores 
-           pueden consultar y gestionar, cambiando su estado entre pendiente y resuelto.</p>
-<p>Este sistema permite recoger problemas detectados durante el uso y mantener 
-           un seguimiento básico de su resolución, sin depender de herramientas externas.</p>
-                </div>
+             <div class="text">
+            <h4>Herramienta de testeo integrada</h4>
+
+            <p>Para evaluar la usabilidad, desarrollé e integré un módulo de testeo
+            que permite configurar pruebas con tareas guiadas, preguntas y campos
+            para recoger observaciones.</p>
+
+            <p>Mediante este sistema se registran las respuestas, el tiempo empleado
+            y los comentarios de los participantes, facilitando la identificación
+            de problemas en los flujos de uso.</p>
+
+            <p>Decidí realizar el módulo como componente independiente y reutilizable
+            en otros proyectos.</p>
+        </div>
+        </div>
+        <!-- TARJETA 03 · FEEDBACK -->
+        <div>
+            <div class="proyecto-detalle-imagen">
+                <img src="imagenes/producto/freelance-connect-mockup.png"
+                     class="m-100"
+                     alt="Vista de feedback y gestión de incidencias">
+            </div>
+                            
+            <div class="text">
+                <h4>Feedback y gestión de incidencias</h4>
+                            
+                <p>Incorporé un sistema interno para que los usuarios puedan comunicar
+                errores, incidencias o sugerencias directamente desde la aplicación.</p>
+                            
+                <p>Cada comunicación queda registrada como un ticket que los
+                administradores pueden consultar y gestionar, cambiando su estado
+                entre pendiente y resuelto.</p>
+                            
+                <p>Este sistema permite recoger problemas detectados durante el uso
+                y mantener un seguimiento básico de su resolución,
+                sin depender de herramientas externas.</p>
             </div>
         </div>
     </section>

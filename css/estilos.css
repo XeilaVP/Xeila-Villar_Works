@@ -684,11 +684,12 @@ header {
             scroll-snap-align: start;
         }
 
-        & > img {
+        img {
             width: 100%;
             aspect-ratio: 4 / 3;
             object-fit: contain;
-            border-radius: 0;
+            border-radius: 22px;
+            padding:10px;
         }
     }
 
@@ -1065,7 +1066,7 @@ footer .right:hover p {
         justify-content: flex-start;
         gap: 0;
 
-        & > div:first-child {
+        div:first-child {
             width: 100%;
             padding: 16px 0;
             margin-bottom: clamp(55px, 8vw, 95px);
@@ -1096,7 +1097,7 @@ footer .right:hover p {
             }
         }
 
-        & > p {
+        p {
             display: flex;
             flex-wrap: wrap;
             align-items: center;
@@ -1119,7 +1120,7 @@ footer .right:hover p {
     }
 
     /* Texto introductorio: titular editorial + descripción lateral */
-    & > .proyecto-detalle-texto:first-of-type {
+    .proyecto-detalle-texto:first-of-type {
         display: grid;
         grid-template-columns: 1.6fr .7fr;
         gap: 35px;
@@ -1127,7 +1128,7 @@ footer .right:hover p {
         padding: 0 0 10px;
         margin-bottom: 42px;
 
-        & > h2:first-child {
+        h2:first-child {
             padding: 0;
             border: 0;
             color: #21232A;
@@ -1146,7 +1147,7 @@ footer .right:hover p {
     }
 
     /* Imagen principal que sigue a la introducción */
-    & > .proyecto-detalle-texto:first-of-type + .proyecto-detalle-imagen {
+    .proyecto-detalle-texto:first-of-type + .proyecto-detalle-imagen {
         margin-bottom: 110px;
         background: #ECEDED;
         border-radius: 22px;
@@ -1157,7 +1158,8 @@ footer .right:hover p {
             width: 100%;
             max-height: 570px;
             object-fit: contain;
-            border-radius: 0;
+            border-radius: 22px;
+            padding: 10px;
         }
     }
 
@@ -1179,7 +1181,7 @@ footer .right:hover p {
             margin: 30px 0;
         }
 
-        & > h2:first-child {
+        h2:first-child {
             padding-top: 23px;
             border-top: 1px solid #21232A;
             color: #BD802C;
@@ -1189,13 +1191,13 @@ footer .right:hover p {
             text-transform: uppercase;
         }
 
-        & > div.flex {
+        div.flex {
             width: 100%;
             gap: 22px;
             margin-top: 30px;
         }
 
-        .column1, & .column2 {
+        .column1, .column2 {
             width: calc(50% - 11px);
             min-width: 0;
             padding: clamp(24px, 3.8vw, 50px);
@@ -1242,14 +1244,14 @@ footer .right:hover p {
         padding-top: 38px;
         border-top: 1px solid #21232A;
 
-        & > img {
+        img {
             width: 100%;
             max-height: 475px;
             object-fit: contain;
             background: #EAEBEB;
         }
 
-        & > .text {
+        .text {
             width: 100%;
             min-width: 0;
             padding: 0;
@@ -1281,15 +1283,15 @@ footer .right:hover p {
         }
 
         /* 03 / Resultado: el bloque original solo tiene .text, sin imagen */
-        & > .text:only-child {
+        .text:only-child {
             grid-column: 1 / -1;
 
-            & > h3 {
+            h3 {
                 max-width: 900px;
                 margin-bottom: 18px;
             }
 
-            & > p {
+            p {
                 max-width: 650px;
                 margin-bottom: 34px;
             }
@@ -1371,7 +1373,8 @@ footer .right:hover p {
 
                     img {
                         width: 100%;
-                        border-radius: 0;
+                        border-radius: 22px;
+                        padding: 10px;
                     }
                 }
 
@@ -1763,28 +1766,28 @@ footer .right:hover p {
     }
 
     .proyecto-detalle {
-        & > section {
+        section {
             margin-bottom: 65px;
         }
 
-        & .proyecto-detalle-cabecera {
+        .proyecto-detalle-cabecera {
             padding-top: 12px !important;
             padding-bottom: 34px !important;
 
-            & > div:first-child {
+            div:first-child {
                 flex-wrap: wrap;
                 margin-bottom: 60px;
                 gap: 6px;
                 font-size: 9px;
             }
 
-            & h1 {
+            h1 {
                 margin-bottom: 28px;
                 font-size: clamp(39px, 11.2vw, 65px);
                 line-height: .92;
             }
 
-            & > p span {
+            p span {
                 font-size: 9px;
                 padding: 4px 9px;
                 min-height: 25px;
@@ -1807,53 +1810,53 @@ footer .right:hover p {
         }
 
         .proyecto-detalle-texto {
-            & > div.flex {
+            div.flex {
                 flex-direction: column;
             }
 
-            & .column1, & .column2 {
+            .column1, .column2 {
                 width: 100%;
                 padding: 25px;
                 border-radius: 18px;
 
-                & h3 {
+                h3 {
                     margin-bottom: 20px;
                 }
             }
         }
 
-        & .proyecto-detalle-imagen-text {
+        .proyecto-detalle-imagen-text {
             padding-top: 22px;
 
-            & h3 {
+            h3 {
                 font-size: clamp(30px, 8.5vw, 43px);
             }
 
-            & > .text:only-child ul {
+            .text:only-child ul {
                 grid-template-columns: 1fr;
 
-                & li {
+                li {
                     padding: 23px;
                 }
             }
         }
 
-        & .proyecto-detalle-tarjetas {
-            & > h3 {
+        .proyecto-detalle-tarjetas {
+            h3 {
                 font-size: clamp(33px, 9vw, 48px);
             }
 
-            & > div.flex {
+            div.flex {
                 grid-template-columns: 1fr;
                 gap: 38px;
 
-                & > div .text h4 {
+                div .text h4 {
                     min-height: 0;
                 }
             }
         }
 
-        & .proyecto-detalle-oscuro {
+        .proyecto-detalle-oscuro {
             padding-top: 35px;
             padding-bottom: 35px;
             border-radius: 17px;
