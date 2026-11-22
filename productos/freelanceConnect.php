@@ -59,7 +59,6 @@
     </section>
 
     <section class="proyecto-detalle-imagen-text flex m-jcsb m-columna t-fila">
-        <img src="imagenes/producto/freelance-filtrado.png" class="m-100 t-50" alt="">
         <div class="imagen-interactiva">
             <img src="imagenes/producto/freelance-connect-mockup-alta-calidad.png"
                  alt="Vista general de Freelance Connect">
