@@ -488,23 +488,23 @@ header {
 /* ======================================
    WEB Y PRODUCTO - ESTILOS
 ====================================== */
-#web-portfolio {
+#web-portfolio, #producto-portfolio {
     width: 100%;
     padding: 130px 0 100px;
     background-color: #FAFBFB;
     color: #21232A;
-    & > .contenido {
+    .contenido {
         width: 90%;
         padding: 0;
     }
     /* ---------- CABECERA ---------- */
-    & .web-cabecera {
+    .web-cabecera, .producto-cabecera {
         width: 100%;
         padding: 0;
         margin-bottom: 50px;
     }
 }
-.web-superior {
+.web-superior, .producto-superior {
     width: 100%;
     gap: 20px;
     margin-bottom: 30px;
@@ -513,19 +513,19 @@ header {
     color: #63666D;
     text-transform: uppercase;
 }
-.web-presentacion {
+.web-presentacion, .producto-presentacion {
     width: 100%;
     gap: 40px;
     align-items: flex-end;
     margin-bottom: 28px;
-    & h1 {
+    h1 {
         flex: 1;
         font-size: clamp(56px, 6.8vw, 115px);
         font-weight: 800;
         line-height: .92;
         letter-spacing: -.075em;
     }
-    & > p {
+    p {
         width: 32%;
         max-width: 370px;
         flex-shrink: 0;
@@ -538,7 +538,7 @@ header {
 }
 
 /* Categorías debajo del hero */
-.web-categorias {
+.web-categorias, .producto-categorias {
     width: 100%;
     border-top: 1px solid #777;
     padding-top: 13px;
@@ -547,11 +547,11 @@ header {
     color: #72747A;
     gap: 15px;
 }
-.web-categorias-lista {
+.web-categorias-lista, .producto-categorias-lista {
     gap: 13px;
     flex-wrap: wrap;
 }
-.web-bajar {
+.web-bajar, .producto-bajar {
     display: inline-flex;
     align-items: center;
     gap: 7px;
@@ -566,7 +566,7 @@ header {
 }
 
 /* ---------- GRID PROYECTOS ---------- */
-#web-portfolio .web-proyectos {
+#web-portfolio .web-proyectos, #producto-portfolio .producto-proyectos {
     width: 90%;
     padding: 160px 0;
     display: flex;
@@ -576,12 +576,12 @@ header {
     align-items: center;
     justify-content: space-around;
 }
-.web-proyecto {
+.web-proyecto, .producto-proyecto {
     min-width: 0;
     display: flex;
     flex-direction: column;
 }
-.web-proyecto-cabecera {
+.web-proyecto-cabecera, .producto-proyecto-cabecera {
     gap: 15px;
     margin-bottom: 12px;
     & h2 {
@@ -595,7 +595,7 @@ header {
         white-space: nowrap;
     }
 }
-.web-proyecto-imagen {
+.web-proyecto-imagen, .producto-proyecto-imagen {
     display: block;
     width: 100%;
     overflow: hidden;
@@ -609,7 +609,7 @@ header {
 }
 
 /* Información del proyecto */
-.web-proyecto-info {
+.web-proyecto-info, .producto-proyecto-info {
     border-top: 1px dotted #ACACAC;
     border-bottom: 1px dotted #ACACAC;
     padding: 8px 0 10px;
@@ -617,7 +617,7 @@ header {
     flex: 1;
     flex-direction: column;
 }
-.web-proyecto-etiquetas {
+.web-proyecto-etiquetas, .producto-proyecto-etiquetas {
     gap: 10px;
     margin-bottom: 8px;
     & p {
@@ -640,7 +640,7 @@ header {
         }
     }
 }
-.web-proyecto-descripcion {
+.web-proyecto-descripcion, .producto-proyecto-descripcion {
     max-width: 90%;
     margin: 0 0 8px;
     font-size: 14px;
@@ -648,7 +648,7 @@ header {
     letter-spacing: -.015em;
     line-height: 1.3;
 }
-.web-proyecto-tecnologias {
+.web-proyecto-tecnologias, .producto-proyecto-tecnologias {
     margin-top: auto;
     font-size: 12px;
     font-weight: 400;
@@ -1411,26 +1411,26 @@ footer .right:hover p {
             background-size: clamp(100%, calc(15% + 720px), 200%) auto;
         }
     }
-    #web-portfolio {
+    #web-portfolio, #producto-portfolio {
         padding-top: 100px;
         & > .contenido {
             width: 92%;
         }
     }
-    .web-presentacion h1 {
+    .web-presentacion h1, .producto-presentacion h1 {
         font-size: clamp(48px, 7vw, 75px);
     }
-    .web-presentacion > p {
+    .web-presentacion > p, .producto-presentacion > p {
         width: 38%;
     }
-    #web-portfolio .web-proyectos {
+    #web-portfolio .web-proyectos, #producto-portfolio .producto-proyectos {
         column-gap: 4%;
         row-gap: 45px;
     }
-    .web-proyecto-cabecera h2 {
+    .web-proyecto-cabecera h2, .producto-proyecto-cabecera h2 {
         font-size: 15px;
     }
-    .web-proyecto-etiquetas p {
+    .web-proyecto-etiquetas p, .producto-proyecto-etiquetas p {
         font-size: 10px;
     }
 
@@ -1552,18 +1552,18 @@ footer .right:hover p {
         }
     }
     /* ---------- WEB Y PRODUCTO ---------- */
-    #web-portfolio > .contenido {
+    #web-portfolio > .contenido, #producto-portfolio > .contenido {
         width: 90%;
     }
-    #web-portfolio .web-cabecera {
+    #web-portfolio .web-cabecera, #producto-portfolio .producto-cabecera {
         margin-bottom: 35px;
     }
-    .web-superior {
+    .web-superior, .producto-superior {
         margin-bottom: 24px;
         font-size: 10px;
         gap: 10px;
     }
-    .web-presentacion {
+    .web-presentacion, .producto-presentacion {
         flex-direction: column;
         align-items: flex-start;
         gap: 20px;
@@ -1582,23 +1582,23 @@ footer .right:hover p {
             margin: 0;
         }
     }
-    .web-categorias {
+    .web-categorias, .producto-categorias {
         padding-top: 10px;
         font-size: 10px;
         gap: 10px;
     }
-    .web-categorias-lista {
+    .web-categorias-lista, .producto-categorias-lista {
         gap: 6px;
     }
-    .web-bajar {
+    .web-bajar, .producto-bajar {
         font-size: 10px;
     }
     /* ---------- PROYECTOS ---------- */
-    #web-portfolio .web-proyectos {
+    #web-portfolio .web-proyectos, #producto-portfolio .producto-proyectos {
         grid-template-columns: 1fr;
         gap: 38px;
     }
-    .web-proyecto-cabecera {
+    .web-proyecto-cabecera, .producto-proyecto-cabecera {
         margin-bottom: 10px;
         & h2 {
             font-size: 15px;
@@ -1607,14 +1607,14 @@ footer .right:hover p {
             font-size: 11px;
         }
     }
-    .web-proyecto-etiquetas p {
+    .web-proyecto-etiquetas p, .producto-proyecto-etiquetas p {
         font-size: 10px;
     }
-    .web-proyecto-descripcion {
+    .web-proyecto-descripcion, .producto-proyecto-descripcion {
         font-size: 12px;
         max-width: 100%;
     }
-    .web-proyecto-tecnologias {
+    .web-proyecto-tecnologias, .producto-proyecto-tecnologias {
         font-size: 11px;
     }
     /* ---------- FOOTER ---------- */

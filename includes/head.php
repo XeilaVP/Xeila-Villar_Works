@@ -69,8 +69,8 @@ $idPagina = $idPagina ?? ($esInicio ? "inicio" : "web");
 
             <!-- MENÚ SUPERIOR -->
             <div id="menu-top" class="flex m-jcsb m-aic">
+                <a href="producto.php">Producto</a>
                 <a href="web.php">Web UX/UI</a>
-                <a href="marketing.php">Marketing</a>
             </div>
 
             <div class="title-pag flex m-jcc m-aic m-columna m-90 p-100">
@@ -133,8 +133,8 @@ $idPagina = $idPagina ?? ($esInicio ? "inicio" : "web");
 
             <!-- MENÚ INFERIOR -->
             <div id="menu-bottom" class="flex m-jcsb m-aic cursor-pointer">
+                <a href="marketing.php">Marketing</a>
                 <a href="grafico.php">Gráfico</a>
-                <a href="ilustracion.php">Ilustración</a>
             </div>
 
         </div>

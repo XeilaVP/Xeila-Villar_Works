@@ -21,22 +21,27 @@ require __DIR__ . "/includes/head.php";
             </p>
             <img src="imagenes/branding/BOLSA.jpg" alt="">
         </div>
-
-        <div class="diseno-web hover-imagen">
-            <p class="color-light">
-                <span class="noto-font" style="font-weight:400; font-style:italic;">DISEÑO</span> WEB
-            </p>
-            <img src="imagenes/branding/BOLSA.jpg" alt="">
-        </div>
         <div class="marketing hover-imagen">
             <p class="color-light">
-               <b class="accent-orange">MARKETING</b> DIGITAL
+               <b class="accent-orange">DISEÑO </b> WEB · <span class="noto-font" style="font-weight:400; font-style:italic;">UX / UI</span>
             </p>
             <img src="imagenes/branding/BOLSA.jpg" alt="">
         </div>
         <div class="direccion-arte hover-imagen">
             <p class="color-light">
-                DIRECCIÓN DE ARTE
+                <b class="accent-blue">MARKETING DIGITAL</b>
+            </p>
+            <img src="imagenes/branding/BOLSA.jpg" alt="">
+        </div>
+        <div class="direccion-arte hover-imagen">
+            <p class="color-light">
+                CRM & E-COMMERCE
+            </p>
+            <img src="imagenes/branding/BOLSA.jpg" alt="">
+        </div>
+        <div class="direccion-arte hover-imagen">
+            <p class="color-light">
+                DIRECCIÓN DE <b class="accent-orange">ARTE</b>
             </p>
             <img src="imagenes/branding/BOLSA.jpg" alt="">
         </div>
@@ -50,17 +55,11 @@ require __DIR__ . "/includes/head.php";
 
         <div class="ia-generativa hover-imagen">
             <p class="color-light">
-                IA GENERATIVA
+                <b class="accent-orange">IA GENERATIVA</b>
             </p>
             <img src="imagenes/branding/BOLSA.jpg" alt="">
         </div>
 
-        <div class="ilustracion hover-imagen">
-            <p class="accent-orange noto-font">
-                ILUSTRACIÓN
-            </p>
-            <img src="imagenes/branding/BOLSA.jpg" alt="">
-        </div>
     </div>
 </section>
     
