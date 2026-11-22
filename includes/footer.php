@@ -159,3 +159,4 @@
   AOS.init();
 </script>
 <script src="js/script.js"></script>
+<script src="js/lightbox.js"></script>

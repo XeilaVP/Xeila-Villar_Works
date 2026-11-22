@@ -59,7 +59,7 @@
     </section>
 
     <section class="proyecto-detalle-imagen-text flex m-jcsb m-columna t-fila">
-        <img src="imagenes/producto/freelance-connect-mockup.png" class="m-100 t-50" alt="">
+        <img src="imagenes/producto/freelance-filtrado.png" class="m-100 t-50" alt="">
         <div class="text m-50 t-100">
             <h2>02 · Solución</h2>
             <h3>Del problema al <em>producto</em></h3>
@@ -184,7 +184,7 @@
         <!-- TARJETA 03 · FEEDBACK -->
         <div>
             <div class="proyecto-detalle-imagen">
-                <img src="imagenes/producto/freelance-connect-mockup.png"
+                <img src="imagenes/producto/feedback-product.png"
                      class="m-100"
                      alt="Vista de feedback y gestión de incidencias">
             </div>
