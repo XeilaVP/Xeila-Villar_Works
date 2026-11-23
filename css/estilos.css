@@ -1048,7 +1048,7 @@ footer {
             padding: 0;
             border: 0;
             color: #21232A;
-            font-size: clamp(25px, 3.1vw, 43px);
+            font-size: clamp(25px, 3.1vw, 36px);
             font-weight: 450;
             line-height: 1.14;
             letter-spacing: -.055em;
@@ -1073,7 +1073,7 @@ footer {
         img {
             width: 100%;
             max-height: 570px;
-            object-fit: contain;
+            object-fit: cover;
             border-radius: 22px;
             padding: 10px;
         }
@@ -1215,7 +1215,7 @@ footer {
                 grid-template-columns: repeat(2, minmax(0, 1fr));
                 gap: 1px;
                 padding: 0;
-                margin: 0;
+                margin-top: 50px;
                 background: #D9DDDF;
                 border: 1px solid #D9DDDF;
                 border-radius: 22px;
@@ -1229,6 +1229,7 @@ footer {
                     background: #F2F3F3;
                     list-style: none;
                     counter-increment: funcionalidad;
+                    height: 100%;
 
                     &::before {
                         content: counter(funcionalidad, decimal-leading-zero);
@@ -1366,6 +1367,83 @@ footer {
         }
     }
 }
+
+/* MOCKUP INTERACTIVO · FREELANCE CONNECT */
+
+.proyecto-detalle .proyecto-detalle-mockup {
+    display: block;
+    padding: 0;
+    border: 0;
+}
+
+/* Las secciones 02 y 03, ahora solo con texto,
+   ocupan todo el ancho disponible */
+.proyecto-detalle .proyecto-detalle-imagen-text:has(> .text:only-child) {
+    grid-template-columns: minmax(0, 1fr);
+}
+
+.proyecto-detalle .imagen-interactiva {
+    position: relative;
+    width: min(100%, 1120px);
+    margin: 0 auto;
+}
+
+.proyecto-detalle .imagen-interactiva > img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: none;
+    object-fit: contain;
+    border-radius: 0;
+    background: transparent;
+}
+
+/* NÚMEROS SOBRE LA IMAGEN */
+
+.proyecto-detalle .punto-interactivo {
+    position: absolute;
+    z-index: 2;
+    transform: translate(-50%, -50%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 34px;
+    height: 34px;
+    padding: 0;
+
+    border: 2px solid #FAFBFB;
+    border-radius: 50%;
+    background: #BD802C;
+    color: #21232A;
+
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1;
+
+    box-shadow: 0 3px 12px rgba(0, 0, 0, .25);
+    cursor: pointer;
+    transition: transform .2s ease, background .2s ease;
+}
+
+.proyecto-detalle .punto-interactivo:hover,
+.proyecto-detalle .punto-interactivo:focus-visible {
+    transform: translate(-50%, -50%) scale(1.15);
+    background: #F2B768;
+    outline: 2px solid #21232A;
+}
+
+@media (max-width: 700px) {
+    .proyecto-detalle .punto-interactivo {
+        width: 25px;
+        height: 25px;
+        font-size: 11px;
+        border-width: 1px;
+    }
+}
+
 
 /* =========================================================
    RESPONSIVE · TABLET Y MÓVIL (hasta 900px)

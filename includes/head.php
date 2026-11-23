@@ -22,6 +22,7 @@ $idPagina = $idPagina ?? ($esInicio ? "inicio" : "web");
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="stylesheet" href="css/lightbox.css">
+    <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/dist/tippy.css">
 
     <!-- GOOGLE ICONS -->
     <link rel="stylesheet"

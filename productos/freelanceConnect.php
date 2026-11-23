@@ -59,46 +59,7 @@
     </section>
 
     <section class="proyecto-detalle-imagen-text flex m-jcsb m-columna t-fila">
-        <div class="imagen-interactiva">
-            <img src="imagenes/producto/freelance-connect-mockup-alta-calidad.png"
-                 alt="Vista general de Freelance Connect">
-
-            <button class="punto-interactivo"
-                    style="left: 65%; top: 16%"
-                    data-tippy-content="Busca profesionales directamente por su nombre.">
-                1
-            </button>
-            <button class="punto-interactivo"
-                    style="left: 45%; top: 21%"
-                    data-tippy-content="Organización por departamentos para localizar profesionales según las necesidades de cada equipo.">
-                2
-            </button>
-            <button class="punto-interactivo"
-                    style="left: 20%; top: 48%"
-                    data-tippy-content="Filtros combinables por valoración, estado, modalidad de tarifa y rango de precios.">
-                3
-            </button>
-            <button class="punto-interactivo"
-                    style="left: 50%; top: 38%"
-                    data-tippy-content="Filtrado por especialidades para encontrar las competencias concretas que requiere cada proyecto.">
-                4
-            </button>
-            <button class="punto-interactivo"
-                    style="left: 79%; top: 47%"
-                    data-tippy-content="Acceso rápido a los profesionales guardados como favoritos.">
-                5
-            </button>
-            <button class="punto-interactivo"
-                    style="left: 50%; top: 65%"
-                    data-tippy-content="Tarjetas con información relevante para comparar profesionales sin abrir sus fichas.">
-                6
-            </button>
-            <button class="punto-interactivo"
-                    style="left: 85%; top: 16%"
-                    data-tippy-content="Administración de usuarios, roles y departamentos de la plataforma.">
-                7
-            </button>
-        </div>
+        
         <div class="text m-50 t-100">
             <h2>02 · Solución</h2>
             <h3>Del problema al <em>producto</em></h3>
@@ -123,6 +84,46 @@
             <p>Freelance Connect reúne las herramientas necesarias para gestionar las 
                 colaboraciones desde una misma plataforma.
             </p>
+            <div class="imagen-interactiva">
+                <img src="imagenes/producto/freelance-connect-mockup-alta-calidad.png"
+                     alt="Vista general de Freelance Connect">
+    
+                <button class="punto-interactivo"
+                        style="left: 65%; top: 16%"
+                        data-tippy-content="Busca profesionales directamente por su nombre.">
+                    1
+                </button>
+                <button class="punto-interactivo"
+                        style="left: 45%; top: 21%"
+                        data-tippy-content="Organización por departamentos para localizar profesionales según las necesidades de cada equipo.">
+                    2
+                </button>
+                <button class="punto-interactivo"
+                        style="left: 20%; top: 48%"
+                        data-tippy-content="Filtros combinables por valoración, estado, modalidad de tarifa y rango de precios.">
+                    3
+                </button>
+                <button class="punto-interactivo"
+                        style="left: 50%; top: 38%"
+                        data-tippy-content="Filtrado por especialidades para encontrar las competencias concretas que requiere cada proyecto.">
+                    4
+                </button>
+                <button class="punto-interactivo"
+                        style="left: 79%; top: 47%"
+                        data-tippy-content="Acceso rápido a los profesionales guardados como favoritos.">
+                    5
+                </button>
+                <button class="punto-interactivo"
+                        style="left: 50%; top: 65%"
+                        data-tippy-content="Tarjetas con información relevante para comparar profesionales sin abrir sus fichas.">
+                    6
+                </button>
+                <button class="punto-interactivo"
+                        style="left: 85%; top: 16%"
+                        data-tippy-content="Administración de usuarios, roles y departamentos de la plataforma.">
+                    7
+                </button>
+            </div>
             <ul class="flex m-jcsb m-wrap m-aic">
                 <li><h4>Búsqueda y selección</h4>
                     <p>Un directorio con filtros permite localizar profesionales por nombre, 
@@ -155,7 +156,7 @@
             </ul>
         </div>
     </section>
-
+        
     <section class="proyecto-detalle-texto proyecto-detalle-tarjetas flex m-columna m-jcsb m-90">
         <h2>04 · Desarrollo y pruebas</h2>
         <h3>Construir, probar y ajustar.</h3>
